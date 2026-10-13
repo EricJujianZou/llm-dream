@@ -144,7 +144,7 @@ Memory tokens after each night, mean over seeds, with the cap:
 | Random noise, 20 percent | 92 ± 7 | 0 ± 0 | 0 ± 0 | 100 ± 0 | 100 ± 0 | 100 ± 0 | 100 ± 0 | 100 ± 0 | 100 ± 0 |
 | Random noise, 40 percent | 81 ± 16 | 0 ± 0 | 0 ± 0 | 100 ± 0 | 100 ± 0 | 100 ± 0 | 100 ± 0 | 100 ± 0 | 100 ± 0 |
 
-Same tests in the evening, with the study lists still in context, are in summary_v2.json under battery_evening. The DRM lists are new ones built from the USF free-association norms, because Opus recognised the classic lists in v1. Human reference points: Roediger and McDermott 1995 found people false-recognise the critical lure at about 0.8 of the hit rate; Cao et al report 0.11 for GPT-4.
+Same tests in the evening, with the study lists still in context, are in summary_v2.json under battery_evening. The DRM lists are new ones built from the USF free-association norms, because Opus recognised the classic lists in v1. Human reference points: Roediger and McDermott 1995 found people false-recognise the critical lure at about the same rate as studied words (0.98 to 1.11 of the hit rate, Tables 1 and 2); Cao, Schooler and Zafarani 2025 report 0.11 for GPT-4 with a hit rate of 1.
 
 ## Housekeeping
 
