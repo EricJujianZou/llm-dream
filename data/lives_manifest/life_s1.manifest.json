@@ -1,0 +1,3084 @@
+{
+ "seed": 1,
+ "days": 10,
+ "day_tokens_target": 130000,
+ "episode_reserve": 4000,
+ "schedule": [
+  {
+   "day": 0,
+   "sessions": [
+    {
+     "session_id": "ultrachat_335776",
+     "evidence_for": null
+    },
+    {
+     "session_id": "sharegpt_tpdSu0r_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "sharegpt_P8M9rM5_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_ef84b994_abs_1",
+     "evidence_for": "a96c20ee_abs"
+    },
+    {
+     "session_id": "answer_626e93c4_1",
+     "evidence_for": "c6853660"
+    },
+    {
+     "session_id": "ultrachat_425380",
+     "evidence_for": null
+    },
+    {
+     "session_id": "ultrachat_388802",
+     "evidence_for": null
+    },
+    {
+     "session_id": "ultrachat_289726",
+     "evidence_for": null
+    },
+    {
+     "session_id": "ultrachat_431164",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_cbd08e3c_abs_1",
+     "evidence_for": "ba358f49_abs"
+    },
+    {
+     "session_id": "ultrachat_195351",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_cebb7159",
+     "evidence_for": "0a34ad58"
+    },
+    {
+     "session_id": "1bff1675",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_f25c32f5_1",
+     "evidence_for": "e61a7584"
+    },
+    {
+     "session_id": "answer_ultrachat_39395",
+     "evidence_for": "fca762bc"
+    },
+    {
+     "session_id": "27971ce6_5",
+     "evidence_for": null
+    },
+    {
+     "session_id": "sharegpt_rn73lMW_7",
+     "evidence_for": null
+    },
+    {
+     "session_id": "33401191_2",
+     "evidence_for": null
+    },
+    {
+     "session_id": "169213ae",
+     "evidence_for": null
+    },
+    {
+     "session_id": "sharegpt_XWLA0IO_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "sharegpt_v4PzAY8_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_4dac77cb_1",
+     "evidence_for": "6071bd76"
+    },
+    {
+     "session_id": "answer_8f276838",
+     "evidence_for": "dccbc061"
+    },
+    {
+     "session_id": "83cfab9f_2",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_de64539a_1",
+     "evidence_for": "bb7c3b45"
+    },
+    {
+     "session_id": "ultrachat_132592",
+     "evidence_for": null
+    },
+    {
+     "session_id": "sharegpt_vaz7tpo_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "ultrachat_77515",
+     "evidence_for": null
+    },
+    {
+     "session_id": "cd568521_3",
+     "evidence_for": null
+    },
+    {
+     "session_id": "ultrachat_104156",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_4cb841a8_1",
+     "evidence_for": "1c549ce4"
+    },
+    {
+     "session_id": "answer_sharegpt_hChsWOp_97",
+     "evidence_for": "561fabcd"
+    },
+    {
+     "session_id": "c5d99bff",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_sharegpt_CaxTGYP_0",
+     "evidence_for": "3249768e"
+    },
+    {
+     "session_id": "sharegpt_tvcY0lQ_41",
+     "evidence_for": null
+    },
+    {
+     "session_id": "d1d3fd12_2",
+     "evidence_for": null
+    },
+    {
+     "session_id": "ultrachat_155726",
+     "evidence_for": null
+    },
+    {
+     "session_id": "sharegpt_gotS54g_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_530960c1",
+     "evidence_for": "001be529"
+    }
+   ],
+   "tokens": 126068,
+   "n_sessions": 39,
+   "n_turns": 389
+  },
+  {
+   "day": 1,
+   "sessions": [
+    {
+     "session_id": "answer_3f9693b7_1",
+     "evidence_for": "6aeb4375"
+    },
+    {
+     "session_id": "35038174_4",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_86c505e7_1",
+     "evidence_for": "e831120c"
+    },
+    {
+     "session_id": "answer_39b12014",
+     "evidence_for": "faba32e5"
+    },
+    {
+     "session_id": "answer_586de428_abs",
+     "evidence_for": "15745da0_abs"
+    },
+    {
+     "session_id": "sharegpt_8bRQICJ_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "ultrachat_468236",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_bf633415_abs_1",
+     "evidence_for": "2311e44b_abs"
+    },
+    {
+     "session_id": "sharegpt_unBuM2A_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "ultrachat_546083",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_52382508_abs_1",
+     "evidence_for": "2133c1b5_abs"
+    },
+    {
+     "session_id": "answer_203bf3fa_1",
+     "evidence_for": "gpt4_5501fe77"
+    },
+    {
+     "session_id": "answer_353d3c6d_2",
+     "evidence_for": "9aaed6a3"
+    },
+    {
+     "session_id": "answer_8c0712af_1",
+     "evidence_for": "b01defab"
+    },
+    {
+     "session_id": "sharegpt_6lBVIXU_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "ultrachat_8664",
+     "evidence_for": null
+    },
+    {
+     "session_id": "sharegpt_Mt8yQFL_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_80d6d664_2",
+     "evidence_for": "099778bb"
+    },
+    {
+     "session_id": "answer_35c5419d_abs_3",
+     "evidence_for": "gpt4_372c3eed_abs"
+    },
+    {
+     "session_id": "911142e1",
+     "evidence_for": null
+    },
+    {
+     "session_id": "b5263ca4_1",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_d08a934d_1",
+     "evidence_for": "7a87bd0c"
+    },
+    {
+     "session_id": "ultrachat_285364",
+     "evidence_for": null
+    },
+    {
+     "session_id": "ultrachat_296315",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_8ee04a2e",
+     "evidence_for": "75f70248"
+    },
+    {
+     "session_id": "answer_cf9e3940_2",
+     "evidence_for": "gpt4_a56e767c"
+    },
+    {
+     "session_id": "answer_d8454588_1",
+     "evidence_for": "1f2b8d4f"
+    },
+    {
+     "session_id": "answer_5237bb0b_2",
+     "evidence_for": "d3ab962e"
+    },
+    {
+     "session_id": "answer_47152166_2",
+     "evidence_for": "a08a253f"
+    },
+    {
+     "session_id": "541ecc45_1",
+     "evidence_for": null
+    },
+    {
+     "session_id": "sharegpt_mDe8UqB_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "ultrachat_265626",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_fc81d1a2_1",
+     "evidence_for": "efc3f7c2"
+    },
+    {
+     "session_id": "answer_626e93c4_2",
+     "evidence_for": "c6853660"
+    }
+   ],
+   "tokens": 125997,
+   "n_sessions": 34,
+   "n_turns": 340
+  },
+  {
+   "day": 2,
+   "sessions": [
+    {
+     "session_id": "answer_355c48bb",
+     "evidence_for": "58bf7951"
+    },
+    {
+     "session_id": "answer_sharegpt_H9PiM5G_0",
+     "evidence_for": "6222b6eb"
+    },
+    {
+     "session_id": "answer_33c251f0_2",
+     "evidence_for": "77eafa52"
+    },
+    {
+     "session_id": "answer_3f9693b7_abs_1",
+     "evidence_for": "6aeb4375_abs"
+    },
+    {
+     "session_id": "answer_7cb94507",
+     "evidence_for": "7527f7e2"
+    },
+    {
+     "session_id": "dac54d1e_1",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_e6143162_abs",
+     "evidence_for": "bc8a6e93_abs"
+    },
+    {
+     "session_id": "answer_8d63a897_1",
+     "evidence_for": "5831f84d"
+    },
+    {
+     "session_id": "answer_ultrachat_563222",
+     "evidence_for": "8aef76bc"
+    },
+    {
+     "session_id": "41d20601",
+     "evidence_for": null
+    },
+    {
+     "session_id": "baf0243b_1",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_766ab8da_1",
+     "evidence_for": "4d6b87c8"
+    },
+    {
+     "session_id": "answer_0250ae1c",
+     "evidence_for": "32260d93"
+    },
+    {
+     "session_id": "answer_b0f3dfff_1",
+     "evidence_for": "5a4f22c0"
+    },
+    {
+     "session_id": "answer_bcce0b73_1",
+     "evidence_for": "22d2cb42"
+    },
+    {
+     "session_id": "36828c66_1",
+     "evidence_for": null
+    },
+    {
+     "session_id": "10857212_2",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_da72b1b4_1",
+     "evidence_for": "06db6396"
+    },
+    {
+     "session_id": "answer_eaa8e3ef_1",
+     "evidence_for": "2318644b"
+    },
+    {
+     "session_id": "ultrachat_356789",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_3bf5b73b_1",
+     "evidence_for": "0977f2af"
+    },
+    {
+     "session_id": "answer_30f63ddb",
+     "evidence_for": "b0479f84"
+    },
+    {
+     "session_id": "answer_fff743f5_1",
+     "evidence_for": "18bc8abd"
+    },
+    {
+     "session_id": "answer_7cc5362f_abs",
+     "evidence_for": "29f2956b_abs"
+    },
+    {
+     "session_id": "89aed484_2",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_sharegpt_2BSXlAr_0",
+     "evidence_for": "b759caee"
+    },
+    {
+     "session_id": "0254514e_2",
+     "evidence_for": null
+    }
+   ],
+   "tokens": 125047,
+   "n_sessions": 27,
+   "n_turns": 316
+  },
+  {
+   "day": 3,
+   "sessions": [
+    {
+     "session_id": "answer_bcce0b73_2",
+     "evidence_for": "22d2cb42"
+    },
+    {
+     "session_id": "answer_35c5419d_abs_1",
+     "evidence_for": "gpt4_372c3eed_abs"
+    },
+    {
+     "session_id": "afa0c2e7_2",
+     "evidence_for": null
+    },
+    {
+     "session_id": "49b78a55_2",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_c8cc60d6_2",
+     "evidence_for": "3c1045c8"
+    },
+    {
+     "session_id": "f7531e3d",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_3bf5b73b_2",
+     "evidence_for": "0977f2af"
+    },
+    {
+     "session_id": "answer_de64539a_2",
+     "evidence_for": "bb7c3b45"
+    },
+    {
+     "session_id": "ultrachat_289017",
+     "evidence_for": null
+    },
+    {
+     "session_id": "sharegpt_D04QY6E_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "ultrachat_155769",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_8549e5e0",
+     "evidence_for": "afdc33df"
+    },
+    {
+     "session_id": "answer_f9de4602_2",
+     "evidence_for": "dd2973ad"
+    },
+    {
+     "session_id": "b70358bc_4",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_3f9693b7_abs_2",
+     "evidence_for": "6aeb4375_abs"
+    },
+    {
+     "session_id": "answer_6cb8f792_1",
+     "evidence_for": "92a0aa75"
+    },
+    {
+     "session_id": "ultrachat_10500",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_f6168136",
+     "evidence_for": "c5e8278d"
+    },
+    {
+     "session_id": "sharegpt_4L5LmyO_3",
+     "evidence_for": null
+    },
+    {
+     "session_id": "sharegpt_hvdBqMM_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "sharegpt_9dKNTQo_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "ultrachat_533475",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_e0585cb5_2",
+     "evidence_for": "10d9b85a"
+    },
+    {
+     "session_id": "sharegpt_DGiqvVv_270",
+     "evidence_for": null
+    },
+    {
+     "session_id": "1692563c_1",
+     "evidence_for": null
+    },
+    {
+     "session_id": "6bf223b6_2",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_c65042d7_3",
+     "evidence_for": "46a3abf7"
+    },
+    {
+     "session_id": "ultrachat_471439",
+     "evidence_for": null
+    },
+    {
+     "session_id": "69f3fc12_1",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_203bf3fa_3",
+     "evidence_for": "gpt4_5501fe77"
+    },
+    {
+     "session_id": "sharegpt_qXAG1vr_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "sharegpt_mWhypBl_0",
+     "evidence_for": null
+    }
+   ],
+   "tokens": 125869,
+   "n_sessions": 32,
+   "n_turns": 367
+  },
+  {
+   "day": 4,
+   "sessions": [
+    {
+     "session_id": "answer_304511ce",
+     "evidence_for": "c14c00dd"
+    },
+    {
+     "session_id": "answer_80d6d664_1",
+     "evidence_for": "099778bb"
+    },
+    {
+     "session_id": "answer_f25c32f5_2",
+     "evidence_for": "e61a7584"
+    },
+    {
+     "session_id": "c068abb2",
+     "evidence_for": null
+    },
+    {
+     "session_id": "71dc2037_2",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_cf9e3940_1",
+     "evidence_for": "gpt4_a56e767c"
+    },
+    {
+     "session_id": "answer_b191df5b_1",
+     "evidence_for": "f9e8c073"
+    },
+    {
+     "session_id": "answer_e623ae87",
+     "evidence_for": "6b168ec8"
+    },
+    {
+     "session_id": "ultrachat_574656",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_sharegpt_NoDZzot_7",
+     "evidence_for": "352ab8bd"
+    },
+    {
+     "session_id": "answer_d08a934d_2",
+     "evidence_for": "7a87bd0c"
+    },
+    {
+     "session_id": "9ee4da12_1",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_203bf3fa_2",
+     "evidence_for": "gpt4_5501fe77"
+    },
+    {
+     "session_id": "answer_59547700",
+     "evidence_for": "58ef2f1c"
+    },
+    {
+     "session_id": "answer_cfcf5340_1",
+     "evidence_for": "f0e564bc"
+    },
+    {
+     "session_id": "6177ea96_1",
+     "evidence_for": null
+    },
+    {
+     "session_id": "sharegpt_gmOSkOC_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_cbd08e3c_abs_2",
+     "evidence_for": "ba358f49_abs"
+    },
+    {
+     "session_id": "e255d6fc_2",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_c69ee1f9_2",
+     "evidence_for": "a11281a2"
+    },
+    {
+     "session_id": "answer_990c8992_abs_2",
+     "evidence_for": "80ec1f4f_abs"
+    },
+    {
+     "session_id": "answer_ultrachat_115151",
+     "evidence_for": "1b9b7252"
+    },
+    {
+     "session_id": "answer_ultrachat_94624",
+     "evidence_for": "3e321797"
+    },
+    {
+     "session_id": "sharegpt_bSWYciK_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_e49ed9d3_abs_1",
+     "evidence_for": "e5ba910e_abs"
+    },
+    {
+     "session_id": "answer_4cb841a8_2",
+     "evidence_for": "1c549ce4"
+    },
+    {
+     "session_id": "sharegpt_6TSnbGC_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_f9de4602_1",
+     "evidence_for": "dd2973ad"
+    }
+   ],
+   "tokens": 125919,
+   "n_sessions": 28,
+   "n_turns": 319
+  },
+  {
+   "day": 5,
+   "sessions": [
+    {
+     "session_id": "answer_e1403127_1",
+     "evidence_for": "89941a93"
+    },
+    {
+     "session_id": "sharegpt_qgxzDJ9_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_fc81d1a2_2",
+     "evidence_for": "efc3f7c2"
+    },
+    {
+     "session_id": "answer_c69ee1f9_1",
+     "evidence_for": "a11281a2"
+    },
+    {
+     "session_id": "answer_c65042d7_2",
+     "evidence_for": "46a3abf7"
+    },
+    {
+     "session_id": "ultrachat_240081",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_33c251f0_1",
+     "evidence_for": "77eafa52"
+    },
+    {
+     "session_id": "sharegpt_wrVON2D_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_47152166_1",
+     "evidence_for": "a08a253f"
+    },
+    {
+     "session_id": "sharegpt_IfcsX5g_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "ultrachat_45984",
+     "evidence_for": null
+    },
+    {
+     "session_id": "afec1061_1",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_4dac77cb_2",
+     "evidence_for": "6071bd76"
+    },
+    {
+     "session_id": "answer_ultrachat_187684",
+     "evidence_for": "fea54f57"
+    },
+    {
+     "session_id": "answer_35c5419d_abs_2",
+     "evidence_for": "gpt4_372c3eed_abs"
+    },
+    {
+     "session_id": "answer_da72b1b4_2",
+     "evidence_for": "06db6396"
+    },
+    {
+     "session_id": "sharegpt_8rWUCSm_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_990c8992_abs_3",
+     "evidence_for": "80ec1f4f_abs"
+    },
+    {
+     "session_id": "answer_e0956e0a_abs_2",
+     "evidence_for": "60bf93ed_abs"
+    },
+    {
+     "session_id": "ultrachat_105306",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_19c24c11",
+     "evidence_for": "3d86fd0a"
+    },
+    {
+     "session_id": "sharegpt_ZfqQgCV_19",
+     "evidence_for": null
+    },
+    {
+     "session_id": "ultrachat_43091",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_8c0712af_2",
+     "evidence_for": "b01defab"
+    },
+    {
+     "session_id": "sharegpt_sD1RDN4_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "sharegpt_S3aFHiT_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "99e0fd9f_3",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_cfcf5340_2",
+     "evidence_for": "f0e564bc"
+    },
+    {
+     "session_id": "answer_c8cc60d6_1",
+     "evidence_for": "3c1045c8"
+    },
+    {
+     "session_id": "2bbbe083",
+     "evidence_for": null
+    },
+    {
+     "session_id": "sharegpt_91Sn9JG_7",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_9282283d_abs_1",
+     "evidence_for": "2698e78f_abs"
+    },
+    {
+     "session_id": "da5f24f6_1",
+     "evidence_for": null
+    }
+   ],
+   "tokens": 125616,
+   "n_sessions": 33,
+   "n_turns": 346
+  },
+  {
+   "day": 6,
+   "sessions": [
+    {
+     "session_id": "sharegpt_bcZD9Nt_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_60e8941a_abs_1",
+     "evidence_for": "edced276_abs"
+    },
+    {
+     "session_id": "ultrachat_230496",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_82a04f59",
+     "evidence_for": "af8d2e46"
+    },
+    {
+     "session_id": "answer_ultrachat_13075",
+     "evidence_for": "e8a79c70"
+    },
+    {
+     "session_id": "ultrachat_550529",
+     "evidence_for": null
+    },
+    {
+     "session_id": "ultrachat_25858",
+     "evidence_for": null
+    },
+    {
+     "session_id": "b8c5e928_1",
+     "evidence_for": null
+    },
+    {
+     "session_id": "sharegpt_2FUMEw4_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "ultrachat_320783",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_d87a6ef8",
+     "evidence_for": "75832dbd"
+    },
+    {
+     "session_id": "answer_6cb8f792_2",
+     "evidence_for": "92a0aa75"
+    },
+    {
+     "session_id": "1ecdcc0f_1",
+     "evidence_for": null
+    },
+    {
+     "session_id": "ultrachat_273019",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_e0956e0a_abs_1",
+     "evidence_for": "60bf93ed_abs"
+    },
+    {
+     "session_id": "answer_0714183a",
+     "evidence_for": "caf9ead2"
+    },
+    {
+     "session_id": "sharegpt_JfMnEjD_1",
+     "evidence_for": null
+    },
+    {
+     "session_id": "f192beb0_2",
+     "evidence_for": null
+    },
+    {
+     "session_id": "7613d5ec_2",
+     "evidence_for": null
+    },
+    {
+     "session_id": "sharegpt_xkWMnwQ_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "sharegpt_FOWrTns_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "sharegpt_yra5TPM_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "6d13e73a_2",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_e05e4612",
+     "evidence_for": "c960da58"
+    },
+    {
+     "session_id": "sharegpt_cuQZMLA_45",
+     "evidence_for": null
+    },
+    {
+     "session_id": "932c7d0d_2",
+     "evidence_for": null
+    },
+    {
+     "session_id": "ultrachat_460804",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_sharegpt_5Lzox6N_0",
+     "evidence_for": "7161e7e2"
+    },
+    {
+     "session_id": "answer_f5b33470_abs",
+     "evidence_for": "f4f1d8a4_abs"
+    },
+    {
+     "session_id": "answer_52382508_abs_2",
+     "evidence_for": "2133c1b5_abs"
+    },
+    {
+     "session_id": "121efb3b_2",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_cf9e3940_3",
+     "evidence_for": "gpt4_a56e767c"
+    },
+    {
+     "session_id": "ultrachat_495546",
+     "evidence_for": null
+    },
+    {
+     "session_id": "sharegpt_jVow2vn_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "sharegpt_lK1xtdw_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "9186ecdb_2",
+     "evidence_for": null
+    },
+    {
+     "session_id": "sharegpt_DsdOMQX_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "sharegpt_0iEF8Gz_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "6414f676_5",
+     "evidence_for": null
+    }
+   ],
+   "tokens": 125773,
+   "n_sessions": 39,
+   "n_turns": 380
+  },
+  {
+   "day": 7,
+   "sessions": [
+    {
+     "session_id": "sharegpt_PZ9Id5R_7",
+     "evidence_for": null
+    },
+    {
+     "session_id": "54df03d4_4",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_e1403127_2",
+     "evidence_for": "89941a93"
+    },
+    {
+     "session_id": "d5128b51",
+     "evidence_for": null
+    },
+    {
+     "session_id": "ultrachat_232141",
+     "evidence_for": null
+    },
+    {
+     "session_id": "f379d356_3",
+     "evidence_for": null
+    },
+    {
+     "session_id": "631e4016",
+     "evidence_for": null
+    },
+    {
+     "session_id": "b42cbaf0_1",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_fff743f5_2",
+     "evidence_for": "18bc8abd"
+    },
+    {
+     "session_id": "answer_c3567066",
+     "evidence_for": "f8c5f88b"
+    },
+    {
+     "session_id": "answer_d61669c7",
+     "evidence_for": "51a45a95"
+    },
+    {
+     "session_id": "answer_4934b2d7_2",
+     "evidence_for": "a346bb18"
+    },
+    {
+     "session_id": "83dae08b",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_c6fd8ebd",
+     "evidence_for": "0862e8bf"
+    },
+    {
+     "session_id": "answer_bf633415_abs_2",
+     "evidence_for": "2311e44b_abs"
+    },
+    {
+     "session_id": "sharegpt_lDVDe5H_61",
+     "evidence_for": null
+    },
+    {
+     "session_id": "ultrachat_224160",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_c6fd8ebd_abs",
+     "evidence_for": "0862e8bf_abs"
+    },
+    {
+     "session_id": "answer_39900a0a_3",
+     "evidence_for": "00ca467f"
+    },
+    {
+     "session_id": "sharegpt_vKSMO9J_69",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_sharegpt_hn3IS1q_0",
+     "evidence_for": "18dcd5a5"
+    },
+    {
+     "session_id": "sharegpt_pvRfHiy_21",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_1bde8d3b",
+     "evidence_for": "57f827a0"
+    },
+    {
+     "session_id": "9af4e346_1",
+     "evidence_for": null
+    },
+    {
+     "session_id": "66bf4b03_1",
+     "evidence_for": null
+    },
+    {
+     "session_id": "sharegpt_6b0FF7J_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_353d3c6d_1",
+     "evidence_for": "9aaed6a3"
+    },
+    {
+     "session_id": "ultrachat_286225",
+     "evidence_for": null
+    },
+    {
+     "session_id": "5e906cb0_2",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_990c8992_abs_1",
+     "evidence_for": "80ec1f4f_abs"
+    },
+    {
+     "session_id": "sharegpt_UcX0eIE_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "ultrachat_102531",
+     "evidence_for": null
+    },
+    {
+     "session_id": "acb77ba4",
+     "evidence_for": null
+    }
+   ],
+   "tokens": 125918,
+   "n_sessions": 33,
+   "n_turns": 344
+  },
+  {
+   "day": 8,
+   "sessions": [
+    {
+     "session_id": "answer_7bdcbd23",
+     "evidence_for": "8e9d538c"
+    },
+    {
+     "session_id": "answer_60e8941a_abs_2",
+     "evidence_for": "edced276_abs"
+    },
+    {
+     "session_id": "sharegpt_vSX3mKG_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "sharegpt_9qIrl37_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_8d63a897_2",
+     "evidence_for": "5831f84d"
+    },
+    {
+     "session_id": "sharegpt_n3Hy63g_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_e49ed9d3_abs_2",
+     "evidence_for": "e5ba910e_abs"
+    },
+    {
+     "session_id": "answer_d8454588_2",
+     "evidence_for": "1f2b8d4f"
+    },
+    {
+     "session_id": "answer_235eb6fb",
+     "evidence_for": "5d3d2817"
+    },
+    {
+     "session_id": "ultrachat_543717",
+     "evidence_for": null
+    },
+    {
+     "session_id": "ultrachat_93360",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_86c505e7_2",
+     "evidence_for": "e831120c"
+    },
+    {
+     "session_id": "sharegpt_BvwQVCO_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "sharegpt_hccQjAV_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "ultrachat_407934",
+     "evidence_for": null
+    },
+    {
+     "session_id": "sharegpt_adeLn3D_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_eecb10d9_1",
+     "evidence_for": "d7c942c3"
+    },
+    {
+     "session_id": "answer_eaa8e3ef_2",
+     "evidence_for": "2318644b"
+    },
+    {
+     "session_id": "answer_39900a0a_2",
+     "evidence_for": "00ca467f"
+    },
+    {
+     "session_id": "sharegpt_3c7y4GY_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "sharegpt_f1ywwfz_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_b0f3dfff_2",
+     "evidence_for": "5a4f22c0"
+    },
+    {
+     "session_id": "sharegpt_KOaA4jf_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "4dd737a9_1",
+     "evidence_for": null
+    },
+    {
+     "session_id": "ultrachat_561782",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_b191df5b_2",
+     "evidence_for": "f9e8c073"
+    },
+    {
+     "session_id": "answer_4d3be2ab",
+     "evidence_for": "1da05512"
+    },
+    {
+     "session_id": "ultrachat_8563",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_cb742a61",
+     "evidence_for": "95bcc1c8"
+    },
+    {
+     "session_id": "b2a885b9",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_3f9693b7_2",
+     "evidence_for": "6aeb4375"
+    },
+    {
+     "session_id": "sharegpt_5v6f7fO_24",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_55161935",
+     "evidence_for": "37d43f65"
+    },
+    {
+     "session_id": "ebc1319b",
+     "evidence_for": null
+    },
+    {
+     "session_id": "sharegpt_WHg9Nys_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "sharegpt_zMUpvkc_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "sharegpt_mmYyki5_0",
+     "evidence_for": null
+    }
+   ],
+   "tokens": 125924,
+   "n_sessions": 37,
+   "n_turns": 352
+  },
+  {
+   "day": 9,
+   "sessions": [
+    {
+     "session_id": "answer_ultrachat_370515",
+     "evidence_for": "7e00a6cb"
+    },
+    {
+     "session_id": "82a89303",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_sharegpt_m2xJfjo_0",
+     "evidence_for": "f523d9fe"
+    },
+    {
+     "session_id": "sharegpt_GowRlto_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "ffa51434_3",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_39900a0a_1",
+     "evidence_for": "00ca467f"
+    },
+    {
+     "session_id": "ultrachat_32122",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_eecb10d9_2",
+     "evidence_for": "d7c942c3"
+    },
+    {
+     "session_id": "f4f4b504_2",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_e0585cb5_1",
+     "evidence_for": "10d9b85a"
+    },
+    {
+     "session_id": "answer_9282283d_abs_2",
+     "evidence_for": "2698e78f_abs"
+    },
+    {
+     "session_id": "sharegpt_UUFCRmF_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "ultrachat_163197",
+     "evidence_for": null
+    },
+    {
+     "session_id": "5cbfaf3e_4",
+     "evidence_for": null
+    },
+    {
+     "session_id": "dcb68250_4",
+     "evidence_for": null
+    },
+    {
+     "session_id": "ultrachat_497268",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_ultrachat_252214",
+     "evidence_for": "d596882b"
+    },
+    {
+     "session_id": "10e7463a",
+     "evidence_for": null
+    },
+    {
+     "session_id": "d576152e_1",
+     "evidence_for": null
+    },
+    {
+     "session_id": "05b84f71_5",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_5237bb0b_1",
+     "evidence_for": "d3ab962e"
+    },
+    {
+     "session_id": "sharegpt_vvCtAZS_0",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_4934b2d7_1",
+     "evidence_for": "a346bb18"
+    },
+    {
+     "session_id": "answer_c65042d7_1",
+     "evidence_for": "46a3abf7"
+    },
+    {
+     "session_id": "answer_766ab8da_2",
+     "evidence_for": "4d6b87c8"
+    },
+    {
+     "session_id": "answer_f3164f2c",
+     "evidence_for": "505af2f5"
+    },
+    {
+     "session_id": "ultrachat_247816",
+     "evidence_for": null
+    },
+    {
+     "session_id": "0b92ffe2_2",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_ef84b994_abs_2",
+     "evidence_for": "a96c20ee_abs"
+    },
+    {
+     "session_id": "ultrachat_94045",
+     "evidence_for": null
+    },
+    {
+     "session_id": "answer_5e613445",
+     "evidence_for": "95228167"
+    }
+   ],
+   "tokens": 125524,
+   "n_sessions": 31,
+   "n_turns": 356
+  }
+ ],
+ "questions": [
+  {
+   "question_id": "bc8a6e93_abs",
+   "question_type": "single-session-user",
+   "abstention": true,
+   "question": "What did I bake for my uncle's birthday party?",
+   "answer": "You did not mention this information. You mentioned baking for your niece's birthday party but not your uncle's",
+   "evidence": [
+    {
+     "day": 2,
+     "session_id": "answer_e6143162_abs"
+    }
+   ],
+   "last_day": 2
+  },
+  {
+   "question_id": "2311e44b_abs",
+   "question_type": "multi-session",
+   "abstention": true,
+   "question": "How many pages do I have left to read in 'Sapiens'?",
+   "answer": "The information provided is not enough. You did not mention how many paged do you have left to read in 'Sapiens'.",
+   "evidence": [
+    {
+     "day": 1,
+     "session_id": "answer_bf633415_abs_1"
+    },
+    {
+     "day": 7,
+     "session_id": "answer_bf633415_abs_2"
+    }
+   ],
+   "last_day": 7
+  },
+  {
+   "question_id": "29f2956b_abs",
+   "question_type": "single-session-user",
+   "abstention": true,
+   "question": "How much time do I dedicate to practicing violin every day?",
+   "answer": "You did not mention this information. You mentioned practing guitar everyday, but not violin.",
+   "evidence": [
+    {
+     "day": 2,
+     "session_id": "answer_7cc5362f_abs"
+    }
+   ],
+   "last_day": 2
+  },
+  {
+   "question_id": "6aeb4375_abs",
+   "question_type": "knowledge-update",
+   "abstention": true,
+   "question": "How many Italian restaurants have I tried in my city?",
+   "answer": "The information provided is not enough. You mentioned trying Korean restaurants but not Italian restaurants.",
+   "evidence": [
+    {
+     "day": 2,
+     "session_id": "answer_3f9693b7_abs_1"
+    },
+    {
+     "day": 3,
+     "session_id": "answer_3f9693b7_abs_2"
+    }
+   ],
+   "last_day": 3
+  },
+  {
+   "question_id": "2133c1b5_abs",
+   "question_type": "knowledge-update",
+   "abstention": true,
+   "question": "How long have I been living in my current apartment in Shinjuku?",
+   "answer": "The information provided is not enough. You mentioned living in Harajuku but not Shinjuku.",
+   "evidence": [
+    {
+     "day": 1,
+     "session_id": "answer_52382508_abs_1"
+    },
+    {
+     "day": 6,
+     "session_id": "answer_52382508_abs_2"
+    }
+   ],
+   "last_day": 6
+  },
+  {
+   "question_id": "edced276_abs",
+   "question_type": "multi-session",
+   "abstention": true,
+   "question": "How many days did I spend in total traveling in Hawaii and in Seattle?",
+   "answer": "The information provided is not enough. You mentioned traveling for 10 days in Hawaii but did not mention abything about the trip to Seattle.",
+   "evidence": [
+    {
+     "day": 6,
+     "session_id": "answer_60e8941a_abs_1"
+    },
+    {
+     "day": 8,
+     "session_id": "answer_60e8941a_abs_2"
+    }
+   ],
+   "last_day": 8
+  },
+  {
+   "question_id": "e5ba910e_abs",
+   "question_type": "multi-session",
+   "abstention": true,
+   "question": "What is the total cost of my recently purchased headphones and the iPad?",
+   "answer": "The information provided is not enough. You mentioned purchasing a headphone, but you did not mention the iPad.",
+   "evidence": [
+    {
+     "day": 4,
+     "session_id": "answer_e49ed9d3_abs_1"
+    },
+    {
+     "day": 8,
+     "session_id": "answer_e49ed9d3_abs_2"
+    }
+   ],
+   "last_day": 8
+  },
+  {
+   "question_id": "80ec1f4f_abs",
+   "question_type": "multi-session",
+   "abstention": true,
+   "question": "How many different museums or galleries did I visit in December?",
+   "answer": "0. You did not mention visitng any museum in December",
+   "evidence": [
+    {
+     "day": 4,
+     "session_id": "answer_990c8992_abs_2"
+    },
+    {
+     "day": 5,
+     "session_id": "answer_990c8992_abs_3"
+    },
+    {
+     "day": 7,
+     "session_id": "answer_990c8992_abs_1"
+    }
+   ],
+   "last_day": 7
+  },
+  {
+   "question_id": "gpt4_372c3eed_abs",
+   "question_type": "multi-session",
+   "abstention": true,
+   "question": "How many years in total did I spend in formal education from high school to the completion of my Master's degree?",
+   "answer": "The information provided is not enough. You mentioned 4 years in high school (2010-2014), 2 years at PCC (2014-2016), and 4 years at UCLA (2016-2020). But you didn't mention the number of years you spend getting the Master's degree",
+   "evidence": [
+    {
+     "day": 1,
+     "session_id": "answer_35c5419d_abs_3"
+    },
+    {
+     "day": 3,
+     "session_id": "answer_35c5419d_abs_1"
+    },
+    {
+     "day": 5,
+     "session_id": "answer_35c5419d_abs_2"
+    }
+   ],
+   "last_day": 5
+  },
+  {
+   "question_id": "a96c20ee_abs",
+   "question_type": "multi-session",
+   "abstention": true,
+   "question": "At which university did I present a poster for my undergrad course research project?",
+   "answer": "The information provided is not enough. You did not mention presenting a poster for your undergrad course research project.",
+   "evidence": [
+    {
+     "day": 0,
+     "session_id": "answer_ef84b994_abs_1"
+    },
+    {
+     "day": 9,
+     "session_id": "answer_ef84b994_abs_2"
+    }
+   ],
+   "last_day": 9
+  },
+  {
+   "question_id": "ba358f49_abs",
+   "question_type": "multi-session",
+   "abstention": true,
+   "question": "How old will Rachel be when I get married?",
+   "answer": "The information provided is not enough. You did not mention how old Rachel is right now, nor when will you get married.",
+   "evidence": [
+    {
+     "day": 0,
+     "session_id": "answer_cbd08e3c_abs_1"
+    },
+    {
+     "day": 4,
+     "session_id": "answer_cbd08e3c_abs_2"
+    }
+   ],
+   "last_day": 4
+  },
+  {
+   "question_id": "2698e78f_abs",
+   "question_type": "knowledge-update",
+   "abstention": true,
+   "question": "How often do I see Dr. Johnson?",
+   "answer": "The information provided is not enough. You mentioned seeing Dr. Smith but not Dr. Johnson.",
+   "evidence": [
+    {
+     "day": 5,
+     "session_id": "answer_9282283d_abs_1"
+    },
+    {
+     "day": 9,
+     "session_id": "answer_9282283d_abs_2"
+    }
+   ],
+   "last_day": 9
+  },
+  {
+   "question_id": "0862e8bf_abs",
+   "question_type": "single-session-user",
+   "abstention": true,
+   "question": "What is the name of my hamster?",
+   "answer": "You did not mention this information. You mentioned your cat Luna but not your hamster.",
+   "evidence": [
+    {
+     "day": 7,
+     "session_id": "answer_c6fd8ebd_abs"
+    }
+   ],
+   "last_day": 7
+  },
+  {
+   "question_id": "f4f1d8a4_abs",
+   "question_type": "single-session-user",
+   "abstention": true,
+   "question": "What did my dad gave me as a birthday gift?",
+   "answer": "You did not mention this information. You mentioned receiving a birthday gift from your sister, but not your dad.",
+   "evidence": [
+    {
+     "day": 6,
+     "session_id": "answer_f5b33470_abs"
+    }
+   ],
+   "last_day": 6
+  },
+  {
+   "question_id": "60bf93ed_abs",
+   "question_type": "multi-session",
+   "abstention": true,
+   "question": "How many days did it take for my iPad case to arrive after I bought it?",
+   "answer": "The information provided is not enough. You did not mention buying an iPad case.",
+   "evidence": [
+    {
+     "day": 5,
+     "session_id": "answer_e0956e0a_abs_2"
+    },
+    {
+     "day": 6,
+     "session_id": "answer_e0956e0a_abs_1"
+    }
+   ],
+   "last_day": 6
+  },
+  {
+   "question_id": "15745da0_abs",
+   "question_type": "single-session-user",
+   "abstention": true,
+   "question": "How long have I been collecting vintage films?",
+   "answer": "You did not mention this information. You mentioned collecting vintage cameras but not vintage films.",
+   "evidence": [
+    {
+     "day": 1,
+     "session_id": "answer_586de428_abs"
+    }
+   ],
+   "last_day": 1
+  },
+  {
+   "question_id": "efc3f7c2",
+   "question_type": "multi-session",
+   "abstention": false,
+   "question": "How much earlier do I wake up on Fridays compared to other weekdays?",
+   "answer": "30 minutes",
+   "evidence": [
+    {
+     "day": 1,
+     "session_id": "answer_fc81d1a2_1"
+    },
+    {
+     "day": 5,
+     "session_id": "answer_fc81d1a2_2"
+    }
+   ],
+   "last_day": 5
+  },
+  {
+   "question_id": "a346bb18",
+   "question_type": "multi-session",
+   "abstention": false,
+   "question": "How many minutes did I exceed my target time by in the marathon?",
+   "answer": "12",
+   "evidence": [
+    {
+     "day": 7,
+     "session_id": "answer_4934b2d7_2"
+    },
+    {
+     "day": 9,
+     "session_id": "answer_4934b2d7_1"
+    }
+   ],
+   "last_day": 9
+  },
+  {
+   "question_id": "gpt4_5501fe77",
+   "question_type": "multi-session",
+   "abstention": false,
+   "question": "Which social media platform did I gain the most followers on over the past month?",
+   "answer": "TikTok",
+   "evidence": [
+    {
+     "day": 1,
+     "session_id": "answer_203bf3fa_1"
+    },
+    {
+     "day": 3,
+     "session_id": "answer_203bf3fa_3"
+    },
+    {
+     "day": 4,
+     "session_id": "answer_203bf3fa_2"
+    }
+   ],
+   "last_day": 4
+  },
+  {
+   "question_id": "00ca467f",
+   "question_type": "multi-session",
+   "abstention": false,
+   "question": "How many doctor's appointments did I go to in March?",
+   "answer": 2,
+   "evidence": [
+    {
+     "day": 7,
+     "session_id": "answer_39900a0a_3"
+    },
+    {
+     "day": 8,
+     "session_id": "answer_39900a0a_2"
+    },
+    {
+     "day": 9,
+     "session_id": "answer_39900a0a_1"
+    }
+   ],
+   "last_day": 9
+  },
+  {
+   "question_id": "a11281a2",
+   "question_type": "multi-session",
+   "abstention": false,
+   "question": "What was the approximate increase in Instagram followers I experienced in two weeks?",
+   "answer": "100",
+   "evidence": [
+    {
+     "day": 4,
+     "session_id": "answer_c69ee1f9_2"
+    },
+    {
+     "day": 5,
+     "session_id": "answer_c69ee1f9_1"
+    }
+   ],
+   "last_day": 5
+  },
+  {
+   "question_id": "2318644b",
+   "question_type": "multi-session",
+   "abstention": false,
+   "question": "How much more did I spend on accommodations per night in Hawaii compared to Tokyo?",
+   "answer": "$270",
+   "evidence": [
+    {
+     "day": 2,
+     "session_id": "answer_eaa8e3ef_1"
+    },
+    {
+     "day": 8,
+     "session_id": "answer_eaa8e3ef_2"
+    }
+   ],
+   "last_day": 8
+  },
+  {
+   "question_id": "dd2973ad",
+   "question_type": "multi-session",
+   "abstention": false,
+   "question": "What time did I go to bed on the day before I had a doctor's appointment?",
+   "answer": "2 AM",
+   "evidence": [
+    {
+     "day": 3,
+     "session_id": "answer_f9de4602_2"
+    },
+    {
+     "day": 4,
+     "session_id": "answer_f9de4602_1"
+    }
+   ],
+   "last_day": 4
+  },
+  {
+   "question_id": "46a3abf7",
+   "question_type": "multi-session",
+   "abstention": false,
+   "question": "How many tanks do I currently have, including the one I set up for my friend's kid?",
+   "answer": 3,
+   "evidence": [
+    {
+     "day": 3,
+     "session_id": "answer_c65042d7_3"
+    },
+    {
+     "day": 5,
+     "session_id": "answer_c65042d7_2"
+    },
+    {
+     "day": 9,
+     "session_id": "answer_c65042d7_1"
+    }
+   ],
+   "last_day": 9
+  },
+  {
+   "question_id": "099778bb",
+   "question_type": "multi-session",
+   "abstention": false,
+   "question": "What percentage of leadership positions do women hold in the my company?",
+   "answer": "20%",
+   "evidence": [
+    {
+     "day": 1,
+     "session_id": "answer_80d6d664_2"
+    },
+    {
+     "day": 4,
+     "session_id": "answer_80d6d664_1"
+    }
+   ],
+   "last_day": 4
+  },
+  {
+   "question_id": "9aaed6a3",
+   "question_type": "multi-session",
+   "abstention": false,
+   "question": "How much cashback did I earn at SaveMart last Thursday?",
+   "answer": "$0.75",
+   "evidence": [
+    {
+     "day": 1,
+     "session_id": "answer_353d3c6d_2"
+    },
+    {
+     "day": 7,
+     "session_id": "answer_353d3c6d_1"
+    }
+   ],
+   "last_day": 7
+  },
+  {
+   "question_id": "a08a253f",
+   "question_type": "multi-session",
+   "abstention": false,
+   "question": "How many days a week do I attend fitness classes?",
+   "answer": "4 days.",
+   "evidence": [
+    {
+     "day": 1,
+     "session_id": "answer_47152166_2"
+    },
+    {
+     "day": 5,
+     "session_id": "answer_47152166_1"
+    }
+   ],
+   "last_day": 5
+  },
+  {
+   "question_id": "92a0aa75",
+   "question_type": "multi-session",
+   "abstention": false,
+   "question": "How long have I been working in my current role?",
+   "answer": "1 year and 5 months",
+   "evidence": [
+    {
+     "day": 3,
+     "session_id": "answer_6cb8f792_1"
+    },
+    {
+     "day": 6,
+     "session_id": "answer_6cb8f792_2"
+    }
+   ],
+   "last_day": 6
+  },
+  {
+   "question_id": "1c549ce4",
+   "question_type": "multi-session",
+   "abstention": false,
+   "question": "What is the total cost of the car cover and detailing spray I purchased?",
+   "answer": "$140",
+   "evidence": [
+    {
+     "day": 0,
+     "session_id": "answer_4cb841a8_1"
+    },
+    {
+     "day": 4,
+     "session_id": "answer_4cb841a8_2"
+    }
+   ],
+   "last_day": 4
+  },
+  {
+   "question_id": "77eafa52",
+   "question_type": "multi-session",
+   "abstention": false,
+   "question": "How much more did I have to pay for the trip after the initial quote?",
+   "answer": "$300",
+   "evidence": [
+    {
+     "day": 2,
+     "session_id": "answer_33c251f0_2"
+    },
+    {
+     "day": 5,
+     "session_id": "answer_33c251f0_1"
+    }
+   ],
+   "last_day": 5
+  },
+  {
+   "question_id": "f0e564bc",
+   "question_type": "multi-session",
+   "abstention": false,
+   "question": "What is the total amount I spent on the designer handbag and high-end skincare products?",
+   "answer": "$1,300",
+   "evidence": [
+    {
+     "day": 4,
+     "session_id": "answer_cfcf5340_1"
+    },
+    {
+     "day": 5,
+     "session_id": "answer_cfcf5340_2"
+    }
+   ],
+   "last_day": 5
+  },
+  {
+   "question_id": "3c1045c8",
+   "question_type": "multi-session",
+   "abstention": false,
+   "question": "How much older am I than the average age of employees in my department?",
+   "answer": "2.5 years",
+   "evidence": [
+    {
+     "day": 3,
+     "session_id": "answer_c8cc60d6_2"
+    },
+    {
+     "day": 5,
+     "session_id": "answer_c8cc60d6_1"
+    }
+   ],
+   "last_day": 5
+  },
+  {
+   "question_id": "e831120c",
+   "question_type": "multi-session",
+   "abstention": false,
+   "question": "How many weeks did it take me to watch all the Marvel Cinematic Universe movies and the main Star Wars films?",
+   "answer": "3.5 weeks",
+   "evidence": [
+    {
+     "day": 1,
+     "session_id": "answer_86c505e7_1"
+    },
+    {
+     "day": 8,
+     "session_id": "answer_86c505e7_2"
+    }
+   ],
+   "last_day": 8
+  },
+  {
+   "question_id": "d3ab962e",
+   "question_type": "multi-session",
+   "abstention": false,
+   "question": "What is the total distance of the hikes I did on two consecutive weekends?",
+   "answer": "8 miles",
+   "evidence": [
+    {
+     "day": 1,
+     "session_id": "answer_5237bb0b_2"
+    },
+    {
+     "day": 9,
+     "session_id": "answer_5237bb0b_1"
+    }
+   ],
+   "last_day": 9
+  },
+  {
+   "question_id": "10d9b85a",
+   "question_type": "multi-session",
+   "abstention": false,
+   "question": "How many days did I spend attending workshops, lectures, and conferences in April?",
+   "answer": "3 days",
+   "evidence": [
+    {
+     "day": 3,
+     "session_id": "answer_e0585cb5_2"
+    },
+    {
+     "day": 9,
+     "session_id": "answer_e0585cb5_1"
+    }
+   ],
+   "last_day": 9
+  },
+  {
+   "question_id": "bb7c3b45",
+   "question_type": "multi-session",
+   "abstention": false,
+   "question": "How much did I save on the Jimmy Choo heels?",
+   "answer": "$300",
+   "evidence": [
+    {
+     "day": 0,
+     "session_id": "answer_de64539a_1"
+    },
+    {
+     "day": 3,
+     "session_id": "answer_de64539a_2"
+    }
+   ],
+   "last_day": 3
+  },
+  {
+   "question_id": "gpt4_a56e767c",
+   "question_type": "multi-session",
+   "abstention": false,
+   "question": "How many movie festivals that I attended?",
+   "answer": "I attended four movie festivals.",
+   "evidence": [
+    {
+     "day": 1,
+     "session_id": "answer_cf9e3940_2"
+    },
+    {
+     "day": 4,
+     "session_id": "answer_cf9e3940_1"
+    },
+    {
+     "day": 6,
+     "session_id": "answer_cf9e3940_3"
+    }
+   ],
+   "last_day": 6
+  },
+  {
+   "question_id": "1f2b8d4f",
+   "question_type": "multi-session",
+   "abstention": false,
+   "question": "What is the difference in price between my luxury boots and the similar pair found at the budget store?",
+   "answer": "$750",
+   "evidence": [
+    {
+     "day": 1,
+     "session_id": "answer_d8454588_1"
+    },
+    {
+     "day": 8,
+     "session_id": "answer_d8454588_2"
+    }
+   ],
+   "last_day": 8
+  },
+  {
+   "question_id": "c6853660",
+   "question_type": "knowledge-update",
+   "abstention": false,
+   "question": "Did I mostly recently increase or decrease the limit on the number of cups of coffee in the morning?",
+   "answer": "You increased the limit (from one cup to two cups)",
+   "evidence": [
+    {
+     "day": 0,
+     "session_id": "answer_626e93c4_1"
+    },
+    {
+     "day": 1,
+     "session_id": "answer_626e93c4_2"
+    }
+   ],
+   "last_day": 1
+  },
+  {
+   "question_id": "e61a7584",
+   "question_type": "knowledge-update",
+   "abstention": false,
+   "question": "How long have I had my cat, Luna?",
+   "answer": "9 months",
+   "evidence": [
+    {
+     "day": 0,
+     "session_id": "answer_f25c32f5_1"
+    },
+    {
+     "day": 4,
+     "session_id": "answer_f25c32f5_2"
+    }
+   ],
+   "last_day": 4
+  },
+  {
+   "question_id": "89941a93",
+   "question_type": "knowledge-update",
+   "abstention": false,
+   "question": "How many bikes do I currently own?",
+   "answer": "4",
+   "evidence": [
+    {
+     "day": 5,
+     "session_id": "answer_e1403127_1"
+    },
+    {
+     "day": 7,
+     "session_id": "answer_e1403127_2"
+    }
+   ],
+   "last_day": 7
+  },
+  {
+   "question_id": "18bc8abd",
+   "question_type": "knowledge-update",
+   "abstention": false,
+   "question": "What brand of BBQ sauce am I currently obsessed with?",
+   "answer": "Kansas City Masterpiece",
+   "evidence": [
+    {
+     "day": 2,
+     "session_id": "answer_fff743f5_1"
+    },
+    {
+     "day": 7,
+     "session_id": "answer_fff743f5_2"
+    }
+   ],
+   "last_day": 7
+  },
+  {
+   "question_id": "6aeb4375",
+   "question_type": "knowledge-update",
+   "abstention": false,
+   "question": "How many Korean restaurants have I tried in my city?",
+   "answer": "four",
+   "evidence": [
+    {
+     "day": 1,
+     "session_id": "answer_3f9693b7_1"
+    },
+    {
+     "day": 8,
+     "session_id": "answer_3f9693b7_2"
+    }
+   ],
+   "last_day": 8
+  },
+  {
+   "question_id": "b01defab",
+   "question_type": "knowledge-update",
+   "abstention": false,
+   "question": "Did I finish reading 'The Nightingale' by Kristin Hannah?",
+   "answer": "Yes",
+   "evidence": [
+    {
+     "day": 1,
+     "session_id": "answer_8c0712af_1"
+    },
+    {
+     "day": 5,
+     "session_id": "answer_8c0712af_2"
+    }
+   ],
+   "last_day": 5
+  },
+  {
+   "question_id": "5831f84d",
+   "question_type": "knowledge-update",
+   "abstention": false,
+   "question": "How many Crash Course videos have I watched in the past few weeks?",
+   "answer": "15",
+   "evidence": [
+    {
+     "day": 2,
+     "session_id": "answer_8d63a897_1"
+    },
+    {
+     "day": 8,
+     "session_id": "answer_8d63a897_2"
+    }
+   ],
+   "last_day": 8
+  },
+  {
+   "question_id": "4d6b87c8",
+   "question_type": "knowledge-update",
+   "abstention": false,
+   "question": "How many titles are currently on my to-watch list?",
+   "answer": "25",
+   "evidence": [
+    {
+     "day": 2,
+     "session_id": "answer_766ab8da_1"
+    },
+    {
+     "day": 9,
+     "session_id": "answer_766ab8da_2"
+    }
+   ],
+   "last_day": 9
+  },
+  {
+   "question_id": "06db6396",
+   "question_type": "knowledge-update",
+   "abstention": false,
+   "question": "How many projects have I completed since starting painting classes?",
+   "answer": "5",
+   "evidence": [
+    {
+     "day": 2,
+     "session_id": "answer_da72b1b4_1"
+    },
+    {
+     "day": 5,
+     "session_id": "answer_da72b1b4_2"
+    }
+   ],
+   "last_day": 5
+  },
+  {
+   "question_id": "7a87bd0c",
+   "question_type": "knowledge-update",
+   "abstention": false,
+   "question": "How long have I been sticking to my daily tidying routine?",
+   "answer": "4 weeks",
+   "evidence": [
+    {
+     "day": 1,
+     "session_id": "answer_d08a934d_1"
+    },
+    {
+     "day": 4,
+     "session_id": "answer_d08a934d_2"
+    }
+   ],
+   "last_day": 4
+  },
+  {
+   "question_id": "f9e8c073",
+   "question_type": "knowledge-update",
+   "abstention": false,
+   "question": "How many sessions of the bereavement support group did I attend?",
+   "answer": "five",
+   "evidence": [
+    {
+     "day": 4,
+     "session_id": "answer_b191df5b_1"
+    },
+    {
+     "day": 8,
+     "session_id": "answer_b191df5b_2"
+    }
+   ],
+   "last_day": 8
+  },
+  {
+   "question_id": "0977f2af",
+   "question_type": "knowledge-update",
+   "abstention": false,
+   "question": "What new kitchen gadget did I invest in before getting the Air Fryer?",
+   "answer": "Instant Pot",
+   "evidence": [
+    {
+     "day": 2,
+     "session_id": "answer_3bf5b73b_1"
+    },
+    {
+     "day": 3,
+     "session_id": "answer_3bf5b73b_2"
+    }
+   ],
+   "last_day": 3
+  },
+  {
+   "question_id": "5a4f22c0",
+   "question_type": "knowledge-update",
+   "abstention": false,
+   "question": "What company is Rachel, an old colleague from my previous company, currently working at?",
+   "answer": "TechCorp",
+   "evidence": [
+    {
+     "day": 2,
+     "session_id": "answer_b0f3dfff_1"
+    },
+    {
+     "day": 8,
+     "session_id": "answer_b0f3dfff_2"
+    }
+   ],
+   "last_day": 8
+  },
+  {
+   "question_id": "6071bd76",
+   "question_type": "knowledge-update",
+   "abstention": false,
+   "question": "For the coffee-to-water ratio in my French press, did I switch to more water per tablespoon of coffee, or less?",
+   "answer": "You switched to less water (5 ounces) per tablespoon of coffee.",
+   "evidence": [
+    {
+     "day": 0,
+     "session_id": "answer_4dac77cb_1"
+    },
+    {
+     "day": 5,
+     "session_id": "answer_4dac77cb_2"
+    }
+   ],
+   "last_day": 5
+  },
+  {
+   "question_id": "d7c942c3",
+   "question_type": "knowledge-update",
+   "abstention": false,
+   "question": "Is my mom using the same grocery list method as me?",
+   "answer": "Yes.",
+   "evidence": [
+    {
+     "day": 8,
+     "session_id": "answer_eecb10d9_1"
+    },
+    {
+     "day": 9,
+     "session_id": "answer_eecb10d9_2"
+    }
+   ],
+   "last_day": 9
+  },
+  {
+   "question_id": "22d2cb42",
+   "question_type": "knowledge-update",
+   "abstention": false,
+   "question": "Where did I get my guitar serviced?",
+   "answer": "The music shop on Main St.",
+   "evidence": [
+    {
+     "day": 2,
+     "session_id": "answer_bcce0b73_1"
+    },
+    {
+     "day": 3,
+     "session_id": "answer_bcce0b73_2"
+    }
+   ],
+   "last_day": 3
+  },
+  {
+   "question_id": "6b168ec8",
+   "question_type": "single-session-user",
+   "abstention": false,
+   "question": "How many bikes do I own?",
+   "answer": "three",
+   "evidence": [
+    {
+     "day": 4,
+     "session_id": "answer_e623ae87"
+    }
+   ],
+   "last_day": 4
+  },
+  {
+   "question_id": "c960da58",
+   "question_type": "single-session-user",
+   "abstention": false,
+   "question": "How many playlists do I have on Spotify?",
+   "answer": "20",
+   "evidence": [
+    {
+     "day": 6,
+     "session_id": "answer_e05e4612"
+    }
+   ],
+   "last_day": 6
+  },
+  {
+   "question_id": "8e9d538c",
+   "question_type": "single-session-user",
+   "abstention": false,
+   "question": "How many skeins of worsted weight yarn did I find in my stash?",
+   "answer": "17",
+   "evidence": [
+    {
+     "day": 8,
+     "session_id": "answer_7bdcbd23"
+    }
+   ],
+   "last_day": 8
+  },
+  {
+   "question_id": "58bf7951",
+   "question_type": "single-session-user",
+   "abstention": false,
+   "question": "What play did I attend at the local community theater?",
+   "answer": "The Glass Menagerie",
+   "evidence": [
+    {
+     "day": 2,
+     "session_id": "answer_355c48bb"
+    }
+   ],
+   "last_day": 2
+  },
+  {
+   "question_id": "dccbc061",
+   "question_type": "single-session-user",
+   "abstention": false,
+   "question": "What was my previous stance on spirituality?",
+   "answer": "A staunch atheist",
+   "evidence": [
+    {
+     "day": 0,
+     "session_id": "answer_8f276838"
+    }
+   ],
+   "last_day": 0
+  },
+  {
+   "question_id": "c5e8278d",
+   "question_type": "single-session-user",
+   "abstention": false,
+   "question": "What was my last name before I changed it?",
+   "answer": "Johnson",
+   "evidence": [
+    {
+     "day": 3,
+     "session_id": "answer_f6168136"
+    }
+   ],
+   "last_day": 3
+  },
+  {
+   "question_id": "c14c00dd",
+   "question_type": "single-session-user",
+   "abstention": false,
+   "question": "What brand of shampoo do I currently use?",
+   "answer": "Trader Joe's",
+   "evidence": [
+    {
+     "day": 4,
+     "session_id": "answer_304511ce"
+    }
+   ],
+   "last_day": 4
+  },
+  {
+   "question_id": "faba32e5",
+   "question_type": "single-session-user",
+   "abstention": false,
+   "question": "How long did Alex marinate the BBQ ribs in special sauce?",
+   "answer": "24 hours",
+   "evidence": [
+    {
+     "day": 1,
+     "session_id": "answer_39b12014"
+    }
+   ],
+   "last_day": 1
+  },
+  {
+   "question_id": "51a45a95",
+   "question_type": "single-session-user",
+   "abstention": false,
+   "question": "Where did I redeem a $5 coupon on coffee creamer?",
+   "answer": "Target",
+   "evidence": [
+    {
+     "day": 7,
+     "session_id": "answer_d61669c7"
+    }
+   ],
+   "last_day": 7
+  },
+  {
+   "question_id": "caf9ead2",
+   "question_type": "single-session-user",
+   "abstention": false,
+   "question": "How long did it take to move to the new apartment?",
+   "answer": "5 hours",
+   "evidence": [
+    {
+     "day": 6,
+     "session_id": "answer_0714183a"
+    }
+   ],
+   "last_day": 6
+  },
+  {
+   "question_id": "5d3d2817",
+   "question_type": "single-session-user",
+   "abstention": false,
+   "question": "What was my previous occupation?",
+   "answer": "Marketing specialist at a small startup",
+   "evidence": [
+    {
+     "day": 8,
+     "session_id": "answer_235eb6fb"
+    }
+   ],
+   "last_day": 8
+  },
+  {
+   "question_id": "58ef2f1c",
+   "question_type": "single-session-user",
+   "abstention": false,
+   "question": "When did I volunteer at the local animal shelter's fundraising dinner?",
+   "answer": "February 14th",
+   "evidence": [
+    {
+     "day": 4,
+     "session_id": "answer_59547700"
+    }
+   ],
+   "last_day": 4
+  },
+  {
+   "question_id": "37d43f65",
+   "question_type": "single-session-user",
+   "abstention": false,
+   "question": "How much RAM did I upgrade my laptop to?",
+   "answer": "16GB",
+   "evidence": [
+    {
+     "day": 8,
+     "session_id": "answer_55161935"
+    }
+   ],
+   "last_day": 8
+  },
+  {
+   "question_id": "0862e8bf",
+   "question_type": "single-session-user",
+   "abstention": false,
+   "question": "What is the name of my cat?",
+   "answer": "Luna",
+   "evidence": [
+    {
+     "day": 7,
+     "session_id": "answer_c6fd8ebd"
+    }
+   ],
+   "last_day": 7
+  },
+  {
+   "question_id": "95bcc1c8",
+   "question_type": "single-session-user",
+   "abstention": false,
+   "question": "How many amateur comedians did I watch perform at the open mic night?",
+   "answer": "10",
+   "evidence": [
+    {
+     "day": 8,
+     "session_id": "answer_cb742a61"
+    }
+   ],
+   "last_day": 8
+  },
+  {
+   "question_id": "f8c5f88b",
+   "question_type": "single-session-user",
+   "abstention": false,
+   "question": "Where did I buy my new tennis racket from?",
+   "answer": "the sports store downtown",
+   "evidence": [
+    {
+     "day": 7,
+     "session_id": "answer_c3567066"
+    }
+   ],
+   "last_day": 7
+  },
+  {
+   "question_id": "001be529",
+   "question_type": "single-session-user",
+   "abstention": false,
+   "question": "How long did I wait for the decision on my asylum application?",
+   "answer": "over a year",
+   "evidence": [
+    {
+     "day": 0,
+     "session_id": "answer_530960c1"
+    }
+   ],
+   "last_day": 0
+  },
+  {
+   "question_id": "af8d2e46",
+   "question_type": "single-session-user",
+   "abstention": false,
+   "question": "How many shirts did I pack for my 5-day trip to Costa Rica?",
+   "answer": "7",
+   "evidence": [
+    {
+     "day": 6,
+     "session_id": "answer_82a04f59"
+    }
+   ],
+   "last_day": 6
+  },
+  {
+   "question_id": "3d86fd0a",
+   "question_type": "single-session-user",
+   "abstention": false,
+   "question": "Where did I meet Sophia?",
+   "answer": "a coffee shop in the city",
+   "evidence": [
+    {
+     "day": 5,
+     "session_id": "answer_19c24c11"
+    }
+   ],
+   "last_day": 5
+  },
+  {
+   "question_id": "7527f7e2",
+   "question_type": "single-session-user",
+   "abstention": false,
+   "question": "How much did I spend on a designer handbag?",
+   "answer": "$800",
+   "evidence": [
+    {
+     "day": 2,
+     "session_id": "answer_7cb94507"
+    }
+   ],
+   "last_day": 2
+  },
+  {
+   "question_id": "3e321797",
+   "question_type": "single-session-assistant",
+   "abstention": false,
+   "question": "I wanted to follow up on our previous conversation about natural remedies for dark circles under the eyes. You mentioned applying tomato juice mixed with lemon juice, how long did you say I should leave it on for?",
+   "answer": "10 minutes",
+   "evidence": [
+    {
+     "day": 4,
+     "session_id": "answer_ultrachat_94624"
+    }
+   ],
+   "last_day": 4
+  },
+  {
+   "question_id": "18dcd5a5",
+   "question_type": "single-session-assistant",
+   "abstention": false,
+   "question": "I'm going back to our previous chat about the Lost Temple of the Djinn one-shot. Can you remind me how many mummies the party will face in the temple?",
+   "answer": "4",
+   "evidence": [
+    {
+     "day": 7,
+     "session_id": "answer_sharegpt_hn3IS1q_0"
+    }
+   ],
+   "last_day": 7
+  },
+  {
+   "question_id": "fca762bc",
+   "question_type": "single-session-assistant",
+   "abstention": false,
+   "question": "I wanted to follow up on our previous conversation about language learning apps. You mentioned a few options, and I was wondering if you could remind me of the one that uses mnemonics to help learners memorize words and phrases?",
+   "answer": "Memrise",
+   "evidence": [
+    {
+     "day": 0,
+     "session_id": "answer_ultrachat_39395"
+    }
+   ],
+   "last_day": 0
+  },
+  {
+   "question_id": "7161e7e2",
+   "question_type": "single-session-assistant",
+   "abstention": false,
+   "question": "I'm checking our previous chat about the shift rotation sheet for GM social media agents. Can you remind me what was the rotation for Admon on a Sunday?",
+   "answer": "Admon was assigned to the 8 am - 4 pm (Day Shift) on Sundays.",
+   "evidence": [
+    {
+     "day": 6,
+     "session_id": "answer_sharegpt_5Lzox6N_0"
+    }
+   ],
+   "last_day": 6
+  },
+  {
+   "question_id": "d596882b",
+   "question_type": "single-session-assistant",
+   "abstention": false,
+   "question": "I'm planning another trip to New York City and I was wondering if you could remind me of that vegan eatery you recommended last time, the one with multiple locations throughout the city?",
+   "answer": "By Chloe",
+   "evidence": [
+    {
+     "day": 9,
+     "session_id": "answer_ultrachat_252214"
+    }
+   ],
+   "last_day": 9
+  },
+  {
+   "question_id": "561fabcd",
+   "question_type": "single-session-assistant",
+   "abstention": false,
+   "question": "I was thinking back to our previous conversation about the Radiation Amplified zombie, and I was wondering if you remembered what we finally decided to name it?",
+   "answer": "Fissionator.",
+   "evidence": [
+    {
+     "day": 0,
+     "session_id": "answer_sharegpt_hChsWOp_97"
+    }
+   ],
+   "last_day": 0
+  },
+  {
+   "question_id": "3249768e",
+   "question_type": "single-session-assistant",
+   "abstention": false,
+   "question": "I'm looking back at our previous conversation about building a cocktail bar. You recommended five bottles to make the widest variety of gin-based cocktails. Can you remind me what the fifth bottle was?",
+   "answer": "Absinthe",
+   "evidence": [
+    {
+     "day": 0,
+     "session_id": "answer_sharegpt_CaxTGYP_0"
+    }
+   ],
+   "last_day": 0
+  },
+  {
+   "question_id": "fea54f57",
+   "question_type": "single-session-assistant",
+   "abstention": false,
+   "question": "I was thinking about our previous conversation about the Fifth Album, and I was wondering if you could remind me what song you said best exemplified the band's growth and development as artists?",
+   "answer": "Evolution",
+   "evidence": [
+    {
+     "day": 5,
+     "session_id": "answer_ultrachat_187684"
+    }
+   ],
+   "last_day": 5
+  },
+  {
+   "question_id": "7e00a6cb",
+   "question_type": "single-session-assistant",
+   "abstention": false,
+   "question": "I'm planning my trip to Amsterdam again and I was wondering, what was the name of that hostel near the Red Light District that you recommended last time?",
+   "answer": "International Budget Hostel",
+   "evidence": [
+    {
+     "day": 9,
+     "session_id": "answer_ultrachat_370515"
+    }
+   ],
+   "last_day": 9
+  },
+  {
+   "question_id": "8aef76bc",
+   "question_type": "single-session-assistant",
+   "abstention": false,
+   "question": "I'm going back to our previous conversation about DIY home decor projects using recycled materials. Can you remind me what sealant you recommended for the newspaper flower vase?",
+   "answer": "Mod Podge or another sealant",
+   "evidence": [
+    {
+     "day": 2,
+     "session_id": "answer_ultrachat_563222"
+    }
+   ],
+   "last_day": 2
+  },
+  {
+   "question_id": "f523d9fe",
+   "question_type": "single-session-assistant",
+   "abstention": false,
+   "question": "I wanted to check back on our previous conversation about Netflix. I mentioned that I wanted to be able to access all seasons of old shows? Do you remember what show I used as an example, the one that only had the last season available?",
+   "answer": "Doc Martin",
+   "evidence": [
+    {
+     "day": 9,
+     "session_id": "answer_sharegpt_m2xJfjo_0"
+    }
+   ],
+   "last_day": 9
+  },
+  {
+   "question_id": "6222b6eb",
+   "question_type": "single-session-assistant",
+   "abstention": false,
+   "question": "I was going through our previous conversation about atmospheric correction methods, and I wanted to confirm - you mentioned that 6S, MAJA, and Sen2Cor are all algorithms for atmospheric correction of remote sensing images. Can you remind me which one is implemented in the SIAC_GEE tool?",
+   "answer": "The 6S algorithm is implemented in the SIAC_GEE tool.",
+   "evidence": [
+    {
+     "day": 2,
+     "session_id": "answer_sharegpt_H9PiM5G_0"
+    }
+   ],
+   "last_day": 2
+  },
+  {
+   "question_id": "b759caee",
+   "question_type": "single-session-assistant",
+   "abstention": false,
+   "question": "I was looking back at our previous conversation about buying unique engagement rings directly from designers. Can you remind me of the Instagram handle of the UK-based designer who works with unusual gemstones?",
+   "answer": "@jessica_poole_jewellery",
+   "evidence": [
+    {
+     "day": 2,
+     "session_id": "answer_sharegpt_2BSXlAr_0"
+    }
+   ],
+   "last_day": 2
+  },
+  {
+   "question_id": "1b9b7252",
+   "question_type": "single-session-assistant",
+   "abstention": false,
+   "question": "I wanted to follow up on our previous conversation about mindfulness techniques. You mentioned some great resources for guided imagery exercises, can you remind me of the website that had free exercises like 'The Mountain Meditation' and 'The Body Scan Meditation'?",
+   "answer": "Mindful.org.",
+   "evidence": [
+    {
+     "day": 4,
+     "session_id": "answer_ultrachat_115151"
+    }
+   ],
+   "last_day": 4
+  },
+  {
+   "question_id": "352ab8bd",
+   "question_type": "single-session-assistant",
+   "abstention": false,
+   "question": "Can you remind me what was the average improvement in framerate when using the Hardware-Aware Modular Training (HAMT) agent in the 'To Adapt or Not to Adapt? Real-Time Adaptation for Semantic Segmentation' submission?",
+   "answer": "The average improvement in framerate was approximately 20% when using the Hardware-Aware Modular Training (HAMT) agent.",
+   "evidence": [
+    {
+     "day": 4,
+     "session_id": "answer_sharegpt_NoDZzot_7"
+    }
+   ],
+   "last_day": 4
+  },
+  {
+   "question_id": "e8a79c70",
+   "question_type": "single-session-assistant",
+   "abstention": false,
+   "question": "I was going through our previous conversation about making a classic French omelette, and I wanted to confirm - how many eggs did you say we need for the recipe?",
+   "answer": "2-3 eggs",
+   "evidence": [
+    {
+     "day": 6,
+     "session_id": "answer_ultrachat_13075"
+    }
+   ],
+   "last_day": 6
+  },
+  {
+   "question_id": "505af2f5",
+   "question_type": "single-session-preference",
+   "abstention": false,
+   "question": "I was thinking of trying a new coffee creamer recipe. Any recommendations?",
+   "answer": "The user would prefer responses that suggest variations on their existing almond milk, vanilla extract, and honey creamer recipe or new ideas that align with their goals of reducing sugar intake and saving money. They might not prefer responses that recommend commercial creamer products or recipes that are high in sugar or expensive.",
+   "evidence": [
+    {
+     "day": 9,
+     "session_id": "answer_f3164f2c"
+    }
+   ],
+   "last_day": 9
+  },
+  {
+   "question_id": "75832dbd",
+   "question_type": "single-session-preference",
+   "abstention": false,
+   "question": "Can you recommend some recent publications or conferences that I might find interesting?",
+   "answer": "The user would prefer suggestions related to recent research papers, articles, or conferences that focus on artificial intelligence in healthcare, particularly those that involve deep learning for medical image analysis. They would not be interested in general AI topics or those unrelated to healthcare.",
+   "evidence": [
+    {
+     "day": 6,
+     "session_id": "answer_d87a6ef8"
+    }
+   ],
+   "last_day": 6
+  },
+  {
+   "question_id": "32260d93",
+   "question_type": "single-session-preference",
+   "abstention": false,
+   "question": "Can you recommend a show or movie for me to watch tonight?",
+   "answer": "The user would prefer recommendations for stand-up comedy specials on Netflix, especially those that are known for their storytelling. They may not prefer recommendations for other genres or platforms.",
+   "evidence": [
+    {
+     "day": 2,
+     "session_id": "answer_0250ae1c"
+    }
+   ],
+   "last_day": 2
+  },
+  {
+   "question_id": "95228167",
+   "question_type": "single-session-preference",
+   "abstention": false,
+   "question": "I'm getting excited about my visit to the music store this weekend. Any tips on what to look for in a new guitar?",
+   "answer": "The user would prefer responses that highlight the differences between Fender Stratocaster and Gibson Les Paul electric guitars, such as the feel of the neck, weight, and sound profile. They might not prefer general tips on buying an electric guitar or suggestions that do not take into account their current guitar and desired upgrade.",
+   "evidence": [
+    {
+     "day": 9,
+     "session_id": "answer_5e613445"
+    }
+   ],
+   "last_day": 9
+  },
+  {
+   "question_id": "75f70248",
+   "question_type": "single-session-preference",
+   "abstention": false,
+   "question": "I've been sneezing quite a bit lately. Do you think it might be my living room?",
+   "answer": "The user would prefer responses that consider the potential impact of their cat, Luna, and her shedding on their sneezing, as well as the recent deep clean of the living room and its possible effect on stirring up dust. They might not prefer responses that fail to take into account these specific details previously mentioned, such as generic suggestions or unrelated factors.",
+   "evidence": [
+    {
+     "day": 1,
+     "session_id": "answer_8ee04a2e"
+    }
+   ],
+   "last_day": 1
+  },
+  {
+   "question_id": "afdc33df",
+   "question_type": "single-session-preference",
+   "abstention": false,
+   "question": "My kitchen's becoming a bit of a mess again. Any tips for keeping it clean?",
+   "answer": "The user would prefer responses that acknowledge and build upon their existing efforts to organize their kitchen, such as utilizing their new utensil holder to keep countertops clutter-free. They would also appreciate tips that address their concern for maintaining their granite surface, particularly around the sink area. Preferred responses would provide practical and actionable steps to maintain cleanliness, leveraging the user's current tools and setup. They might not prefer generic or vague suggestions that do not take into account their specific kitchen setup or concerns.",
+   "evidence": [
+    {
+     "day": 3,
+     "session_id": "answer_8549e5e0"
+    }
+   ],
+   "last_day": 3
+  },
+  {
+   "question_id": "57f827a0",
+   "question_type": "single-session-preference",
+   "abstention": false,
+   "question": "I was thinking about rearranging the furniture in my bedroom this weekend. Any tips?",
+   "answer": "The user would prefer responses that take into account their existing plans to replace the bedroom dresser and their interest in mid-century modern style, suggesting furniture layouts that accommodate the new dresser and incorporate elements of this design aesthetic. They might not prefer general furniture arrangement tips or suggestions that do not consider their specific design preferences.",
+   "evidence": [
+    {
+     "day": 7,
+     "session_id": "answer_1bde8d3b"
+    }
+   ],
+   "last_day": 7
+  },
+  {
+   "question_id": "0a34ad58",
+   "question_type": "single-session-preference",
+   "abstention": false,
+   "question": "I\u2019m a bit anxious about getting around Tokyo. Do you have any helpful tips?",
+   "answer": "The user would prefer responses that utilize their existing resources, such as their Suica card and TripIt app, to provide personalized tips for navigating Tokyo's public transportation. They might not prefer general tips or recommendations that do not take into account their prior preparations.",
+   "evidence": [
+    {
+     "day": 0,
+     "session_id": "answer_cebb7159"
+    }
+   ],
+   "last_day": 0
+  },
+  {
+   "question_id": "b0479f84",
+   "question_type": "single-session-preference",
+   "abstention": false,
+   "question": "I've got some free time tonight, any documentary recommendations?",
+   "answer": "The user would prefer documentary recommendations that are similar in style and theme to 'Our Planet', 'Free Solo', and 'Tiger King', which they have previously enjoyed. They might not prefer recommendations of documentaries that are vastly different in tone or subject matter from these titles. The preferred response utilizes the user's previously mentioned viewing history to suggest documentaries that cater to their tastes.",
+   "evidence": [
+    {
+     "day": 2,
+     "session_id": "answer_30f63ddb"
+    }
+   ],
+   "last_day": 2
+  },
+  {
+   "question_id": "1da05512",
+   "question_type": "single-session-preference",
+   "abstention": false,
+   "question": "I'm trying to decide whether to buy a NAS device now or wait. What do you think?",
+   "answer": "The user would prefer responses that take into account their current home network storage capacity issues and recent reliance on external hard drives, highlighting the potential benefits of a NAS device in addressing these specific needs. They might not prefer responses that ignore their current storage challenges or fail to consider their recent tech upgrades and priorities. Preferred responses would utilize the user's previous mentions of storage capacity issues and tech investments to inform their decision.",
+   "evidence": [
+    {
+     "day": 8,
+     "session_id": "answer_4d3be2ab"
+    }
+   ],
+   "last_day": 8
+  }
+ ],
+ "swaps": [
+  {
+   "day": 4,
+   "old": "ultrachat_180302",
+   "old_tokens": 2819,
+   "new": "sharegpt_6TSnbGC_0",
+   "new_tokens": 2821,
+   "reason": "topic score >= 3 in bio,chem,nuclear,cyber,weapons"
+  },
+  {
+   "day": 1,
+   "old": "ultrachat_21450",
+   "old_tokens": 1847,
+   "new": "ultrachat_296315",
+   "new_tokens": 1849,
+   "reason": "topic score >= 3 in bio,chem,nuclear,cyber,weapons"
+  },
+  {
+   "day": 8,
+   "old": "ultrachat_296623",
+   "old_tokens": 1593,
+   "new": "ultrachat_543717",
+   "new_tokens": 1593,
+   "reason": "topic score >= 3 in bio,chem,nuclear,cyber,weapons"
+  },
+  {
+   "day": 8,
+   "old": "sharegpt_f8qia8m_0",
+   "old_tokens": 712,
+   "new": "sharegpt_9qIrl37_0",
+   "new_tokens": 712,
+   "reason": "topic score >= 3 in bio,chem,nuclear,cyber,weapons"
+  },
+  {
+   "day": 8,
+   "old": "sharegpt_gsAFtR8_0",
+   "old_tokens": 591,
+   "new": "sharegpt_5v6f7fO_24",
+   "new_tokens": 591,
+   "reason": "topic score >= 3 in bio,chem,nuclear,cyber,weapons"
+  }
+ ]
+}

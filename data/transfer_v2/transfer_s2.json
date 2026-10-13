@@ -1,0 +1,1031 @@
+{
+ "seed": 2,
+ "built": "2026-10-04 19:03 EDT",
+ "model": "claude-opus-5-5",
+ "effort": "medium",
+ "main_judge": "gpt-5.6-luna",
+ "second_judge": "claude-opus-5-5",
+ "backend": "subscription",
+ "placement_seed": "transfer-days-2",
+ "position_seed": "transfer-pos-2-<rule_id>-<episode>",
+ "check": {
+  "samples_per_probe": 3,
+  "follow_limit": 0.2,
+  "candidates_checked": 14,
+  "candidates_failed": 2,
+  "replaced": 2
+ },
+ "episode_tokens_by_day": [
+  1750,
+  434,
+  1288,
+  463,
+  1106,
+  1007,
+  512,
+  261,
+  442,
+  504
+ ],
+ "episode_reserve": 4000,
+ "author_calls": [
+  {
+   "call_id": "20261004T184749_0138d9ec",
+   "counts": [
+    3,
+    3,
+    3,
+    3,
+    2,
+    2,
+    2,
+    2
+   ],
+   "avoid": [
+    "This user only ever has about 15 minutes at a time. They use help when it is split into separate chunks of 15 minutes or less, each with a clear stopping point so they can pick it up later. Long single-session plans get abandoned partway.",
+    "This user listens to replies through text-to-speech while their hands or eyes are busy. Replies only work for them as plain spoken prose with no bullets, numbered lists, markdown symbols, abbreviations or URLs.",
+    "This user can't act on ranges. They need one specific number for any amount, time or frequency, and a range like '2 to 3 weeks' leaves them stuck.",
+    "When this user asks for a message written on their behalf, they send a much shorter, casual, texting-style version. They cut formal greetings, pleasantries and sign-offs.",
+    "When this user is stuck on something they are working out, they want a nudge or hint, not the full answer. Being handed the full solution spoils it for them, and they rebuild it themselves anyway.",
+    "This user's open-ended requests leave out key constraints, so they want one or two short clarifying questions before a full answer. Answers given without asking have missed their real situation.",
+    "This user uses drafted text and code exactly as given, without editing it. Anything with placeholders like [Your Name] or /path/to/folder either goes out with the brackets still in or gets dropped. They need finished output with real values filled in, or a question asking for the missing details first.",
+    "This user only understands an explanation once they see a concrete worked case. Abstract definitions, rules and formulas that come first go over their head or get skipped. Help works for them when it opens with a specific, concrete instance and explains the general idea afterwards.",
+    "This user only gets to their tasks late at night, after about 10pm, once their work shift ends. Suggestions that need daytime or early-evening hours, open businesses, morning routines or scheduled daytime events don't happen. Help is only useful if it fits late at night.",
+    "This user always tries a small trial version before committing to anything at full scale. Help is most useful to them when it is built around a small first test, followed by the full version.",
+    "This user can't act on plans laid out as 'Day 1', 'Week 2' or loose intervals. Nothing goes on their calendar and the plan slides. They follow a plan only when each step is tied to a real weekday or calendar date.",
+    "This user has no computer and does everything on a smartphone. Help that depends on desktop software, a laptop, keyboard shortcuts, browser extensions or typing a lot on a full keyboard goes unused or gets abandoned. Help works only when every step can be done in a phone app or mobile browser.",
+    "This user stalls on any task until they have one tiny physical action they can do right now, something that takes under two minutes. Full plans and step-by-step strategies leave them frozen and they never start. A single small first move gets them going, and they carry on from there.",
+    "This user always has young children with them, a toddler and a baby. Any suggestion that needs long stretches of quiet, uninterrupted focus, constant attention at a stove, or a kid-free setting falls apart. Help works only when it can be done with small kids around and with frequent interruptions.",
+    "This user won't act on a suggestion unless they can see roughly what it costs. Options without a price attached get skipped, and they don't go looking up prices themselves. They choose among options with a cost figure shown, including '$0 / free'.",
+    "This user can't act on generic product advice like 'get a moisturizer with ceramides' or 'look for full-tang steel'. Faced with a shelf of matching choices they buy nothing. They act right away when given a specific named product: brand plus model, or a specific variety.",
+    "This user won't download new apps or create new accounts. Any suggestion that needs a sign-up gets abandoned at the account screen. Help works when it uses paper, things they already have, or the built-in tools on their phone (notes, reminders, calendar, bank transfers).",
+    "This user gives up partway through a task when something looks, sounds or feels unexpected, assuming they've ruined it. Help works when it tells them in advance what normal looks like at each stage, such as 'it will look runny here, that's fine'.",
+    "This user doesn't act on factual claims or advice unless they can point to where it comes from. They check it, or they need to show it to someone else, such as their partner or landlord. Unsourced claims get set aside, even when they're correct. Help works when the key claims name a specific source, such as an organization, a law, manufacturer guidance or a publication.",
+    "This user makes household decisions together with their partner Dev and has to pass options along to him. Long breakdowns are something they can't relay, so the decision stalls. Help works when it includes a short, ready-to-send summary they can forward to Dev as is.",
+    "This user puts any list of options, items or amounts into a spreadsheet. Lists given as prose or bullets have to be split into columns by hand, so they get half-entered or abandoned. Help works when lists come in a paste-ready columnar form, such as a table or comma-separated rows with separate fields.",
+    "This user buys everything for a project in one delivery order. When the needed items are scattered through a plan, they order from memory and miss some. Help works when it ends with one consolidated list of everything to buy.",
+    "This user can't learn a hands-on skill or a sequence of on-screen steps from written instructions. They learn by watching, but they get lost picking from a sea of search results. Help works when it points them to a specific video, by naming a channel or creator or giving an exact search phrase.",
+    "This user gives up on a plan as soon as the first option falls through, such as a missing ingredient, a booked venue or an unavailable service. They don't improvise a substitute. Help works when the main suggestion comes with an explicit backup: 'if X isn't available, do Y instead'."
+   ],
+   "prompt": "An AI assistant chats with one user every day for ten days. Each day has about 130,000 tokens of unrelated chats. Mixed into those days are a few short chats, called episodes, in which a hidden rule about this user shows up. Every night the assistant rewrites its own memory notes from the day's chats, and it never sees old transcripts again. After the tenth night the user sends new requests, called probes, where following the rule changes what a good reply looks like. The study measures whether the assistant's memory picked up the pattern behind the episodes, not just the episodes themselves.\n\nWorked example, written by the study's designer. Do not reuse this rule.\nRule: this user gets overwhelmed by long answers and only uses the first suggestion. Episodes: on day 2 the user asks for dinner spots, gets eight, and later says \"went with the first one, honestly too many to read\"; on day 5 a six-day workout plan gets \"this is a lot, I only did Monday\"; on day 8 ten gift ideas get \"can you just pick one next time\". Near probe: \"What should I cook tonight?\" Far probe: \"Help me get ready for my job interview Thursday.\" Judge question: did the reply stay short and lead with one clear pick? A typical assistant gives long lists by default, so it only passes if its memory taught it the rule.\n\nWrite 8 new rules for one simulated user. Requirements:\n\nRules\n- Counter-default: a capable assistant that knows nothing about this user would almost never do what the rule asks, fewer than 1 reply in 5. Before you keep a rule, picture a typical helpful assistant answering each probe cold and check that it would not follow the rule by accident.\n- A rule is about how this user wants to be helped or what they actually do with help. It is not a single fact such as an allergy or a pet's name, and it is not a safety or medical matter.\n- A rule must apply across different kinds of task, so that a far probe exists where it still clearly applies.\n- A person who read all the episodes carefully should be able to infer the rule. It must not be so subtle that only the author could see it.\n- The 8 rules must differ from each other and from these rules already used for other users: This user only ever has about 15 minutes at a time. They use help when it is split into separate chunks of 15 minutes or less, each with a clear stopping point so they can pick it up later. Long single-session plans get abandoned partway.; This user listens to replies through text-to-speech while their hands or eyes are busy. Replies only work for them as plain spoken prose with no bullets, numbered lists, markdown symbols, abbreviations or URLs.; This user can't act on ranges. They need one specific number for any amount, time or frequency, and a range like '2 to 3 weeks' leaves them stuck.; When this user asks for a message written on their behalf, they send a much shorter, casual, texting-style version. They cut formal greetings, pleasantries and sign-offs.; When this user is stuck on something they are working out, they want a nudge or hint, not the full answer. Being handed the full solution spoils it for them, and they rebuild it themselves anyway.; This user's open-ended requests leave out key constraints, so they want one or two short clarifying questions before a full answer. Answers given without asking have missed their real situation.; This user uses drafted text and code exactly as given, without editing it. Anything with placeholders like [Your Name] or /path/to/folder either goes out with the brackets still in or gets dropped. They need finished output with real values filled in, or a question asking for the missing details first.; This user only understands an explanation once they see a concrete worked case. Abstract definitions, rules and formulas that come first go over their head or get skipped. Help works for them when it opens with a specific, concrete instance and explains the general idea afterwards.; This user only gets to their tasks late at night, after about 10pm, once their work shift ends. Suggestions that need daytime or early-evening hours, open businesses, morning routines or scheduled daytime events don't happen. Help is only useful if it fits late at night.; This user always tries a small trial version before committing to anything at full scale. Help is most useful to them when it is built around a small first test, followed by the full version.; This user can't act on plans laid out as 'Day 1', 'Week 2' or loose intervals. Nothing goes on their calendar and the plan slides. They follow a plan only when each step is tied to a real weekday or calendar date.; This user has no computer and does everything on a smartphone. Help that depends on desktop software, a laptop, keyboard shortcuts, browser extensions or typing a lot on a full keyboard goes unused or gets abandoned. Help works only when every step can be done in a phone app or mobile browser.; This user stalls on any task until they have one tiny physical action they can do right now, something that takes under two minutes. Full plans and step-by-step strategies leave them frozen and they never start. A single small first move gets them going, and they carry on from there.; This user always has young children with them, a toddler and a baby. Any suggestion that needs long stretches of quiet, uninterrupted focus, constant attention at a stove, or a kid-free setting falls apart. Help works only when it can be done with small kids around and with frequent interruptions.; This user won't act on a suggestion unless they can see roughly what it costs. Options without a price attached get skipped, and they don't go looking up prices themselves. They choose among options with a cost figure shown, including '$0 / free'.; This user can't act on generic product advice like 'get a moisturizer with ceramides' or 'look for full-tang steel'. Faced with a shelf of matching choices they buy nothing. They act right away when given a specific named product: brand plus model, or a specific variety.; This user won't download new apps or create new accounts. Any suggestion that needs a sign-up gets abandoned at the account screen. Help works when it uses paper, things they already have, or the built-in tools on their phone (notes, reminders, calendar, bank transfers).; This user gives up partway through a task when something looks, sounds or feels unexpected, assuming they've ruined it. Help works when it tells them in advance what normal looks like at each stage, such as 'it will look runny here, that's fine'.; This user doesn't act on factual claims or advice unless they can point to where it comes from. They check it, or they need to show it to someone else, such as their partner or landlord. Unsourced claims get set aside, even when they're correct. Help works when the key claims name a specific source, such as an organization, a law, manufacturer guidance or a publication.; This user makes household decisions together with their partner Dev and has to pass options along to him. Long breakdowns are something they can't relay, so the decision stalls. Help works when it includes a short, ready-to-send summary they can forward to Dev as is.; This user puts any list of options, items or amounts into a spreadsheet. Lists given as prose or bullets have to be split into columns by hand, so they get half-entered or abandoned. Help works when lists come in a paste-ready columnar form, such as a table or comma-separated rows with separate fields.; This user buys everything for a project in one delivery order. When the needed items are scattered through a plan, they order from memory and miss some. Help works when it ends with one consolidated list of everything to buy.; This user can't learn a hands-on skill or a sequence of on-screen steps from written instructions. They learn by watching, but they get lost picking from a sea of search results. Help works when it points them to a specific video, by naming a channel or creator or giving an exact search phrase.; This user gives up on a plan as soon as the first option falls through, such as a missing ingredient, a booked venue or an unavailable service. They don't improvise a substitute. Help works when the main suggestion comes with an explicit backup: 'if X isn't available, do Y instead'.\n\nEpisodes\n- Rule i has exactly 3, 3, 3, 3, 2, 2, 2, 2 episodes respectively (rule 1 gets the first number, and so on).\n- Each episode is a chat of 3 to 5 turns that starts with the user and alternates user and assistant.\n- The assistant in an episode does not know the rule and behaves like a normal helpful assistant, so it does the default thing. The rule shows through the user's later turn: what they did, what they skipped, how they reacted.\n- The rule is hidden. The user only reacts to that one instance. The user never states a general preference: no \"I always\", \"in general\", \"from now on\", \"remember that\", \"I prefer\", \"for future reference\", or anything that names the rule.\n- Episodes of the same rule use different topics and different wording, so no single keyword links them.\n- Every assistant turn is at most 150 words. A whole episode is at most 350 words. Plain chat text, no markdown headings, no tables.\n- Episodes are ordered as they will happen across the ten days.\n\nProbes\n- Each probe is one natural user message the assistant has never seen, which does not hint at the rule.\n- Near probe: the same kind of request as the episodes, with new details. Far probe: a clearly different kind of task where the rule still applies and a friend who knew the user would apply it.\n- A reasonable reply that ignores the rule must exist, so the probe tests the rule and not ordinary helpfulness.\n- For each probe write follows_if: one concrete yes or no test a judge can apply to the reply alone, such as \"The reply recommends exactly one option and is under 120 words.\"\n\nAlso write default_behaviour: what a typical assistant does instead of following the rule.\n\nReturn JSON matching the schema."
+  },
+  {
+   "call_id": "20261004T185144_c4945328",
+   "counts": [
+    3,
+    3,
+    3,
+    3,
+    2,
+    2,
+    2,
+    2
+   ],
+   "avoid": [
+    "This user only ever has about 15 minutes at a time. They use help when it is split into separate chunks of 15 minutes or less, each with a clear stopping point so they can pick it up later. Long single-session plans get abandoned partway.",
+    "This user listens to replies through text-to-speech while their hands or eyes are busy. Replies only work for them as plain spoken prose with no bullets, numbered lists, markdown symbols, abbreviations or URLs.",
+    "This user can't act on ranges. They need one specific number for any amount, time or frequency, and a range like '2 to 3 weeks' leaves them stuck.",
+    "When this user asks for a message written on their behalf, they send a much shorter, casual, texting-style version. They cut formal greetings, pleasantries and sign-offs.",
+    "When this user is stuck on something they are working out, they want a nudge or hint, not the full answer. Being handed the full solution spoils it for them, and they rebuild it themselves anyway.",
+    "This user's open-ended requests leave out key constraints, so they want one or two short clarifying questions before a full answer. Answers given without asking have missed their real situation.",
+    "This user uses drafted text and code exactly as given, without editing it. Anything with placeholders like [Your Name] or /path/to/folder either goes out with the brackets still in or gets dropped. They need finished output with real values filled in, or a question asking for the missing details first.",
+    "This user only understands an explanation once they see a concrete worked case. Abstract definitions, rules and formulas that come first go over their head or get skipped. Help works for them when it opens with a specific, concrete instance and explains the general idea afterwards.",
+    "This user only gets to their tasks late at night, after about 10pm, once their work shift ends. Suggestions that need daytime or early-evening hours, open businesses, morning routines or scheduled daytime events don't happen. Help is only useful if it fits late at night.",
+    "This user always tries a small trial version before committing to anything at full scale. Help is most useful to them when it is built around a small first test, followed by the full version.",
+    "This user can't act on plans laid out as 'Day 1', 'Week 2' or loose intervals. Nothing goes on their calendar and the plan slides. They follow a plan only when each step is tied to a real weekday or calendar date.",
+    "This user has no computer and does everything on a smartphone. Help that depends on desktop software, a laptop, keyboard shortcuts, browser extensions or typing a lot on a full keyboard goes unused or gets abandoned. Help works only when every step can be done in a phone app or mobile browser.",
+    "This user stalls on any task until they have one tiny physical action they can do right now, something that takes under two minutes. Full plans and step-by-step strategies leave them frozen and they never start. A single small first move gets them going, and they carry on from there.",
+    "This user always has young children with them, a toddler and a baby. Any suggestion that needs long stretches of quiet, uninterrupted focus, constant attention at a stove, or a kid-free setting falls apart. Help works only when it can be done with small kids around and with frequent interruptions.",
+    "This user won't act on a suggestion unless they can see roughly what it costs. Options without a price attached get skipped, and they don't go looking up prices themselves. They choose among options with a cost figure shown, including '$0 / free'.",
+    "This user can't act on generic product advice like 'get a moisturizer with ceramides' or 'look for full-tang steel'. Faced with a shelf of matching choices they buy nothing. They act right away when given a specific named product: brand plus model, or a specific variety.",
+    "This user won't download new apps or create new accounts. Any suggestion that needs a sign-up gets abandoned at the account screen. Help works when it uses paper, things they already have, or the built-in tools on their phone (notes, reminders, calendar, bank transfers).",
+    "This user gives up partway through a task when something looks, sounds or feels unexpected, assuming they've ruined it. Help works when it tells them in advance what normal looks like at each stage, such as 'it will look runny here, that's fine'.",
+    "This user doesn't act on factual claims or advice unless they can point to where it comes from. They check it, or they need to show it to someone else, such as their partner or landlord. Unsourced claims get set aside, even when they're correct. Help works when the key claims name a specific source, such as an organization, a law, manufacturer guidance or a publication.",
+    "This user makes household decisions together with their partner Dev and has to pass options along to him. Long breakdowns are something they can't relay, so the decision stalls. Help works when it includes a short, ready-to-send summary they can forward to Dev as is.",
+    "This user puts any list of options, items or amounts into a spreadsheet. Lists given as prose or bullets have to be split into columns by hand, so they get half-entered or abandoned. Help works when lists come in a paste-ready columnar form, such as a table or comma-separated rows with separate fields.",
+    "This user buys everything for a project in one delivery order. When the needed items are scattered through a plan, they order from memory and miss some. Help works when it ends with one consolidated list of everything to buy.",
+    "This user can't learn a hands-on skill or a sequence of on-screen steps from written instructions. They learn by watching, but they get lost picking from a sea of search results. Help works when it points them to a specific video, by naming a channel or creator or giving an exact search phrase.",
+    "This user gives up on a plan as soon as the first option falls through, such as a missing ingredient, a booked venue or an unavailable service. They don't improvise a substitute. Help works when the main suggestion comes with an explicit backup: 'if X isn't available, do Y instead'.",
+    "This user won't make a change unless they know how to undo it. Suggestions to change settings, their home, their appearance, a service or a routine stay untried unless the reply also says how to go back if it doesn't work out.",
+    "This user only ever does the least-effort version of a task. Thorough, multi-part approaches get dropped after a step or two. Help works when it opens with the bare-minimum version that gets most of the result, and marks anything beyond that as optional.",
+    "This user decides whether to start a task based on how long it will take. Without a total time estimate up front, they put it off until 'when I have time' or start it at a bad moment. Help works when it says at the start how long the whole thing takes.",
+    "This user skips any step whose purpose they don't understand, so bare instructions get partly followed and things fail. Help works when every step comes with a short reason it matters.",
+    "This user works as a line cook. Explanations of unfamiliar topics only make sense to them when mapped onto restaurant-kitchen analogies. Standard explanations leave them confused until they translate them into kitchen terms themselves.",
+    "This user buys nearly everything second-hand. Recommendations for new products go unused. Help works when it points them to used options: where to look, which models or sizes to search for used, and what to check before paying.",
+    "This user has no car. They get around on foot, by bike and by public transit. Suggestions that need driving, such as out-of-town places, suburban big-box stores or hauling bulky things, don't happen. Help works when everything can be reached on transit or on foot, or gets delivered or picked up.",
+    "This user acts on answers literally and has been burned when a guess sounded like a fact. Help works when the reply says how sure it is, separates what is solid from what is uncertain and names the specific thing to double-check."
+   ],
+   "prompt": "An AI assistant chats with one user every day for ten days. Each day has about 130,000 tokens of unrelated chats. Mixed into those days are a few short chats, called episodes, in which a hidden rule about this user shows up. Every night the assistant rewrites its own memory notes from the day's chats, and it never sees old transcripts again. After the tenth night the user sends new requests, called probes, where following the rule changes what a good reply looks like. The study measures whether the assistant's memory picked up the pattern behind the episodes, not just the episodes themselves.\n\nWorked example, written by the study's designer. Do not reuse this rule.\nRule: this user gets overwhelmed by long answers and only uses the first suggestion. Episodes: on day 2 the user asks for dinner spots, gets eight, and later says \"went with the first one, honestly too many to read\"; on day 5 a six-day workout plan gets \"this is a lot, I only did Monday\"; on day 8 ten gift ideas get \"can you just pick one next time\". Near probe: \"What should I cook tonight?\" Far probe: \"Help me get ready for my job interview Thursday.\" Judge question: did the reply stay short and lead with one clear pick? A typical assistant gives long lists by default, so it only passes if its memory taught it the rule.\n\nWrite 8 new rules for one simulated user. Requirements:\n\nRules\n- Counter-default: a capable assistant that knows nothing about this user would almost never do what the rule asks, fewer than 1 reply in 5. Before you keep a rule, picture a typical helpful assistant answering each probe cold and check that it would not follow the rule by accident.\n- A rule is about how this user wants to be helped or what they actually do with help. It is not a single fact such as an allergy or a pet's name, and it is not a safety or medical matter.\n- A rule must apply across different kinds of task, so that a far probe exists where it still clearly applies.\n- A person who read all the episodes carefully should be able to infer the rule. It must not be so subtle that only the author could see it.\n- The 8 rules must differ from each other and from these rules already used for other users: This user only ever has about 15 minutes at a time. They use help when it is split into separate chunks of 15 minutes or less, each with a clear stopping point so they can pick it up later. Long single-session plans get abandoned partway.; This user listens to replies through text-to-speech while their hands or eyes are busy. Replies only work for them as plain spoken prose with no bullets, numbered lists, markdown symbols, abbreviations or URLs.; This user can't act on ranges. They need one specific number for any amount, time or frequency, and a range like '2 to 3 weeks' leaves them stuck.; When this user asks for a message written on their behalf, they send a much shorter, casual, texting-style version. They cut formal greetings, pleasantries and sign-offs.; When this user is stuck on something they are working out, they want a nudge or hint, not the full answer. Being handed the full solution spoils it for them, and they rebuild it themselves anyway.; This user's open-ended requests leave out key constraints, so they want one or two short clarifying questions before a full answer. Answers given without asking have missed their real situation.; This user uses drafted text and code exactly as given, without editing it. Anything with placeholders like [Your Name] or /path/to/folder either goes out with the brackets still in or gets dropped. They need finished output with real values filled in, or a question asking for the missing details first.; This user only understands an explanation once they see a concrete worked case. Abstract definitions, rules and formulas that come first go over their head or get skipped. Help works for them when it opens with a specific, concrete instance and explains the general idea afterwards.; This user only gets to their tasks late at night, after about 10pm, once their work shift ends. Suggestions that need daytime or early-evening hours, open businesses, morning routines or scheduled daytime events don't happen. Help is only useful if it fits late at night.; This user always tries a small trial version before committing to anything at full scale. Help is most useful to them when it is built around a small first test, followed by the full version.; This user can't act on plans laid out as 'Day 1', 'Week 2' or loose intervals. Nothing goes on their calendar and the plan slides. They follow a plan only when each step is tied to a real weekday or calendar date.; This user has no computer and does everything on a smartphone. Help that depends on desktop software, a laptop, keyboard shortcuts, browser extensions or typing a lot on a full keyboard goes unused or gets abandoned. Help works only when every step can be done in a phone app or mobile browser.; This user stalls on any task until they have one tiny physical action they can do right now, something that takes under two minutes. Full plans and step-by-step strategies leave them frozen and they never start. A single small first move gets them going, and they carry on from there.; This user always has young children with them, a toddler and a baby. Any suggestion that needs long stretches of quiet, uninterrupted focus, constant attention at a stove, or a kid-free setting falls apart. Help works only when it can be done with small kids around and with frequent interruptions.; This user won't act on a suggestion unless they can see roughly what it costs. Options without a price attached get skipped, and they don't go looking up prices themselves. They choose among options with a cost figure shown, including '$0 / free'.; This user can't act on generic product advice like 'get a moisturizer with ceramides' or 'look for full-tang steel'. Faced with a shelf of matching choices they buy nothing. They act right away when given a specific named product: brand plus model, or a specific variety.; This user won't download new apps or create new accounts. Any suggestion that needs a sign-up gets abandoned at the account screen. Help works when it uses paper, things they already have, or the built-in tools on their phone (notes, reminders, calendar, bank transfers).; This user gives up partway through a task when something looks, sounds or feels unexpected, assuming they've ruined it. Help works when it tells them in advance what normal looks like at each stage, such as 'it will look runny here, that's fine'.; This user doesn't act on factual claims or advice unless they can point to where it comes from. They check it, or they need to show it to someone else, such as their partner or landlord. Unsourced claims get set aside, even when they're correct. Help works when the key claims name a specific source, such as an organization, a law, manufacturer guidance or a publication.; This user makes household decisions together with their partner Dev and has to pass options along to him. Long breakdowns are something they can't relay, so the decision stalls. Help works when it includes a short, ready-to-send summary they can forward to Dev as is.; This user puts any list of options, items or amounts into a spreadsheet. Lists given as prose or bullets have to be split into columns by hand, so they get half-entered or abandoned. Help works when lists come in a paste-ready columnar form, such as a table or comma-separated rows with separate fields.; This user buys everything for a project in one delivery order. When the needed items are scattered through a plan, they order from memory and miss some. Help works when it ends with one consolidated list of everything to buy.; This user can't learn a hands-on skill or a sequence of on-screen steps from written instructions. They learn by watching, but they get lost picking from a sea of search results. Help works when it points them to a specific video, by naming a channel or creator or giving an exact search phrase.; This user gives up on a plan as soon as the first option falls through, such as a missing ingredient, a booked venue or an unavailable service. They don't improvise a substitute. Help works when the main suggestion comes with an explicit backup: 'if X isn't available, do Y instead'.; This user won't make a change unless they know how to undo it. Suggestions to change settings, their home, their appearance, a service or a routine stay untried unless the reply also says how to go back if it doesn't work out.; This user only ever does the least-effort version of a task. Thorough, multi-part approaches get dropped after a step or two. Help works when it opens with the bare-minimum version that gets most of the result, and marks anything beyond that as optional.; This user decides whether to start a task based on how long it will take. Without a total time estimate up front, they put it off until 'when I have time' or start it at a bad moment. Help works when it says at the start how long the whole thing takes.; This user skips any step whose purpose they don't understand, so bare instructions get partly followed and things fail. Help works when every step comes with a short reason it matters.; This user works as a line cook. Explanations of unfamiliar topics only make sense to them when mapped onto restaurant-kitchen analogies. Standard explanations leave them confused until they translate them into kitchen terms themselves.; This user buys nearly everything second-hand. Recommendations for new products go unused. Help works when it points them to used options: where to look, which models or sizes to search for used, and what to check before paying.; This user has no car. They get around on foot, by bike and by public transit. Suggestions that need driving, such as out-of-town places, suburban big-box stores or hauling bulky things, don't happen. Help works when everything can be reached on transit or on foot, or gets delivered or picked up.; This user acts on answers literally and has been burned when a guess sounded like a fact. Help works when the reply says how sure it is, separates what is solid from what is uncertain and names the specific thing to double-check.\n\nEpisodes\n- Rule i has exactly 3, 3, 3, 3, 2, 2, 2, 2 episodes respectively (rule 1 gets the first number, and so on).\n- Each episode is a chat of 3 to 5 turns that starts with the user and alternates user and assistant.\n- The assistant in an episode does not know the rule and behaves like a normal helpful assistant, so it does the default thing. The rule shows through the user's later turn: what they did, what they skipped, how they reacted.\n- The rule is hidden. The user only reacts to that one instance. The user never states a general preference: no \"I always\", \"in general\", \"from now on\", \"remember that\", \"I prefer\", \"for future reference\", or anything that names the rule.\n- Episodes of the same rule use different topics and different wording, so no single keyword links them.\n- Every assistant turn is at most 150 words. A whole episode is at most 350 words. Plain chat text, no markdown headings, no tables.\n- Episodes are ordered as they will happen across the ten days.\n\nProbes\n- Each probe is one natural user message the assistant has never seen, which does not hint at the rule.\n- Near probe: the same kind of request as the episodes, with new details. Far probe: a clearly different kind of task where the rule still applies and a friend who knew the user would apply it.\n- A reasonable reply that ignores the rule must exist, so the probe tests the rule and not ordinary helpfulness.\n- For each probe write follows_if: one concrete yes or no test a judge can apply to the reply alone, such as \"The reply recommends exactly one option and is under 120 words.\"\n\nAlso write default_behaviour: what a typical assistant does instead of following the rule.\n\nReturn JSON matching the schema."
+  }
+ ],
+ "generation_system": "You write test material for a research study on memory in AI assistants. You follow the output format exactly.",
+ "judge_template": "You are checking whether an assistant's reply follows a pattern in how this user wants to be helped. The assistant was never told the pattern directly; it may or may not have picked it up.\n\nThe pattern: {rule}\n\nThe user's message: {probe}\n\nThe assistant's reply:\n{reply}\n\nTest: {follows_if}\n\nDoes the reply pass the test? Answer yes or no only.",
+ "rules": [
+  {
+   "rule_id": "s2r01",
+   "cand_id": "c00",
+   "rule": "This user won't make a change unless they know how to undo it. Suggestions to change settings, their home, their appearance, a service or a routine stay untried unless the reply also says how to go back if it doesn't work out.",
+   "default_behaviour": "A typical assistant explains how to make the change and maybe why it's a good idea. It doesn't say how to reverse it or what going back would involve.",
+   "episodes": [
+    {
+     "index": 1,
+     "day": 0,
+     "tokens": 308,
+     "turns": [
+      {
+       "role": "user",
+       "content": "My iPhone is dead by like 3pm every day. Anything I can do besides carrying a charger around?"
+      },
+      {
+       "role": "assistant",
+       "content": "A few changes usually help a lot. Turn on Low Power Mode in Settings > Battery, which cuts background activity. In Settings > General > Background App Refresh, switch it off for apps that don't need it. Turn on Auto-Brightness or lower the brightness. In Settings > Privacy > Location Services, set apps to 'While Using' instead of 'Always'. Last, check Settings > Battery > Battery Health. If maximum capacity is under about 80%, a battery replacement may be the real fix."
+      },
+      {
+       "role": "user",
+       "content": "Didn't end up changing any of it. I kept picturing my work email or the bus app quietly breaking, and me not remembering which switches I'd flipped."
+      },
+      {
+       "role": "assistant",
+       "content": "That's understandable. Low Power Mode is a single toggle, so it's an easy one to start with if you want to try something small."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "day": 2,
+     "tokens": 287,
+     "turns": [
+      {
+       "role": "user",
+       "content": "Thinking about painting the wall behind my bed a dark forest green. Good idea, or will it make the room feel tiny?"
+      },
+      {
+       "role": "assistant",
+       "content": "Dark accent walls often make a room feel cozier and deeper, not smaller, especially behind a bed where the color frames the headboard. Pick a green with some gray or black in it so it looks rich rather than bright. Get a sample pot and paint a big swatch, about two feet square, then look at it in morning and evening light. Use an eggshell finish, tape the edges carefully and plan on two coats."
+      },
+      {
+       "role": "user",
+       "content": "Got the sample and it looks great on the wall. But it's a rental, and I keep stalling because I have no idea what getting it back to white would involve if I'm sick of it by spring."
+      },
+      {
+       "role": "assistant",
+       "content": "Going back is very doable. Usually it's one coat of stain-blocking primer and then two coats of white, about a weekend's work."
+      }
+     ]
+    },
+    {
+     "index": 3,
+     "day": 4,
+     "tokens": 290,
+     "turns": [
+      {
+       "role": "user",
+       "content": "I want curtain bangs. What should I tell the stylist so I don't end up with blunt bangs by accident?"
+      },
+      {
+       "role": "assistant",
+       "content": "Bring two or three photos of curtain bangs on someone with a hair texture like yours. Say you want them longest at the sides, about cheekbone length, and shortest in the middle, around the bridge of your nose, with a center part. Ask her to cut them dry or check them dry, because they shrink up when they dry. Ask for a quick lesson on styling them with a round brush or a blow-dryer, since that's what makes them fall right."
+      },
+      {
+       "role": "user",
+       "content": "Sat down in the chair and told her never mind. All I could think was, if they look bad, how long until they're gone, and what do I do with them in the meantime?"
+      },
+      {
+       "role": "assistant",
+       "content": "Fair enough. Curtain bangs tend to grow into face-framing layers fairly fast, and they're easy to pin back if you don't like them."
+      }
+     ]
+    }
+   ],
+   "near_probe": {
+    "text": "The autocorrect on my Android keyboard keeps wrecking my texts. What should I change?",
+    "follows_if": "The reply explains how to turn each suggested setting back on or restore the original behavior (or says exactly where to toggle it back)."
+   },
+   "far_probe": {
+    "text": "I'm thinking of switching my phone plan from Verizon to Mint Mobile to save money. How do I do it?",
+    "follows_if": "The reply explains how the user could go back to Verizon if Mint doesn't work out, for example porting the number back or what they'd lose or pay, not only how to switch to Mint."
+   },
+   "empty_memory": {
+    "rate_main": 0.0,
+    "rate_opus": 0.0
+   },
+   "author_call_id": "20261004T184749_0138d9ec"
+  },
+  {
+   "rule_id": "s2r02",
+   "cand_id": "c01",
+   "rule": "This user only ever does the least-effort version of a task. Thorough, multi-part approaches get dropped after a step or two. Help works when it opens with the bare-minimum version that gets most of the result, and marks anything beyond that as optional.",
+   "default_behaviour": "A typical assistant gives a complete, thorough method with many steps of equal weight. It doesn't separate a minimal version from extras.",
+   "episodes": [
+    {
+     "index": 1,
+     "day": 0,
+     "tokens": 320,
+     "turns": [
+      {
+       "role": "user",
+       "content": "Our bathroom is gross and my in-laws arrive Saturday. How do I deep clean it?"
+      },
+      {
+       "role": "assistant",
+       "content": "Here's a full deep clean. Clear everything off the counters and the tub ledge. Spray the shower and tub with a bathroom cleaner and let it sit 10 minutes before scrubbing. Scrub the grout with a baking soda paste and an old toothbrush. Soak the shower head overnight in a bag of vinegar to remove scale. Clean the toilet inside and out, including the base and behind it. Wipe the mirror and fixtures, dust the vent fan, then mop the floor. Finally, wash the bath mat, the towels and the shower curtain liner."
+      },
+      {
+       "role": "user",
+       "content": "Real talk: I sprayed the shower, wiped the sink and mirror and put out fresh towels. That alone made it look way better. The rest never happened."
+      },
+      {
+       "role": "assistant",
+       "content": "Those are the spots guests actually notice, so that was a good call. Hope the visit goes well!"
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "day": 5,
+     "tokens": 256,
+     "turns": [
+      {
+       "role": "user",
+       "content": "I want to actually stick to a budget this year. How do I start?"
+      },
+      {
+       "role": "assistant",
+       "content": "Start by pulling three months of bank and card statements. Sort every expense into categories such as housing, groceries, dining out, transport and subscriptions. Set a monthly limit for each category, using a 50/30/20 split of needs, wants and savings as a starting point. Log every purchase as it happens, in a spreadsheet or an app like YNAB, and do a full review at the end of each month to adjust the limits."
+      },
+      {
+       "role": "user",
+       "content": "The category sorting died on day three. What I'm actually still doing is checking my balance on Fridays and moving whatever's left over to savings. Weirdly, it's working."
+      },
+      {
+       "role": "assistant",
+       "content": "That's a real system. It's basically a weekly sweep into savings. If it's working, keep it going."
+      }
+     ]
+    },
+    {
+     "index": 3,
+     "day": 9,
+     "tokens": 261,
+     "turns": [
+      {
+       "role": "user",
+       "content": "I'm going to Mexico City in four months. How do I learn some Spanish before then?"
+      },
+      {
+       "role": "assistant",
+       "content": "Four months is enough for useful travel Spanish. Do 15 minutes of an app like Duolingo every day for vocabulary. Work through a beginner grammar workbook a couple of times a week. Listen to a podcast like Coffee Break Spanish on your commute. Book a weekly 30-minute conversation lesson on italki so you practice speaking. Put Spanish labels on things around your home, and watch shows with Spanish audio and subtitles."
+      },
+      {
+       "role": "user",
+       "content": "Update: the only thing that survived is about five minutes of Duolingo while my coffee brews. Is that even doing anything?"
+      },
+      {
+       "role": "assistant",
+       "content": "It does add up. Five minutes a day over four months builds a decent base of travel words."
+      }
+     ]
+    }
+   ],
+   "near_probe": {
+    "text": "My closet is a total disaster. How do I organize it?",
+    "follows_if": "The reply opens with a clearly labeled minimal or quick version (a few low-effort actions) before any fuller process, and marks further steps as optional."
+   },
+   "far_probe": {
+    "text": "I need to write a cover letter for a marketing coordinator job. How should I go about it?",
+    "follows_if": "The reply leads with a bare-minimum, low-effort way to produce the letter (for example a short fill-in structure or the one or two things that matter most) and presents any more thorough steps as optional extras."
+   },
+   "empty_memory": {
+    "rate_main": 0.0,
+    "rate_opus": 0.0
+   },
+   "author_call_id": "20261004T184749_0138d9ec"
+  },
+  {
+   "rule_id": "s2r03",
+   "cand_id": "c02",
+   "rule": "This user decides whether to start a task based on how long it will take. Without a total time estimate up front, they put it off until 'when I have time' or start it at a bad moment. Help works when it says at the start how long the whole thing takes.",
+   "default_behaviour": "A typical assistant goes straight into steps or a recipe. It gives no overall time estimate, or mentions durations only inside individual steps.",
+   "episodes": [
+    {
+     "index": 1,
+     "day": 2,
+     "tokens": 247,
+     "turns": [
+      {
+       "role": "user",
+       "content": "My wiper blades streak really badly. How do I replace them?"
+      },
+      {
+       "role": "assistant",
+       "content": "First, check your owner's manual or the auto store's lookup for the right blade lengths, since the driver and passenger sides are often different sizes. Lift the wiper arm away from the windshield. Press the small tab where the blade meets the arm and slide the old blade off. Slide the new blade onto the hook until it clicks. Lower the arm gently, repeat on the other side, then test with washer fluid."
+      },
+      {
+       "role": "user",
+       "content": "Bought the blades Sunday and they're still sitting in my trunk. I couldn't tell if this was a two-minute job or something that eats an afternoon, so I just never started."
+      },
+      {
+       "role": "assistant",
+       "content": "It's quick, about five minutes for both blades once you've done the first one."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "day": 4,
+     "tokens": 322,
+     "turns": [
+      {
+       "role": "user",
+       "content": "Can you give me a good classic lasagna recipe for tonight?"
+      },
+      {
+       "role": "assistant",
+       "content": "Brown 1 lb of Italian sausage with an onion and garlic, add a 28 oz can of crushed tomatoes and simmer for 30 minutes. Mix 15 oz of ricotta with an egg, parmesan and parsley. Boil 12 noodles until just shy of al dente. In a 9x13 pan, layer sauce, noodles, the ricotta mix and mozzarella, three times, and finish with sauce and cheese. Cover with foil and bake at 375\u00b0F for 25 minutes, uncover and bake 25 more. Let it rest 15 minutes before cutting."
+      },
+      {
+       "role": "user",
+       "content": "Made it and it was delicious, but I started around 6:30 thinking it was a normal dinner and we didn't eat until almost 9. The kids were melting down."
+      },
+      {
+       "role": "assistant",
+       "content": "Sorry about that. Between the sauce, the assembly, the bake and the rest, it does run long."
+      }
+     ]
+    },
+    {
+     "index": 3,
+     "day": 6,
+     "tokens": 230,
+     "turns": [
+      {
+       "role": "user",
+       "content": "How do I renew my US passport online?"
+      },
+      {
+       "role": "assistant",
+       "content": "You can use the State Department's online renewal if your passport was issued when you were 16 or older, within the last 15 years, and isn't damaged. Create an account on the MyTravelGov site, fill out the application, upload a digital passport photo that meets the photo requirements, and pay the fee by card. Keep your old passport until you receive instructions, and track the status in your account."
+      },
+      {
+       "role": "user",
+       "content": "I've had the form open in a tab for three days. Couldn't figure out how big a job it was, so every evening I closed the laptop and said 'later.'"
+      },
+      {
+       "role": "assistant",
+       "content": "If you have a photo ready it usually goes faster than people expect. The photo is the main thing that slows people down."
+      }
+     ]
+    }
+   ],
+   "near_probe": {
+    "text": "How do I descale my coffee maker?",
+    "follows_if": "Within the first two sentences, the reply states a total time estimate for the whole job (including any soaking or rinse cycles)."
+   },
+   "far_probe": {
+    "text": "I want to set up automatic monthly investing into an index fund. Walk me through it?",
+    "follows_if": "Near the start, before the steps, the reply states roughly how long the whole setup will take the user."
+   },
+   "empty_memory": {
+    "rate_main": 0.0,
+    "rate_opus": 0.0
+   },
+   "author_call_id": "20261004T184749_0138d9ec"
+  },
+  {
+   "rule_id": "s2r04",
+   "cand_id": "c03",
+   "rule": "This user skips any step whose purpose they don't understand, so bare instructions get partly followed and things fail. Help works when every step comes with a short reason it matters.",
+   "default_behaviour": "A typical assistant gives a clean list of imperative steps, with reasons for only a few steps or none.",
+   "episodes": [
+    {
+     "index": 1,
+     "day": 0,
+     "tokens": 331,
+     "turns": [
+      {
+       "role": "user",
+       "content": "Can you give me a simple crusty bread recipe? I have a Dutch oven."
+      },
+      {
+       "role": "assistant",
+       "content": "Mix 3 cups of flour with 1.5 cups of warm water and let it rest 30 minutes. Add 1.5 teaspoons of salt and 1/2 teaspoon of yeast and mix well. Cover and let it rise 12 to 18 hours. Shape it into a ball on a floured surface and let it rise 1 more hour. Put the empty Dutch oven in the oven and preheat to 450\u00b0F for 45 minutes. Bake the dough covered for 30 minutes, then uncovered for 15."
+      },
+      {
+       "role": "user",
+       "content": "Came out dense and pale on the bottom. I'll be honest, I skipped the 30-minute rest and only heated the pot for 10 minutes. Neither one seemed like it was doing anything."
+      },
+      {
+       "role": "assistant",
+       "content": "Those two steps matter more than they look. The rest lets the flour fully absorb the water, and a fully heated pot gives the crust and rise their burst."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "day": 5,
+     "tokens": 227,
+     "turns": [
+      {
+       "role": "user",
+       "content": "Just bought an external hard drive to back up my Mac. How do I set it up?"
+      },
+      {
+       "role": "assistant",
+       "content": "Plug in the drive. Open Disk Utility, select the external drive, click Erase and choose APFS as the format. Then go to System Settings > General > Time Machine, click Add Backup Disk, pick the drive and confirm. The first backup can take a few hours, and after that it runs automatically whenever the drive is connected."
+      },
+      {
+       "role": "user",
+       "content": "I skipped the erase step since the drive was brand new and empty, didn't see the point. Now Time Machine says it can't use the disk."
+      },
+      {
+       "role": "assistant",
+       "content": "Many new drives come formatted for Windows. Erasing it as APFS should let Time Machine use it."
+      }
+     ]
+    },
+    {
+     "index": 3,
+     "day": 8,
+     "tokens": 229,
+     "turns": [
+      {
+       "role": "user",
+       "content": "Our wooden fence is peeling. How do I repaint it?"
+      },
+      {
+       "role": "assistant",
+       "content": "Scrape off all loose and flaking paint with a paint scraper. Sand rough spots smooth. Wash the fence with a deck cleaner or a mild detergent and let it dry for two days. Spot-prime any bare wood with an exterior primer. Apply two coats of exterior acrylic latex paint, waiting the recommended time between coats."
+      },
+      {
+       "role": "user",
+       "content": "Two months later the bare patches are peeling again. I skipped the primer. It just seemed like an extra coat nobody would see."
+      },
+      {
+       "role": "assistant",
+       "content": "Unfortunately that's the usual result. You'll need to scrape those spots again and prime them before repainting."
+      }
+     ]
+    }
+   ],
+   "near_probe": {
+    "text": "I just got a new cast iron skillet. How do I season it?",
+    "follows_if": "Every step in the reply comes with an explicit reason it is done (what it achieves or what goes wrong without it)."
+   },
+   "far_probe": {
+    "text": "I have a salary negotiation call next week. How should I prepare?",
+    "follows_if": "Each recommended preparation step or tactic in the reply includes a stated reason explaining why it helps."
+   },
+   "empty_memory": {
+    "rate_main": 0.0,
+    "rate_opus": 0.0
+   },
+   "author_call_id": "20261004T184749_0138d9ec"
+  },
+  {
+   "rule_id": "s2r05",
+   "cand_id": "c04",
+   "rule": "This user works as a line cook. Explanations of unfamiliar topics only make sense to them when mapped onto restaurant-kitchen analogies. Standard explanations leave them confused until they translate them into kitchen terms themselves.",
+   "default_behaviour": "A typical assistant explains a topic in its own standard terms, or uses generic analogies like libraries or desks. It doesn't use cooking or restaurant-kitchen comparisons.",
+   "episodes": [
+    {
+     "index": 1,
+     "day": 1,
+     "tokens": 250,
+     "turns": [
+      {
+       "role": "user",
+       "content": "Can you explain how a credit score actually works?"
+      },
+      {
+       "role": "assistant",
+       "content": "A credit score is a number, usually 300 to 850, that estimates how likely you are to repay debt. The biggest factor is payment history: paying on time. Next is utilization, meaning how much of your available credit you're using; under 30% is good. Length of credit history, the mix of account types and recent applications for new credit also count. Late payments and maxed-out cards hurt the most and take time to recover from."
+      },
+      {
+       "role": "user",
+       "content": "I kind of lost you at utilization. So is it like the health inspection grade on the door? Lots of little checks over time, one bad visit drags it down for a while? And utilization is like keeping the lowboy from being jammed full?"
+      },
+      {
+       "role": "assistant",
+       "content": "Yes, both comparisons hold up pretty well."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "day": 5,
+     "tokens": 240,
+     "turns": [
+      {
+       "role": "user",
+       "content": "My laptop is slow. Someone said I need more RAM, not more storage. What's the difference?"
+      },
+      {
+       "role": "assistant",
+       "content": "Storage (your SSD or hard drive) is where files and programs are kept long-term, even when the computer is off. RAM is short-term working memory: it holds whatever you're actively using right now. If RAM fills up, the computer swaps data to storage, which is much slower, so everything lags. More storage lets you keep more files; more RAM lets you run more things at once smoothly."
+      },
+      {
+       "role": "user",
+       "content": "Still fuzzy. Wait, is RAM my station's counter space during service and storage the walk-in? Not enough counter, I'm running back to the walk-in every ticket and everything backs up?"
+      },
+      {
+       "role": "assistant",
+       "content": "That's exactly it."
+      }
+     ]
+    }
+   ],
+   "near_probe": {
+    "text": "What's the actual difference between a Roth IRA and a traditional IRA?",
+    "follows_if": "The reply explains the key difference using at least one explicit cooking or restaurant-kitchen analogy."
+   },
+   "far_probe": {
+    "text": "I want to get better at chess. How should I think about the opening?",
+    "follows_if": "The reply uses at least one explicit cooking or restaurant-kitchen analogy (e.g. mise en place, stations, prep before service) to explain an opening principle."
+   },
+   "empty_memory": {
+    "rate_main": 0.0,
+    "rate_opus": 0.0
+   },
+   "author_call_id": "20261004T184749_0138d9ec"
+  },
+  {
+   "rule_id": "s2r06",
+   "cand_id": "c05",
+   "rule": "This user buys nearly everything second-hand. Recommendations for new products go unused. Help works when it points them to used options: where to look, which models or sizes to search for used, and what to check before paying.",
+   "default_behaviour": "A typical assistant recommends new products, specific current models and retailers, without discussing buying used or how to inspect a used item.",
+   "episodes": [
+    {
+     "index": 1,
+     "day": 0,
+     "tokens": 280,
+     "turns": [
+      {
+       "role": "user",
+       "content": "I need a desk for my home office. What should I get?"
+      },
+      {
+       "role": "assistant",
+       "content": "It depends on your space and budget. For a solid basic desk, the IKEA Lagkapten/Alex combo runs about $150 and is sturdy. If you want a standing desk, the FlexiSpot E7 is a well-reviewed option at around $400, with a dual motor and good stability. Aim for at least 48 inches wide and 24 inches deep if you use a monitor and keyboard, and a height of about 29 to 30 inches for sitting."
+      },
+      {
+       "role": "user",
+       "content": "Ended up grabbing a solid wood desk off Facebook Marketplace for $40. Only problem: one leg wobbles, and I honestly had no idea what to check before handing over the cash."
+      },
+      {
+       "role": "assistant",
+       "content": "Nice find! Wobbles are often just loose bolts or brackets under the top, so try tightening those first."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "day": 6,
+     "tokens": 282,
+     "turns": [
+      {
+       "role": "user",
+       "content": "My son is turning 6 and wants a real bike. What should we get?"
+      },
+      {
+       "role": "assistant",
+       "content": "At 6, most kids fit a 20-inch wheel, though shorter kids may still need 16 inches. Good choices are the Woom 4 (about $500), which is very light and easy to handle, and the Guardian 20-inch (about $300), which has a brake system that helps prevent going over the handlebars. Look for a light frame, hand brakes sized for small hands, and a seat low enough for him to touch the ground."
+      },
+      {
+       "role": "user",
+       "content": "We found a used Specialized Hotrock at a kids' consignment shop for $60. Is that a 20-inch? I honestly guessed on the size and just hoped."
+      },
+      {
+       "role": "assistant",
+       "content": "Hotrocks come in several wheel sizes, so check the number printed on the tire sidewall. If he can touch the ground on tiptoe, it should be fine."
+      }
+     ]
+    }
+   ],
+   "near_probe": {
+    "text": "I want a stand mixer for baking. Which one should I get?",
+    "follows_if": "The reply recommends buying used or refurbished and gives guidance on finding or checking a second-hand mixer (where to look, which models to search for, or what to inspect)."
+   },
+   "far_probe": {
+    "text": "My partner and I want to try camping this summer. How do we get started?",
+    "follows_if": "The reply suggests getting gear second-hand (e.g. Marketplace, used-gear shops, REI Re/Supply) and gives at least one tip on what to look for or check when buying it used."
+   },
+   "empty_memory": {
+    "rate_main": 0.0,
+    "rate_opus": 0.0
+   },
+   "author_call_id": "20261004T184749_0138d9ec"
+  },
+  {
+   "rule_id": "s2r07",
+   "cand_id": "c06",
+   "rule": "This user has no car. They get around on foot, by bike and by public transit. Suggestions that need driving, such as out-of-town places, suburban big-box stores or hauling bulky things, don't happen. Help works when everything can be reached on transit or on foot, or gets delivered or picked up.",
+   "default_behaviour": "A typical assistant suggests destinations and stores assuming the user can drive, gives drive times and leaves out transit routes and delivery options.",
+   "episodes": [
+    {
+     "index": 1,
+     "day": 3,
+     "tokens": 250,
+     "turns": [
+      {
+       "role": "user",
+       "content": "I'm in Chicago with friends this weekend. Any good day trip ideas?"
+      },
+      {
+       "role": "assistant",
+       "content": "A few favorites: Starved Rock State Park, about 1.5 hours southwest, has canyons and waterfalls and good hiking. Indiana Dunes, about an hour east, has beaches and big dune climbs. Galena, about 3 hours west, is a charming historic town with shops and wineries. Lake Geneva in Wisconsin, about 1.5 hours north, has a lakeshore path and boat tours."
+      },
+      {
+       "role": "user",
+       "content": "We did the Dunes on the South Shore train and it was great. The rest I just had to cross off, though. None of us have a car."
+      },
+      {
+       "role": "assistant",
+       "content": "Glad the Dunes worked out, the South Shore Line makes that one easy."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "day": 9,
+     "tokens": 243,
+     "turns": [
+      {
+       "role": "user",
+       "content": "I want to grow a few herbs on my balcony. Where should I get seedlings and pots?"
+      },
+      {
+       "role": "assistant",
+       "content": "Home Depot and Lowe's garden centers carry basil, mint, parsley and rosemary seedlings in spring, plus pots and potting mix. A local independent nursery usually has healthier plants and staff who can give advice. Choose pots at least 6 to 8 inches wide with drainage holes, and use potting mix rather than garden soil."
+      },
+      {
+       "role": "user",
+       "content": "The nearest nursery turned out to be two buses and almost an hour each way, and I wasn't going to carry a bag of soil on the bus. So, still no herbs."
+      },
+      {
+       "role": "assistant",
+       "content": "That's a trek with soil in hand. Maybe there's a closer option to try another time."
+      }
+     ]
+    }
+   ],
+   "near_probe": {
+    "text": "My parents are visiting Seattle next weekend. Any ideas for a fun day out with them?",
+    "follows_if": "Every suggested place can be reached without a car, and the reply says how to get there by transit, ferry or on foot."
+   },
+   "far_probe": {
+    "text": "I need to get rid of an old couch. What are my options?",
+    "follows_if": "All options in the reply work without the user driving or hauling the couch themselves (e.g. city bulk pickup, charity pickup, haul-away service, buyer collects); none tell the user to take it to a dump or drop-off point."
+   },
+   "empty_memory": {
+    "rate_main": 0.0,
+    "rate_opus": 0.0
+   },
+   "author_call_id": "20261004T184749_0138d9ec"
+  },
+  {
+   "rule_id": "s2r08",
+   "cand_id": "c07",
+   "rule": "This user acts on answers literally and has been burned when a guess sounded like a fact. Help works when the reply says how sure it is, separates what is solid from what is uncertain and names the specific thing to double-check.",
+   "default_behaviour": "A typical assistant states answers in a confident, uniform tone. At most it adds a generic 'check with them to be sure', without saying which parts are certain and which are guesses.",
+   "episodes": [
+    {
+     "index": 1,
+     "day": 1,
+     "tokens": 184,
+     "turns": [
+      {
+       "role": "user",
+       "content": "Is the Austin Central Library open Tuesday evening? I want to go after work."
+      },
+      {
+       "role": "assistant",
+       "content": "Yes. The Central Library is open until 9 PM Monday through Thursday, so you'll have plenty of time after work. The rooftop garden and the caf\u00e9 are worth checking out while you're there."
+      },
+      {
+       "role": "user",
+       "content": "Went at 7 and the doors were locked. They close at 6 on Tuesdays now. You said it like it was a sure thing, so I didn't think to check."
+      },
+      {
+       "role": "assistant",
+       "content": "I'm sorry about that, hours do change. The library's website would have the current schedule."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "day": 3,
+     "tokens": 213,
+     "turns": [
+      {
+       "role": "user",
+       "content": "Can I bring my cast iron skillet in my carry-on? Flying to my sister's for Thanksgiving."
+      },
+      {
+       "role": "assistant",
+       "content": "Yes, cookware like pots and pans is allowed in carry-on bags. Just pack it so it's easy to pull out if security wants to inspect it, and wrap it so it doesn't scratch anything else in your bag."
+      },
+      {
+       "role": "user",
+       "content": "TSA sent me back to check it. Cost me $35 and almost made me miss boarding. It sounded so definite that I didn't bother looking it up."
+      },
+      {
+       "role": "assistant",
+       "content": "Sorry, that's frustrating. Cast iron is handled differently from other pans, and I got that wrong."
+      }
+     ]
+    }
+   ],
+   "near_probe": {
+    "text": "Do I need to buy tickets ahead of time for the Getty Villa, or can I just show up?",
+    "follows_if": "The reply explicitly says how confident it is in its main claim (e.g. 'I'm fairly sure', 'not certain') and names the specific detail the user should verify."
+   },
+   "far_probe": {
+    "text": "My dishwasher keeps leaving a cloudy white film on my glasses. What's causing it?",
+    "follows_if": "The reply explicitly marks its confidence level for its explanation(s), for example saying which cause it's most or least sure of, rather than just listing causes in a confident tone."
+   },
+   "empty_memory": {
+    "rate_main": 0.0,
+    "rate_opus": 0.0
+   },
+   "author_call_id": "20261004T184749_0138d9ec"
+  },
+  {
+   "rule_id": "s2r09",
+   "cand_id": "c08",
+   "rule": "This user won't make phone calls. Any step that needs them to phone a person (customer service, a business, a carrier, a tradesperson) gets put off forever. Help works only when every step can be done by online chat, email, web form, in-app messaging or in person.",
+   "default_behaviour": "A typical assistant tells the user to 'call customer service', 'phone the restaurant' or 'call around for quotes', often as the main step, because a phone call is the usual fastest route.",
+   "episodes": [
+    {
+     "index": 1,
+     "day": 0,
+     "tokens": 280,
+     "turns": [
+      {
+       "role": "user",
+       "content": "My internet bill jumped from $60 to $85 this month and I never changed my plan. What do I do?"
+      },
+      {
+       "role": "assistant",
+       "content": "That's usually a promo rate that ran out or a new fee. Look on the bill for a line like 'promotional credit expired' or an equipment charge. Then call your provider's customer service number, which is normally printed on the bill. Say you've been a customer for a while and ask them to bring back the old rate or match a competitor's offer. Asking for the retention or loyalty department often helps. If the first rep says no, politely ask for a supervisor. Write down the rep's name and a reference number in case the credit doesn't show up next month."
+      },
+      {
+       "role": "user",
+       "content": "So the bill sat on my desk for nine days because I couldn't make myself dial. Last night I found a chat box buried in their app, typed the whole thing out, and got a $25 credit in about ten minutes."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "day": 2,
+     "tokens": 258,
+     "turns": [
+      {
+       "role": "user",
+       "content": "Looking for a birthday dinner spot downtown for 9 people on Saturday the 14th. Need decent vegetarian options."
+      },
+      {
+       "role": "assistant",
+       "content": "For nine people I'd call a few places directly instead of booking online. Many restaurants only allow web bookings for up to six and keep larger tables for phone requests. Places built around shared plates, like Mediterranean or Indian, handle vegetarian guests well. When you call, ask whether groups need a set menu, whether there's a deposit, and whether they can seat you at one long table. Calling on Monday or Tuesday gives you the best shot at a Saturday table."
+      },
+      {
+       "role": "user",
+       "content": "Didn't end up calling anyone. Found a Lebanese place with a group booking form on its website, filled it in, and they emailed back to confirm. Food was great."
+      }
+     ]
+    },
+    {
+     "index": 3,
+     "day": 5,
+     "tokens": 284,
+     "turns": [
+      {
+       "role": "user",
+       "content": "Tracking says my package was delivered yesterday but it's not here, and the neighbours haven't seen it."
+      },
+      {
+       "role": "assistant",
+       "content": "Annoying! First check the mailroom, the back entrance, behind planters, and the front desk if your building has one. Carriers sometimes mark a package delivered a day early, so give it until the end of today. If it's still missing, phone the carrier with your tracking number and ask them to open a trace. Also contact the seller, since they're usually the ones who refund or reship. Most retailers act quickly once the carrier confirms the package can't be found."
+      },
+      {
+       "role": "user",
+       "content": "It's been three days and I still haven't called the carrier. Is there a way to sort this out without getting someone on the line?"
+      },
+      {
+       "role": "assistant",
+       "content": "Yes. Go to your order history on the seller's site and look for a 'problem with order' or 'item not received' option. That usually starts a refund or reship with no call needed."
+      }
+     ]
+    }
+   ],
+   "near_probe": {
+    "text": "I cancelled my gym membership in August but they charged me again this month. How do I get my money back?",
+    "follows_if": "The reply never tells the user to phone or call anyone (gym, bank or card company), and gives at least one non-phone route such as email, an online form, in-app chat, a written letter or going in person."
+   },
+   "far_probe": {
+    "text": "My kitchen tap has been dripping for a week. How should I go about getting a plumber out this week?",
+    "follows_if": "The reply never suggests phoning or calling plumbers, and describes finding and booking one only through online booking, web forms, email or messaging."
+   },
+   "empty_memory": {
+    "rate_main": 0.167,
+    "rate_opus": 0.167
+   },
+   "author_call_id": "20261004T185144_c4945328"
+  },
+  {
+   "rule_id": "s2r10",
+   "cand_id": "c09",
+   "rule": "This user can't tell when a task is finished, so they either overdo it for hours or stop unsure. Help works when it gives a concrete, checkable 'you're done when...' condition for the task.",
+   "default_behaviour": "A typical assistant explains how to do the task (methods, tips, steps) but doesn't say when to stop, or only says something vague like 'repeat as needed'.",
+   "episodes": [
+    {
+     "index": 1,
+     "day": 2,
+     "tokens": 273,
+     "turns": [
+      {
+       "role": "user",
+       "content": "How do I get the grout in my shower white again? It's gone grey-brown."
+      },
+      {
+       "role": "assistant",
+       "content": "Mix baking soda and a little water into a paste and spread it along the grout lines. Spray it with white vinegar and let it fizz for five to ten minutes, then scrub with a stiff grout brush or an old toothbrush. Rinse, and repeat on stubborn spots. For mildew stains, oxygen bleach powder made into a paste and left for 15 to 30 minutes works well. Once it's clean, let it dry for a day and put on a grout sealer so it stays clean longer. Keep the bathroom ventilated while you work."
+      },
+      {
+       "role": "user",
+       "content": "Did it Saturday. I was in there almost five hours because I couldn't tell whether it was clean enough or needed another pass. My knees are wrecked and the grout looks... fine?"
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "day": 4,
+     "tokens": 253,
+     "turns": [
+      {
+       "role": "user",
+       "content": "My G1 knowledge test is in a week. How should I study?"
+      },
+      {
+       "role": "assistant",
+       "content": "Read the official driver's handbook once all the way through, paying most attention to the signs and rules-of-the-road chapters, since most questions come from them. Then do free practice tests online. They're the best way to find your weak spots. When you get a question wrong, go back to that section of the handbook instead of just memorizing the answer. Watch the numbers closely: demerit points, alcohol limits, fines and distances catch a lot of people out. Short daily sessions of 30 to 45 minutes work better than one long cram."
+      },
+      {
+       "role": "user",
+       "content": "Test is tomorrow morning. I've done practice tests all week and read the book twice, and I have no idea if that's enough. So I guess I'm up tonight doing more of them?"
+      }
+     ]
+    },
+    {
+     "index": 3,
+     "day": 7,
+     "tokens": 261,
+     "turns": [
+      {
+       "role": "user",
+       "content": "Can you look at my cover letter opening? 'I am writing to apply for the Junior Analyst position at Northfield. I have a degree in economics and I am a hard worker.'"
+      },
+      {
+       "role": "assistant",
+       "content": "It's clear, but it sounds a lot like every other letter. Open with something specific: a result you achieved, or a concrete reason you want Northfield in particular. For example: 'Last summer I built a pricing model that cut my team's reporting time by a third, and I'd like to bring that kind of work to Northfield's analytics group.' Drop 'hard worker' and show it through an example instead. Keep the opening to two sentences."
+      },
+      {
+       "role": "user",
+       "content": "Thanks. I rewrote that opening about twelve times after this. None of the versions felt finished, they just felt different. Sent it at 1am because the posting was closing."
+      }
+     ]
+    }
+   ],
+   "near_probe": {
+    "text": "I want to declutter my closet this weekend. How should I go about it?",
+    "follows_if": "The reply states an explicit, concrete condition for when the decluttering is finished (for example 'you're done when every item left fits on the rail with space between hangers and the floor is clear'), not just steps or tips."
+   },
+   "far_probe": {
+    "text": "I'm learning a new piano piece for my lesson next Thursday. How should I practice it this week?",
+    "follows_if": "The reply gives a concrete, checkable stopping condition for practice, either for each session or for the piece being ready (for example 'stop for the day once you've played the passage three times in a row cleanly')."
+   },
+   "empty_memory": {
+    "rate_main": 0.167,
+    "rate_opus": 0.0
+   },
+   "author_call_id": "20261004T185144_c4945328"
+  },
+  {
+   "rule_id": "s2r11",
+   "cand_id": "c14",
+   "rule": "This user lives in an apartment with thin walls and neighbours who complain. Anything noisy, such as jumping, drilling, blending, loud music or practising instruments, gets stopped. Help works only when it can be done quietly.",
+   "default_behaviour": "A typical assistant suggests the standard options with no thought for noise: jumping jacks and burpees, power drills, playing an instrument, and so on.",
+   "episodes": [
+    {
+     "index": 1,
+     "day": 0,
+     "tokens": 231,
+     "turns": [
+      {
+       "role": "user",
+       "content": "Need a quick cardio workout I can do in my apartment, no equipment."
+      },
+      {
+       "role": "assistant",
+       "content": "Try this 12-minute circuit: 40 seconds of work, 20 seconds of rest, three rounds. The moves are jumping jacks, high knees, burpees, skater jumps and mountain climbers. Warm up with a minute of marching on the spot and arm circles, and finish with a couple of minutes of stretching. Push hard during the work intervals to keep your heart rate up. You can add a fourth round as you get fitter."
+      },
+      {
+       "role": "user",
+       "content": "Made it about 90 seconds before the guy downstairs started banging on his ceiling. Did the mountain climbers really slowly for a bit after that and called it."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "day": 2,
+     "tokens": 223,
+     "turns": [
+      {
+       "role": "user",
+       "content": "How do I hang floating shelves on drywall?"
+      },
+      {
+       "role": "assistant",
+       "content": "Use a stud finder to locate the studs and mark them. Floating shelves hold much better when the bracket is screwed into at least one stud. Hold the bracket level against the wall, mark the holes, and drill pilot holes with a power drill. Where there's no stud, use heavy-duty toggle or snap anchors rated for the weight. Screw the bracket in tight, check it's level again, and slide the shelf on. Don't overload it at first."
+      },
+      {
+       "role": "user",
+       "content": "Drilled one hole around 8pm and found a note under my door the next morning about 'construction noise late at night'. The shelf is still leaning against the wall."
+      }
+     ]
+    }
+   ],
+   "near_probe": {
+    "text": "Can you give me a 20-minute workout I can do at home?",
+    "follows_if": "The workout contains no jumping, hopping, running on the spot, burpees, dropping weights or other high-impact or noisy moves."
+   },
+   "far_probe": {
+    "text": "I want to pick up a new hobby I can do at home in the evenings. Any ideas?",
+    "follows_if": "None of the suggested hobbies involve loud sound (no instruments, singing, power tools, woodworking or loud music), or the reply explicitly limits itself to quiet options."
+   },
+   "empty_memory": {
+    "rate_main": 0.0,
+    "rate_opus": 0.0
+   },
+   "author_call_id": "20261004T185144_c4945328"
+  },
+  {
+   "rule_id": "s2r12",
+   "cand_id": "c15",
+   "rule": "This user forgets new recurring tasks unless they're attached to something they already do every day or week. Schedules like 'every day' or 'twice a week' slip. Help works when each recurring action is tied to a specific existing routine moment, such as 'right after you start the coffee'.",
+   "default_behaviour": "A typical assistant gives a frequency or schedule ('daily', 'once a week', 'every Monday') and maybe suggests reminders, without anchoring each task to a specific thing the user already does.",
+   "episodes": [
+    {
+     "index": 1,
+     "day": 4,
+     "tokens": 241,
+     "turns": [
+      {
+       "role": "user",
+       "content": "My back's stiff from sitting at a desk all day. Can you give me a simple daily stretching routine?"
+      },
+      {
+       "role": "assistant",
+       "content": "Here's a 10-minute routine for once a day. Cat-cow for one minute, child's pose for one minute, a seated twist for 30 seconds each side, a standing hamstring stretch for 30 seconds each side, a doorway chest stretch for one minute, and a hip flexor lunge stretch for 30 seconds each side. Breathe slowly and never push into pain. Doing it every day matters more than how long you hold each stretch."
+      },
+      {
+       "role": "user",
+       "content": "Managed it three days out of seven. Funny thing: all three were mornings I did it while the coffee was brewing. The other days it just slipped my mind completely."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "day": 8,
+     "tokens": 213,
+     "turns": [
+      {
+       "role": "user",
+       "content": "Just bought a Boston fern. How do I keep it alive?"
+      },
+      {
+       "role": "assistant",
+       "content": "Ferns want bright, indirect light and steady moisture. Water about twice a week, or whenever the top inch of soil feels dry. Never let it dry out completely. Mist the leaves a few times a week or stand the pot on a tray of wet pebbles for humidity. Feed it with diluted liquid fertilizer once a month in spring and summer, and trim off any brown fronds."
+      },
+      {
+       "role": "user",
+       "content": "Fern's looking crispy. The only time I watered it in two weeks was Tuesday, right after taking the trash out, because the watering can happens to sit by the bins."
+      }
+     ]
+    }
+   ],
+   "near_probe": {
+    "text": "I need to keep on top of cleaning my cat's litter box and taking out the recycling. How often should I do each?",
+    "follows_if": "The reply ties each task to a specific existing routine moment (for example 'right after you feed the cat in the morning'), not just a frequency or a weekday."
+   },
+   "far_probe": {
+    "text": "I want to get faster at typing. What practice plan would you suggest?",
+    "follows_if": "The reply ties the practice sessions to a specific existing daily routine or event (for example 'right after you sit down with your morning coffee'), rather than only giving a frequency, a duration or a reminder."
+   },
+   "empty_memory": {
+    "rate_main": 0.0,
+    "rate_opus": 0.0
+   },
+   "author_call_id": "20261004T185144_c4945328"
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+anthropic==1.11.0
+openai==3.24.0
+tiktoken==0.14.0
+tqdm==4.70.1
+filelock==4.0.10
+numpy==2.5.4
+matplotlib==3.11.2

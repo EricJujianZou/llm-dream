@@ -1,0 +1,14 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+data/raw/
+data/corpus/
+data/lives_v2/
+data/token_cache.sqlite*
+logs/
+cost.jsonl
+usage_budget.json
+results/runs_v2/*/*
+!results/runs_v2/*/summary.json
+external/LLM_CognitivePsychology/

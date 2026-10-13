@@ -1,0 +1,1048 @@
+{
+ "seed": 0,
+ "built": "2026-10-04 18:24 EDT",
+ "model": "claude-opus-5-5",
+ "effort": "medium",
+ "main_judge": "gpt-5.6-luna",
+ "second_judge": "claude-opus-5-5",
+ "backend": "subscription",
+ "placement_seed": "transfer-days-0",
+ "position_seed": "transfer-pos-0-<rule_id>-<episode>",
+ "check": {
+  "samples_per_probe": 3,
+  "follow_limit": 0.2,
+  "candidates_checked": 15,
+  "candidates_failed": 3,
+  "replaced": 3
+ },
+ "episode_tokens_by_day": [
+  1222,
+  2249,
+  600,
+  1377,
+  290,
+  877,
+  1013,
+  275,
+  607,
+  517
+ ],
+ "episode_reserve": 4000,
+ "author_calls": [
+  {
+   "call_id": "20261004T175940_cbb7ab7e",
+   "counts": [
+    3,
+    3,
+    3,
+    3,
+    2,
+    2,
+    2,
+    2
+   ],
+   "avoid": [],
+   "prompt": "An AI assistant chats with one user every day for ten days. Each day has about 130,000 tokens of unrelated chats. Mixed into those days are a few short chats, called episodes, in which a hidden rule about this user shows up. Every night the assistant rewrites its own memory notes from the day's chats, and it never sees old transcripts again. After the tenth night the user sends new requests, called probes, where following the rule changes what a good reply looks like. The study measures whether the assistant's memory picked up the pattern behind the episodes, not just the episodes themselves.\n\nWorked example, written by the study's designer. Do not reuse this rule.\nRule: this user gets overwhelmed by long answers and only uses the first suggestion. Episodes: on day 2 the user asks for dinner spots, gets eight, and later says \"went with the first one, honestly too many to read\"; on day 5 a six-day workout plan gets \"this is a lot, I only did Monday\"; on day 8 ten gift ideas get \"can you just pick one next time\". Near probe: \"What should I cook tonight?\" Far probe: \"Help me get ready for my job interview Thursday.\" Judge question: did the reply stay short and lead with one clear pick? A typical assistant gives long lists by default, so it only passes if its memory taught it the rule.\n\nWrite 8 new rules for one simulated user. Requirements:\n\nRules\n- Counter-default: a capable assistant that knows nothing about this user would almost never do what the rule asks, fewer than 1 reply in 5. Before you keep a rule, picture a typical helpful assistant answering each probe cold and check that it would not follow the rule by accident.\n- A rule is about how this user wants to be helped or what they actually do with help. It is not a single fact such as an allergy or a pet's name, and it is not a safety or medical matter.\n- A rule must apply across different kinds of task, so that a far probe exists where it still clearly applies.\n- A person who read all the episodes carefully should be able to infer the rule. It must not be so subtle that only the author could see it.\n- The 8 rules must differ from each other and from these rules already used for other users: (none yet)\n\nEpisodes\n- Rule i has exactly 3, 3, 3, 3, 2, 2, 2, 2 episodes respectively (rule 1 gets the first number, and so on).\n- Each episode is a chat of 3 to 5 turns that starts with the user and alternates user and assistant.\n- The assistant in an episode does not know the rule and behaves like a normal helpful assistant, so it does the default thing. The rule shows through the user's later turn: what they did, what they skipped, how they reacted.\n- The rule is hidden. The user only reacts to that one instance. The user never states a general preference: no \"I always\", \"in general\", \"from now on\", \"remember that\", \"I prefer\", \"for future reference\", or anything that names the rule.\n- Episodes of the same rule use different topics and different wording, so no single keyword links them.\n- Every assistant turn is at most 150 words. A whole episode is at most 350 words. Plain chat text, no markdown headings, no tables.\n- Episodes are ordered as they will happen across the ten days.\n\nProbes\n- Each probe is one natural user message the assistant has never seen, which does not hint at the rule.\n- Near probe: the same kind of request as the episodes, with new details. Far probe: a clearly different kind of task where the rule still applies and a friend who knew the user would apply it.\n- A reasonable reply that ignores the rule must exist, so the probe tests the rule and not ordinary helpfulness.\n- For each probe write follows_if: one concrete yes or no test a judge can apply to the reply alone, such as \"The reply recommends exactly one option and is under 120 words.\"\n\nAlso write default_behaviour: what a typical assistant does instead of following the rule.\n\nReturn JSON matching the schema."
+  },
+  {
+   "call_id": "20261004T180345_eae430c3",
+   "counts": [
+    3,
+    3,
+    3,
+    3,
+    2,
+    2,
+    2,
+    2
+   ],
+   "avoid": [
+    "This user only ever has about 15 minutes at a time. They use help when it is split into separate chunks of 15 minutes or less, each with a clear stopping point so they can pick it up later. Long single-session plans get abandoned partway.",
+    "This user never pays for anything an assistant suggests. They skip every paid option, including subscriptions, tickets, paid tools and purchases, and only use what is free.",
+    "This user is often stuck when something goes wrong, so they need a ready plan B. Plans, recipes and messages are useful to them only if they include what to do if the main approach fails.",
+    "This user listens to replies through text-to-speech while their hands or eyes are busy. Replies only work for them as plain spoken prose with no bullets, numbered lists, markdown symbols, abbreviations or URLs.",
+    "This user can't act on ranges. They need one specific number for any amount, time or frequency, and a range like '2 to 3 weeks' leaves them stuck.",
+    "When this user asks for a message written on their behalf, they send a much shorter, casual, texting-style version. They cut formal greetings, pleasantries and sign-offs.",
+    "When this user is stuck on something they are working out, they want a nudge or hint, not the full answer. Being handed the full solution spoils it for them, and they rebuild it themselves anyway.",
+    "This user's open-ended requests leave out key constraints, so they want one or two short clarifying questions before a full answer. Answers given without asking have missed their real situation."
+   ],
+   "prompt": "An AI assistant chats with one user every day for ten days. Each day has about 130,000 tokens of unrelated chats. Mixed into those days are a few short chats, called episodes, in which a hidden rule about this user shows up. Every night the assistant rewrites its own memory notes from the day's chats, and it never sees old transcripts again. After the tenth night the user sends new requests, called probes, where following the rule changes what a good reply looks like. The study measures whether the assistant's memory picked up the pattern behind the episodes, not just the episodes themselves.\n\nWorked example, written by the study's designer. Do not reuse this rule.\nRule: this user gets overwhelmed by long answers and only uses the first suggestion. Episodes: on day 2 the user asks for dinner spots, gets eight, and later says \"went with the first one, honestly too many to read\"; on day 5 a six-day workout plan gets \"this is a lot, I only did Monday\"; on day 8 ten gift ideas get \"can you just pick one next time\". Near probe: \"What should I cook tonight?\" Far probe: \"Help me get ready for my job interview Thursday.\" Judge question: did the reply stay short and lead with one clear pick? A typical assistant gives long lists by default, so it only passes if its memory taught it the rule.\n\nWrite 8 new rules for one simulated user. Requirements:\n\nRules\n- Counter-default: a capable assistant that knows nothing about this user would almost never do what the rule asks, fewer than 1 reply in 5. Before you keep a rule, picture a typical helpful assistant answering each probe cold and check that it would not follow the rule by accident.\n- A rule is about how this user wants to be helped or what they actually do with help. It is not a single fact such as an allergy or a pet's name, and it is not a safety or medical matter.\n- A rule must apply across different kinds of task, so that a far probe exists where it still clearly applies.\n- A person who read all the episodes carefully should be able to infer the rule. It must not be so subtle that only the author could see it.\n- The 8 rules must differ from each other and from these rules already used for other users: This user only ever has about 15 minutes at a time. They use help when it is split into separate chunks of 15 minutes or less, each with a clear stopping point so they can pick it up later. Long single-session plans get abandoned partway.; This user never pays for anything an assistant suggests. They skip every paid option, including subscriptions, tickets, paid tools and purchases, and only use what is free.; This user is often stuck when something goes wrong, so they need a ready plan B. Plans, recipes and messages are useful to them only if they include what to do if the main approach fails.; This user listens to replies through text-to-speech while their hands or eyes are busy. Replies only work for them as plain spoken prose with no bullets, numbered lists, markdown symbols, abbreviations or URLs.; This user can't act on ranges. They need one specific number for any amount, time or frequency, and a range like '2 to 3 weeks' leaves them stuck.; When this user asks for a message written on their behalf, they send a much shorter, casual, texting-style version. They cut formal greetings, pleasantries and sign-offs.; When this user is stuck on something they are working out, they want a nudge or hint, not the full answer. Being handed the full solution spoils it for them, and they rebuild it themselves anyway.; This user's open-ended requests leave out key constraints, so they want one or two short clarifying questions before a full answer. Answers given without asking have missed their real situation.\n\nEpisodes\n- Rule i has exactly 3, 3, 3, 3, 2, 2, 2, 2 episodes respectively (rule 1 gets the first number, and so on).\n- Each episode is a chat of 3 to 5 turns that starts with the user and alternates user and assistant.\n- The assistant in an episode does not know the rule and behaves like a normal helpful assistant, so it does the default thing. The rule shows through the user's later turn: what they did, what they skipped, how they reacted.\n- The rule is hidden. The user only reacts to that one instance. The user never states a general preference: no \"I always\", \"in general\", \"from now on\", \"remember that\", \"I prefer\", \"for future reference\", or anything that names the rule.\n- Episodes of the same rule use different topics and different wording, so no single keyword links them.\n- Every assistant turn is at most 150 words. A whole episode is at most 350 words. Plain chat text, no markdown headings, no tables.\n- Episodes are ordered as they will happen across the ten days.\n\nProbes\n- Each probe is one natural user message the assistant has never seen, which does not hint at the rule.\n- Near probe: the same kind of request as the episodes, with new details. Far probe: a clearly different kind of task where the rule still applies and a friend who knew the user would apply it.\n- A reasonable reply that ignores the rule must exist, so the probe tests the rule and not ordinary helpfulness.\n- For each probe write follows_if: one concrete yes or no test a judge can apply to the reply alone, such as \"The reply recommends exactly one option and is under 120 words.\"\n\nAlso write default_behaviour: what a typical assistant does instead of following the rule.\n\nReturn JSON matching the schema."
+  },
+  {
+   "call_id": "20261004T181410_0b112613",
+   "counts": [
+    3,
+    3
+   ],
+   "avoid": [
+    "This user only ever has about 15 minutes at a time. They use help when it is split into separate chunks of 15 minutes or less, each with a clear stopping point so they can pick it up later. Long single-session plans get abandoned partway.",
+    "This user never pays for anything an assistant suggests. They skip every paid option, including subscriptions, tickets, paid tools and purchases, and only use what is free.",
+    "This user is often stuck when something goes wrong, so they need a ready plan B. Plans, recipes and messages are useful to them only if they include what to do if the main approach fails.",
+    "This user listens to replies through text-to-speech while their hands or eyes are busy. Replies only work for them as plain spoken prose with no bullets, numbered lists, markdown symbols, abbreviations or URLs.",
+    "This user can't act on ranges. They need one specific number for any amount, time or frequency, and a range like '2 to 3 weeks' leaves them stuck.",
+    "When this user asks for a message written on their behalf, they send a much shorter, casual, texting-style version. They cut formal greetings, pleasantries and sign-offs.",
+    "When this user is stuck on something they are working out, they want a nudge or hint, not the full answer. Being handed the full solution spoils it for them, and they rebuild it themselves anyway.",
+    "This user's open-ended requests leave out key constraints, so they want one or two short clarifying questions before a full answer. Answers given without asking have missed their real situation.",
+    "This user uses drafted text and code exactly as given, without editing it. Anything with placeholders like [Your Name] or /path/to/folder either goes out with the brackets still in or gets dropped. They need finished output with real values filled in, or a question asking for the missing details first.",
+    "This user won't do anything that needs a live spoken conversation, such as a phone call or talking to someone face to face. They only act on help that can be done in writing: online forms, chat, email, apps or messages. Advice whose main step is 'call them' or 'go talk to them' doesn't get done.",
+    "This user only understands an explanation once they see a concrete worked case. Abstract definitions, rules and formulas that come first go over their head or get skipped. Help works for them when it opens with a specific, concrete instance and explains the general idea afterwards.",
+    "This user only gets to their tasks late at night, after about 10pm, once their work shift ends. Suggestions that need daytime or early-evening hours, open businesses, morning routines or scheduled daytime events don't happen. Help is only useful if it fits late at night.",
+    "This user always tries a small trial version before committing to anything at full scale. Help is most useful to them when it is built around a small first test, followed by the full version.",
+    "This user can't act on plans laid out as 'Day 1', 'Week 2' or loose intervals. Nothing goes on their calendar and the plan slides. They follow a plan only when each step is tied to a real weekday or calendar date.",
+    "This user picks the unconventional, off-the-beaten-path option every time. They skip the popular, standard recommendations and go for the unusual one that most people wouldn't choose.",
+    "This user stalls or misreads when an answer is wrapped in caveats, warnings, disclaimers and 'it depends'. They miss the actual instruction or can't tell what the answer is. Help only works for them when it states the steps or the answer directly, without hedging."
+   ],
+   "prompt": "An AI assistant chats with one user every day for ten days. Each day has about 130,000 tokens of unrelated chats. Mixed into those days are a few short chats, called episodes, in which a hidden rule about this user shows up. Every night the assistant rewrites its own memory notes from the day's chats, and it never sees old transcripts again. After the tenth night the user sends new requests, called probes, where following the rule changes what a good reply looks like. The study measures whether the assistant's memory picked up the pattern behind the episodes, not just the episodes themselves.\n\nWorked example, written by the study's designer. Do not reuse this rule.\nRule: this user gets overwhelmed by long answers and only uses the first suggestion. Episodes: on day 2 the user asks for dinner spots, gets eight, and later says \"went with the first one, honestly too many to read\"; on day 5 a six-day workout plan gets \"this is a lot, I only did Monday\"; on day 8 ten gift ideas get \"can you just pick one next time\". Near probe: \"What should I cook tonight?\" Far probe: \"Help me get ready for my job interview Thursday.\" Judge question: did the reply stay short and lead with one clear pick? A typical assistant gives long lists by default, so it only passes if its memory taught it the rule.\n\nWrite 2 new rules for one simulated user. Requirements:\n\nRules\n- Counter-default: a capable assistant that knows nothing about this user would almost never do what the rule asks, fewer than 1 reply in 5. Before you keep a rule, picture a typical helpful assistant answering each probe cold and check that it would not follow the rule by accident.\n- A rule is about how this user wants to be helped or what they actually do with help. It is not a single fact such as an allergy or a pet's name, and it is not a safety or medical matter.\n- A rule must apply across different kinds of task, so that a far probe exists where it still clearly applies.\n- A person who read all the episodes carefully should be able to infer the rule. It must not be so subtle that only the author could see it.\n- The 2 rules must differ from each other and from these rules already used for other users: This user only ever has about 15 minutes at a time. They use help when it is split into separate chunks of 15 minutes or less, each with a clear stopping point so they can pick it up later. Long single-session plans get abandoned partway.; This user never pays for anything an assistant suggests. They skip every paid option, including subscriptions, tickets, paid tools and purchases, and only use what is free.; This user is often stuck when something goes wrong, so they need a ready plan B. Plans, recipes and messages are useful to them only if they include what to do if the main approach fails.; This user listens to replies through text-to-speech while their hands or eyes are busy. Replies only work for them as plain spoken prose with no bullets, numbered lists, markdown symbols, abbreviations or URLs.; This user can't act on ranges. They need one specific number for any amount, time or frequency, and a range like '2 to 3 weeks' leaves them stuck.; When this user asks for a message written on their behalf, they send a much shorter, casual, texting-style version. They cut formal greetings, pleasantries and sign-offs.; When this user is stuck on something they are working out, they want a nudge or hint, not the full answer. Being handed the full solution spoils it for them, and they rebuild it themselves anyway.; This user's open-ended requests leave out key constraints, so they want one or two short clarifying questions before a full answer. Answers given without asking have missed their real situation.; This user uses drafted text and code exactly as given, without editing it. Anything with placeholders like [Your Name] or /path/to/folder either goes out with the brackets still in or gets dropped. They need finished output with real values filled in, or a question asking for the missing details first.; This user won't do anything that needs a live spoken conversation, such as a phone call or talking to someone face to face. They only act on help that can be done in writing: online forms, chat, email, apps or messages. Advice whose main step is 'call them' or 'go talk to them' doesn't get done.; This user only understands an explanation once they see a concrete worked case. Abstract definitions, rules and formulas that come first go over their head or get skipped. Help works for them when it opens with a specific, concrete instance and explains the general idea afterwards.; This user only gets to their tasks late at night, after about 10pm, once their work shift ends. Suggestions that need daytime or early-evening hours, open businesses, morning routines or scheduled daytime events don't happen. Help is only useful if it fits late at night.; This user always tries a small trial version before committing to anything at full scale. Help is most useful to them when it is built around a small first test, followed by the full version.; This user can't act on plans laid out as 'Day 1', 'Week 2' or loose intervals. Nothing goes on their calendar and the plan slides. They follow a plan only when each step is tied to a real weekday or calendar date.; This user picks the unconventional, off-the-beaten-path option every time. They skip the popular, standard recommendations and go for the unusual one that most people wouldn't choose.; This user stalls or misreads when an answer is wrapped in caveats, warnings, disclaimers and 'it depends'. They miss the actual instruction or can't tell what the answer is. Help only works for them when it states the steps or the answer directly, without hedging.\n\nEpisodes\n- Rule i has exactly 3, 3 episodes respectively (rule 1 gets the first number, and so on).\n- Each episode is a chat of 3 to 5 turns that starts with the user and alternates user and assistant.\n- The assistant in an episode does not know the rule and behaves like a normal helpful assistant, so it does the default thing. The rule shows through the user's later turn: what they did, what they skipped, how they reacted.\n- The rule is hidden. The user only reacts to that one instance. The user never states a general preference: no \"I always\", \"in general\", \"from now on\", \"remember that\", \"I prefer\", \"for future reference\", or anything that names the rule.\n- Episodes of the same rule use different topics and different wording, so no single keyword links them.\n- Every assistant turn is at most 150 words. A whole episode is at most 350 words. Plain chat text, no markdown headings, no tables.\n- Episodes are ordered as they will happen across the ten days.\n\nProbes\n- Each probe is one natural user message the assistant has never seen, which does not hint at the rule.\n- Near probe: the same kind of request as the episodes, with new details. Far probe: a clearly different kind of task where the rule still applies and a friend who knew the user would apply it.\n- A reasonable reply that ignores the rule must exist, so the probe tests the rule and not ordinary helpfulness.\n- For each probe write follows_if: one concrete yes or no test a judge can apply to the reply alone, such as \"The reply recommends exactly one option and is under 120 words.\"\n\nAlso write default_behaviour: what a typical assistant does instead of following the rule.\n\nReturn JSON matching the schema."
+  }
+ ],
+ "generation_system": "You write test material for a research study on memory in AI assistants. You follow the output format exactly.",
+ "judge_template": "You are checking whether an assistant's reply follows a pattern in how this user wants to be helped. The assistant was never told the pattern directly; it may or may not have picked it up.\n\nThe pattern: {rule}\n\nThe user's message: {probe}\n\nThe assistant's reply:\n{reply}\n\nTest: {follows_if}\n\nDoes the reply pass the test? Answer yes or no only.",
+ "rules": [
+  {
+   "rule_id": "s0r01",
+   "cand_id": "c00",
+   "rule": "This user only ever has about 15 minutes at a time. They use help when it is split into separate chunks of 15 minutes or less, each with a clear stopping point so they can pick it up later. Long single-session plans get abandoned partway.",
+   "default_behaviour": "Gives one continuous sequence of steps or one long session plan. It does not size the work to short windows or mark safe stopping points.",
+   "episodes": [
+    {
+     "index": 1,
+     "day": 1,
+     "tokens": 377,
+     "turns": [
+      {
+       "role": "user",
+       "content": "How do I repot my monstera? It's way too big for its pot."
+      },
+      {
+       "role": "assistant",
+       "content": "Here's how. 1) Water it the day before so the root ball holds together. 2) Pick a pot 2 to 5 cm wider with drainage holes. 3) Lay down newspaper and get fresh aroid mix (potting soil, orchid bark, perlite). 4) Tip the plant out, squeezing the pot if it's stuck. 5) Loosen circling roots and trim any mushy ones. 6) Set it in the new pot at the same depth, fill around it and firm gently. 7) Water thoroughly and add a moss pole if it leans. Afterwards give it bright indirect light and skip fertilizer for a month."
+      },
+      {
+       "role": "user",
+       "content": "Update: I had about fifteen minutes before a call. I got it out of the old pot, started on the roots, and then had to leave it. It sat on the newspaper with bare roots for two hours. I think it's fine, but yikes."
+      },
+      {
+       "role": "assistant",
+       "content": "Glad it survived! Monsteras are tough. If roots end up exposed again, wrap them in a damp towel or a plastic bag. Watch for drooping over the next week."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "day": 3,
+     "tokens": 328,
+     "turns": [
+      {
+       "role": "user",
+       "content": "Can you help me set up a simple monthly budget spreadsheet?"
+      },
+      {
+       "role": "assistant",
+       "content": "Sure. Start a Google Sheet with four tabs. On Income, list each source and its monthly amount. On Fixed, list rent, insurance, phone and subscriptions. On Variable, make columns for Date, Category, Amount and Note, and log every purchase. On Summary, use SUMIF to total each category from Variable, add Fixed, and subtract from Income. Then set a target per category and add conditional formatting so a cell turns red when you go over. Finally, pull last month's bank statement and backfill it so you have a baseline. The whole setup takes about an hour and a half the first time."
+      },
+      {
+       "role": "user",
+       "content": "I had the quarter hour between work and school pickup, so I made the tabs and typed some categories. I opened it again tonight and couldn't tell where I'd left off or what half of it was for. Kind of gave up."
+      },
+      {
+       "role": "assistant",
+       "content": "That's frustrating. Want to paste in what you've got so we can pick up from there?"
+      }
+     ]
+    },
+    {
+     "index": 3,
+     "day": 6,
+     "tokens": 303,
+     "turns": [
+      {
+       "role": "user",
+       "content": "I'm taking the CompTIA A+ Core 1 exam in six weeks. How should I study?"
+      },
+      {
+       "role": "assistant",
+       "content": "A solid plan is about 8 to 10 hours a week. Each weekend, do one long session of two to three hours: watch Professor Messer's videos for one exam domain, take notes, then do practice questions. On weekdays, do an hour of flashcard review. In weeks five and six, take full-length timed practice exams and go over every wrong answer. Hands-on practice matters too, so open up an old PC if you can."
+      },
+      {
+       "role": "user",
+       "content": "Two-to-three-hour sessions aren't happening at my house. Here's what did work: sitting in the car at my kid's swim practice, I watched one Messer video and did ten flashcards. Fifteen minutes, done, and it actually felt like progress."
+      },
+      {
+       "role": "assistant",
+       "content": "That's a great habit to build on. Short, consistent sessions add up, and spaced review works really well for memorization."
+      }
+     ]
+    }
+   ],
+   "near_probe": {
+    "text": "How do I deep clean my oven? It's pretty gross in there.",
+    "follows_if": "The reply splits the job into separate chunks that each take about 15 minutes or less and can be done at different times, with a clear stopping point after each chunk."
+   },
+   "far_probe": {
+    "text": "I need to write a cover letter for a product manager job I'm applying to. Can you help me get it done?",
+    "follows_if": "The reply splits the cover-letter work into separate sessions of about 15 minutes or less, each with a clear stopping point, instead of one continuous process or a single full draft with no session breakdown."
+   },
+   "empty_memory": {
+    "rate_main": 0.0,
+    "rate_opus": 0.0
+   },
+   "author_call_id": "20261004T175940_cbb7ab7e"
+  },
+  {
+   "rule_id": "s0r02",
+   "cand_id": "c03",
+   "rule": "This user listens to replies through text-to-speech while their hands or eyes are busy. Replies only work for them as plain spoken prose with no bullets, numbered lists, markdown symbols, abbreviations or URLs.",
+   "default_behaviour": "Formats answers with bullet points, numbered steps, bold text, symbols and links, which is standard for recipes, plans and checklists.",
+   "episodes": [
+    {
+     "index": 1,
+     "day": 0,
+     "tokens": 369,
+     "turns": [
+      {
+       "role": "user",
+       "content": "Can you give me a simple focaccia recipe?"
+      },
+      {
+       "role": "assistant",
+       "content": "Easy focaccia:\n- 500 g bread flour\n- 400 ml warm water\n- 7 g instant yeast\n- 10 g salt\n- 60 ml olive oil, divided\nSteps:\n1. Mix the flour, water, yeast and salt into a shaggy dough.\n2. Pour 2 tbsp oil over it, cover, and rest 30 min.\n3. Do 3 sets of stretch-and-folds, 30 min apart.\n4. Oil a 9x13 pan, add the dough, rest 1 hr.\n5. Dimple it, drizzle with oil, sprinkle flaky salt.\n6. Bake at 230\u00b0C for 22\u201325 min.\nMore variations: https://www.kingarthurbaking.com/recipes/focaccia"
+      },
+      {
+       "role": "user",
+       "content": "I had this read aloud to me while my hands were covered in dough. It said 'dash' before every ingredient, then 'one period', then spelled out the whole website. I lost my place twice."
+      },
+      {
+       "role": "assistant",
+       "content": "Sorry about that! I hope the focaccia still turned out well."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "day": 2,
+     "tokens": 273,
+     "turns": [
+      {
+       "role": "user",
+       "content": "Give me an interval workout for my run tonight, about 35 minutes."
+      },
+      {
+       "role": "assistant",
+       "content": "Here you go:\n**Warm-up** (8 min): easy jog\n**Main set**:\n- 6 x 2 min @ hard effort (RPE 8)\n  - 90 sec easy jog between\n**Cool-down** (6 min): easy jog + stretch\nTotal \u2248 35 min. *Tip:* keep the hard reps even and don't sprint the first one."
+      },
+      {
+       "role": "user",
+       "content": "I played this through my earbuds once I was already running. 'Asterisk asterisk warm-up asterisk asterisk', 'six x two', 'at hard effort R P E eight'. Couldn't catch the structure at all, so I just jogged."
+      },
+      {
+       "role": "assistant",
+       "content": "Ha, that's annoying. An easy jog still counts, nice work getting out there!"
+      }
+     ]
+    },
+    {
+     "index": 3,
+     "day": 4,
+     "tokens": 290,
+     "turns": [
+      {
+       "role": "user",
+       "content": "My tire pressure light just came on. What do I do?"
+      },
+      {
+       "role": "assistant",
+       "content": "Don't panic. Here's the checklist:\n1. Pull over somewhere safe when you can.\n2. Look at all 4 tires for an obvious flat.\n3. Find the recommended PSI on the sticker inside the driver's door (often 32\u201335 PSI).\n4. Use a gauge at a gas station and fill to spec.\n5. If the light stays on after ~10 mi, the TPMS sensor may need a reset (see manual, \u00a76.3).\nCold weather often triggers it, so it may be nothing."
+      },
+      {
+       "role": "user",
+       "content": "I was driving, so I had it read out. I got 'one period', 'four', 'P S I', then 'section sign six point three', and had no clue what I'd heard. Ended up pulling over to read it on the screen."
+      },
+      {
+       "role": "assistant",
+       "content": "Good call to pull over and read it. Were the tires low?"
+      }
+     ]
+    }
+   ],
+   "near_probe": {
+    "text": "How do I make a basic mushroom risotto?",
+    "follows_if": "The reply is written entirely as flowing sentences in paragraphs, with no bullets, no numbered lists, no markdown symbols such as asterisks or headers, and no URLs."
+   },
+   "far_probe": {
+    "text": "What should I check before buying a used car from a private seller?",
+    "follows_if": "The reply is written entirely as flowing sentences in paragraphs, with no bullets, no numbered lists, no markdown symbols such as asterisks or headers, and no URLs."
+   },
+   "empty_memory": {
+    "rate_main": 0.0,
+    "rate_opus": 0.0
+   },
+   "author_call_id": "20261004T175940_cbb7ab7e"
+  },
+  {
+   "rule_id": "s0r03",
+   "cand_id": "c04",
+   "rule": "This user can't act on ranges. They need one specific number for any amount, time or frequency, and a range like '2 to 3 weeks' leaves them stuck.",
+   "default_behaviour": "Gives ranges such as '6 to 7 minutes', 'every 2 to 3 weeks' or '$20 to $40', because ranges are the accurate default.",
+   "episodes": [
+    {
+     "index": 1,
+     "day": 0,
+     "tokens": 252,
+     "turns": [
+      {
+       "role": "user",
+       "content": "How often should I water a snake plant?"
+      },
+      {
+       "role": "assistant",
+       "content": "Snake plants handle drought very well. Water every 2 to 3 weeks in spring and summer, and every 4 to 6 weeks in winter. Let the soil dry out completely between waterings; stick a finger 2 to 3 inches deep to check. Water thoroughly until it drains, then empty the saucer. Overwatering is the main way people kill them."
+      },
+      {
+       "role": "user",
+       "content": "So is it 2 weeks or 3? And 4 or 6? I set a reminder for 'every 2.5 weeks', which feels silly. The finger test just confused me more. The top felt dry and lower down sort of didn't."
+      },
+      {
+       "role": "assistant",
+       "content": "Either works, honestly. They're forgiving plants. If in doubt, wait a few more days."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "day": 3,
+     "tokens": 214,
+     "turns": [
+      {
+       "role": "user",
+       "content": "Movers just finished. Three guys, about five hours. How much should I tip?"
+      },
+      {
+       "role": "assistant",
+       "content": "The usual tip for movers is 5 to 10% of the total bill, or $4 to $5 per mover per hour for a long job. For three movers over five hours, that's roughly $20 to $40 each. Go higher if there were stairs, heavy items or bad weather, and consider offering water or lunch too."
+      },
+      {
+       "role": "user",
+       "content": "I stood there with my wallet open doing math between 20 and 40 while they waited. Gave $30 each and still have no idea if that was right."
+      },
+      {
+       "role": "assistant",
+       "content": "$30 each is generous and right in the normal range. I'm sure they appreciated it."
+      }
+     ]
+    }
+   ],
+   "near_probe": {
+    "text": "How long should I boil eggs to get jammy yolks?",
+    "follows_if": "The reply gives one specific cooking time, for example '6.5 minutes', and does not give a time range such as '6 to 7 minutes'."
+   },
+   "far_probe": {
+    "text": "How much money should I budget for a week in Lisbon?",
+    "follows_if": "The reply gives one total budget figure, not a range, and any sub-amounts it lists are also single numbers, not ranges."
+   },
+   "empty_memory": {
+    "rate_main": 0.0,
+    "rate_opus": 0.0
+   },
+   "author_call_id": "20261004T175940_cbb7ab7e"
+  },
+  {
+   "rule_id": "s0r04",
+   "cand_id": "c05",
+   "rule": "When this user asks for a message written on their behalf, they send a much shorter, casual, texting-style version. They cut formal greetings, pleasantries and sign-offs.",
+   "default_behaviour": "Writes polished, polite drafts with formal openers such as 'I hope this finds you well', full sentences, warm closings and a sign-off.",
+   "episodes": [
+    {
+     "index": 1,
+     "day": 0,
+     "tokens": 293,
+     "turns": [
+      {
+       "role": "user",
+       "content": "Can you write an email to my son's teacher saying he'll miss Friday for a family wedding, and asking for the work he'll miss?"
+      },
+      {
+       "role": "assistant",
+       "content": "Of course! 'Dear Ms. Alvarez, I hope this message finds you well. I am writing to let you know that Noah will be absent from school this Friday, as our family will be attending a wedding out of town. We would be grateful if you could share any assignments or materials he will miss so that he can stay on track. Please don't hesitate to reach out if you have any questions. Thank you so much for your understanding and support. Warm regards, Dana Kim'"
+      },
+      {
+       "role": "user",
+       "content": "Sent a version of it. I cut it down to 'hi ms alvarez, noah's out friday for a wedding, can you send what he'll miss? thanks! dana'. Yours read like a cover letter."
+      },
+      {
+       "role": "assistant",
+       "content": "That works great. Teachers get tons of email, so short is fine."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "day": 5,
+     "tokens": 227,
+     "turns": [
+      {
+       "role": "user",
+       "content": "I need to tell my rec soccer team that Sunday's game moved to 10am at Riverside field."
+      },
+      {
+       "role": "assistant",
+       "content": "Here's a message: 'Hi everyone! \ud83d\udc4b Quick update about this Sunday's game: the match has been rescheduled to 10:00 AM and will now take place at Riverside Field. Please plan to arrive 15 minutes early to warm up. Let me know if you have any questions or can't make it. Looking forward to seeing you all there! Go team! \u26bd'"
+      },
+      {
+       "role": "user",
+       "content": "Posted 'sunday's now 10am at riverside, be there 9:45'. I copied maybe four words from yours."
+      },
+      {
+       "role": "assistant",
+       "content": "Short and clear, perfect for a group chat."
+      }
+     ]
+    }
+   ],
+   "near_probe": {
+    "text": "Write an email to my landlord letting him know the dishwasher stopped draining.",
+    "follows_if": "The drafted email is under 50 words and casual. It has no formal greeting such as 'Dear', no pleasantry such as 'I hope this finds you well', and no formal sign-off such as 'Best regards' or 'Sincerely'."
+   },
+   "far_probe": {
+    "text": "Can you write a short bio for me for my climbing gym's staff page? I teach the beginner classes.",
+    "follows_if": "The bio is under 50 words, uses casual conversational language with contractions, and avoids polished phrases such as 'passionate about', 'dedicated to' or 'with years of experience'."
+   },
+   "empty_memory": {
+    "rate_main": 0.0,
+    "rate_opus": 0.0
+   },
+   "author_call_id": "20261004T175940_cbb7ab7e"
+  },
+  {
+   "rule_id": "s0r05",
+   "cand_id": "c06",
+   "rule": "When this user is stuck on something they are working out, they want a nudge or hint, not the full answer. Being handed the full solution spoils it for them, and they rebuild it themselves anyway.",
+   "default_behaviour": "Gives the full answer or complete solution right away, such as the puzzle answer or the finished formula or code.",
+   "episodes": [
+    {
+     "index": 1,
+     "day": 3,
+     "tokens": 240,
+     "turns": [
+      {
+       "role": "user",
+       "content": "Wordle help. I've got _RA_E, and G, C, T and P are out. Two guesses left."
+      },
+      {
+       "role": "assistant",
+       "content": "Words that fit _RA_E without G, C, T or P include BRAKE, BRAVE, BRAZE, DRAKE and FRAME. I'd guess BRAKE next: if the B goes green, you're down to BRAVE or BRAZE, and if the K is yellow or green, you're done. If the B is gray, try FRAME to test the F and M."
+      },
+      {
+       "role": "user",
+       "content": "Got it on BRAVE. Felt kind of hollow, though. I was one 'think about B words' away from seeing it myself, and the list just handed it over."
+      },
+      {
+       "role": "assistant",
+       "content": "Ha, fair! Still counts as a saved streak."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "day": 9,
+     "tokens": 259,
+     "turns": [
+      {
+       "role": "user",
+       "content": "I need a formula that flags invoices more than 30 days past due. The due date is in column C and the paid status is in D."
+      },
+      {
+       "role": "assistant",
+       "content": "Put this in E2 and drag it down: =IF(AND(D2<>\"Paid\", TODAY()-C2>30), \"OVERDUE\", \"\"). It checks that the invoice isn't marked Paid and that more than 30 days have passed since the due date. You can add conditional formatting to highlight OVERDUE rows in red."
+      },
+      {
+       "role": "user",
+       "content": "It works. Weirdly, though, I deleted it and wrote it myself once I saw the TODAY()-C2 part. That was the piece I was missing, and now I actually understand how it fits together."
+      },
+      {
+       "role": "assistant",
+       "content": "Nice, that's a great way to learn it. Rebuilding formulas yourself makes them stick."
+      }
+     ]
+    }
+   ],
+   "near_probe": {
+    "text": "Stuck on a cryptic crossword clue: 'Flower of London (6)'. Any ideas?",
+    "follows_if": "The reply gives a hint or nudge, for example that 'flower' could mean something that flows, and does not state the answer THAMES."
+   },
+   "far_probe": {
+    "text": "My Python function to reverse a linked list keeps returning None. Can you help me figure out what's wrong?",
+    "follows_if": "The reply points toward where the bug likely is or asks a guiding question, and does not give a complete corrected function."
+   },
+   "empty_memory": {
+    "rate_main": 0.0,
+    "rate_opus": 0.0
+   },
+   "author_call_id": "20261004T175940_cbb7ab7e"
+  },
+  {
+   "rule_id": "s0r06",
+   "cand_id": "c07",
+   "rule": "This user's open-ended requests leave out key constraints, so they want one or two short clarifying questions before a full answer. Answers given without asking have missed their real situation.",
+   "default_behaviour": "Answers immediately with a full list of recommendations or a complete draft based on generic assumptions, without asking anything first.",
+   "episodes": [
+    {
+     "index": 1,
+     "day": 1,
+     "tokens": 297,
+     "turns": [
+      {
+       "role": "user",
+       "content": "What laptop should I buy?"
+      },
+      {
+       "role": "assistant",
+       "content": "Some strong picks right now: the MacBook Air M3 has great battery life and build quality, from $1,099. The Dell XPS 13 is a premium Windows ultrabook at about $1,000. The Lenovo ThinkPad X1 Carbon has the best keyboard and is business-grade, about $1,400. The ASUS Zenbook 14 OLED has a gorgeous screen for about $800. The HP Pavilion 15 is a solid budget choice at around $600. For most people, the MacBook Air is the safe recommendation."
+      },
+      {
+       "role": "user",
+       "content": "None of these will work. It's for my daughter's video editing for school, and I can't go over $700. Kind of a wasted read."
+      },
+      {
+       "role": "assistant",
+       "content": "Got it! For video editing under $700, look at the Acer Nitro V or a refurbished M1 MacBook Air. Both handle editing well for the price."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "day": 8,
+     "tokens": 273,
+     "turns": [
+      {
+       "role": "user",
+       "content": "Can you plan a date night for this Saturday?"
+      },
+      {
+       "role": "assistant",
+       "content": "Here's a fun plan: start with cocktails at a rooftop bar around 6:30. Then have a 7:30 dinner reservation at a steakhouse or a cozy Italian place, maybe sharing a bottle of wine. After dinner, catch a late show at a comedy club or jazz bar. End with dessert or a nightcap somewhere quiet. Book dinner and the show today, because Saturdays fill up fast."
+      },
+      {
+       "role": "user",
+       "content": "She's vegan, neither of us drinks, and we only have a sitter until 9. So the cocktails, steakhouse, wine, late show and nightcap are all out. That's almost all of it."
+      },
+      {
+       "role": "assistant",
+       "content": "Ah, that changes things! How about an early dinner at a vegan spot and a sunset walk, home by 9?"
+      }
+     ]
+    }
+   ],
+   "near_probe": {
+    "text": "Can you recommend a good tablet?",
+    "follows_if": "The reply asks at least one clarifying question, for example about budget or use, and does not give a full list of tablet recommendations."
+   },
+   "far_probe": {
+    "text": "Can you write me a toast for my sister's wedding next month?",
+    "follows_if": "The reply asks at least one question about the sister, the couple or the user before writing, and does not include a complete toast draft."
+   },
+   "empty_memory": {
+    "rate_main": 0.0,
+    "rate_opus": 0.0
+   },
+   "author_call_id": "20261004T175940_cbb7ab7e"
+  },
+  {
+   "rule_id": "s0r07",
+   "cand_id": "c08",
+   "rule": "This user uses drafted text and code exactly as given, without editing it. Anything with placeholders like [Your Name] or /path/to/folder either goes out with the brackets still in or gets dropped. They need finished output with real values filled in, or a question asking for the missing details first.",
+   "default_behaviour": "A typical assistant writes letters, toasts and scripts as templates with bracketed placeholders or dummy paths, and tells the user to fill them in.",
+   "episodes": [
+    {
+     "index": 1,
+     "day": 1,
+     "tokens": 365,
+     "turns": [
+      {
+       "role": "user",
+       "content": "My dishwasher's been broken for two weeks and my landlord keeps ignoring my texts. Can you write a firm but polite email?"
+      },
+      {
+       "role": "assistant",
+       "content": "Here's a draft:\n\nSubject: Repair request \u2013 broken dishwasher at [Your Address]\n\nDear [Landlord's Name],\n\nI'm writing to follow up about the dishwasher at [Your Address], which stopped working on [date]. I first reported it by text on [date] and haven't received a response. Please let me know by [deadline] when a repair can be scheduled. Under my lease, appliance repairs are the landlord's responsibility, and I'd like to resolve this promptly.\n\nThank you,\n[Your Name]\n[Phone Number]"
+      },
+      {
+       "role": "user",
+       "content": "Update: I sent it from my phone in a rush and it went out with 'Dear [Landlord's Name]' and all the brackets still in. He replied asking if it was a form letter. Ugh."
+      },
+      {
+       "role": "assistant",
+       "content": "Oof, sorry about that. You could reply briefly: 'Sorry, I sent the draft by mistake. The dishwasher has been broken since early this month. When can someone come look at it?'"
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "day": 6,
+     "tokens": 399,
+     "turns": [
+      {
+       "role": "user",
+       "content": "can you give me a python script that renames all my vacation photos in order of when they were taken, like 001.jpg, 002.jpg"
+      },
+      {
+       "role": "assistant",
+       "content": "Sure:\n\nimport os\nfrom PIL import Image\n\nFOLDER = '/path/to/your/photos'\n\ndef taken(p):\n    try:\n        return Image.open(p)._getexif()[36867]\n    except Exception:\n        return '9999'\n\nfiles = [f for f in os.listdir(FOLDER) if f.lower().endswith('.jpg')]\nfiles.sort(key=lambda f: taken(os.path.join(FOLDER, f)))\nfor i, f in enumerate(files, 1):\n    os.rename(os.path.join(FOLDER, f), os.path.join(FOLDER, f'{i:03}.jpg'))\n\nChange FOLDER to your photo folder before running, and back up the photos first."
+      },
+      {
+       "role": "user",
+       "content": "ran it and got FileNotFoundError: '/path/to/your/photos'. didn't catch that I was supposed to edit that line. closed the terminal and dragged them around by hand instead lol"
+      },
+      {
+       "role": "assistant",
+       "content": "Ah, sorry! If you tell me where the photos are, for example ~/Pictures/Lisbon, I can put that path in for you."
+      }
+     ]
+    },
+    {
+     "index": 3,
+     "day": 8,
+     "tokens": 334,
+     "turns": [
+      {
+       "role": "user",
+       "content": "My best friend Dana's wedding is Saturday and I'm giving a short toast. Can you help?"
+      },
+      {
+       "role": "assistant",
+       "content": "Here's a two-minute toast you can adapt:\n\n'Good evening, everyone. For those who don't know me, I'm [Your Name], and I've known Dana since [how you met]. One thing you learn quickly about Dana is [quality]. I'll never forget [short funny story]. When she met [Partner's Name], I knew something was different because [moment you noticed]. [Partner's Name], thank you for [something they bring out in her]. Please raise your glasses to Dana and [Partner's Name]!'\n\nKeep the story under 30 seconds and practice it out loud a couple of times."
+      },
+      {
+       "role": "user",
+       "content": "So that kind of fell apart. I meant to fill in the blanks Friday night, stared at it, never did. Saturday I just stood up, said congrats Dana and Marcus, and sat back down."
+      },
+      {
+       "role": "assistant",
+       "content": "That still counts. Short and sincere is fine, and it sounds like it was a lovely day."
+      }
+     ]
+    }
+   ],
+   "near_probe": {
+    "text": "Can you write a quick note to my neighbor Priya asking her to keep her dog off my lawn? It keeps digging up my tulips.",
+    "follows_if": "The reply contains no bracketed placeholders or fill-in blanks (such as [Your Name], [Address] or ___). It either gives a complete, ready-to-send note or asks for the missing details instead of leaving blanks."
+   },
+   "far_probe": {
+    "text": "Give me a command to back up my Documents folder to my external hard drive.",
+    "follows_if": "The reply contains no placeholder values such as /path/to/, YourDrive, <drive>, USERNAME or [brackets]. It either uses concrete values or asks for the drive name and OS before giving the command."
+   },
+   "empty_memory": {
+    "rate_main": 0.0,
+    "rate_opus": 0.0
+   },
+   "author_call_id": "20261004T180345_eae430c3"
+  },
+  {
+   "rule_id": "s0r08",
+   "cand_id": "c10",
+   "rule": "This user only understands an explanation once they see a concrete worked case. Abstract definitions, rules and formulas that come first go over their head or get skipped. Help works for them when it opens with a specific, concrete instance and explains the general idea afterwards.",
+   "default_behaviour": "A typical assistant starts with a definition, rule or formula, explains the concept in general terms, and adds an illustration at the end, if it adds one at all.",
+   "episodes": [
+    {
+     "index": 1,
+     "day": 1,
+     "tokens": 319,
+     "turns": [
+      {
+       "role": "user",
+       "content": "can someone explain compound interest to me like I'm not a math person"
+      },
+      {
+       "role": "assistant",
+       "content": "Compound interest means you earn interest on your original money and also on the interest it has already earned. The formula is A = P(1 + r/n)^(nt), where P is the principal, r is the annual rate, n is how many times per year it compounds, and t is the number of years. Because interest is added to the balance, each period's growth is a bit bigger than the last, which is why it speeds up over long timeframes.\n\nFor instance, $1,000 at 5% compounded yearly becomes $1,050 after year one, then $1,102.50 after year two, since the second year's 5% applies to $1,050."
+      },
+      {
+       "role": "user",
+       "content": "the formula paragraph went right over my head. it only made sense at the $1,050 then $1,102.50 bit. so like after 10 years what's my thousand worth?"
+      },
+      {
+       "role": "assistant",
+       "content": "About $1,629 at 5% yearly. Without compounding it would be $1,500, so that extra $129 is interest earning interest."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "day": 3,
+     "tokens": 258,
+     "turns": [
+      {
+       "role": "user",
+       "content": "affect vs effect, I mess this up constantly in work emails"
+      },
+      {
+       "role": "assistant",
+       "content": "In most cases, 'affect' is a verb meaning to influence, and 'effect' is a noun meaning the result. A handy trick: Affect = Action, Effect = End result. There are exceptions. 'Effect' can be a verb meaning to bring about, as in 'to effect change', and 'affect' can be a noun in psychology meaning displayed emotion, but you'll rarely need those.\n\nThe delay will affect our launch date.\nThe delay had a big effect on our launch date."
+      },
+      {
+       "role": "user",
+       "content": "Honestly skimmed past the first part. The two launch-date sentences at the bottom are what I'm going to keep in my head."
+      },
+      {
+       "role": "assistant",
+       "content": "That works. And if 'the' fits in front of it, it's usually effect."
+      }
+     ]
+    },
+    {
+     "index": 3,
+     "day": 5,
+     "tokens": 348,
+     "turns": [
+      {
+       "role": "user",
+       "content": "Starting a data course. What does a JOIN actually do in SQL?"
+      },
+      {
+       "role": "assistant",
+       "content": "A JOIN combines rows from two tables based on a related column. An INNER JOIN returns only rows that have a match in both tables. A LEFT JOIN returns all rows from the left table plus matching rows from the right, with NULLs where there's no match. RIGHT and FULL joins follow the same logic in other directions. The join condition, written with ON, tells SQL which columns to match.\n\nSay you have customers (id, name) and orders (id, customer_id, total). SELECT name, total FROM customers JOIN orders ON customers.id = orders.customer_id gives each order with its customer's name. Make it a LEFT JOIN and customers with no orders still show up, with total as NULL."
+      },
+      {
+       "role": "user",
+       "content": "Read the top part three times, nothing. Then hit the customers and orders bit and it clicked instantly. Ok so why would I want those NULL rows?"
+      },
+      {
+       "role": "assistant",
+       "content": "To find people who never ordered. Add WHERE orders.id IS NULL to that LEFT JOIN."
+      }
+     ]
+    }
+   ],
+   "near_probe": {
+    "text": "What's the actual difference between a Roth IRA and a traditional IRA?",
+    "follows_if": "Within its first two sentences, the reply gives a concrete scenario with specific numbers or a specific person's case, before any general definition of either account type."
+   },
+   "far_probe": {
+    "text": "How should a cover letter be structured? I'm applying for an office coordinator job.",
+    "follows_if": "The reply opens with actual sample cover-letter text (at least one full sample paragraph or opening) before giving any general structural advice."
+   },
+   "empty_memory": {
+    "rate_main": 0.0,
+    "rate_opus": 0.0
+   },
+   "author_call_id": "20261004T180345_eae430c3"
+  },
+  {
+   "rule_id": "s0r09",
+   "cand_id": "c11",
+   "rule": "This user only gets to their tasks late at night, after about 10pm, once their work shift ends. Suggestions that need daytime or early-evening hours, open businesses, morning routines or scheduled daytime events don't happen. Help is only useful if it fits late at night.",
+   "default_behaviour": "A typical assistant suggests morning routines, weekend daytime sessions, daytime drop-offs and classes at normal hours, without considering late-night timing.",
+   "episodes": [
+    {
+     "index": 1,
+     "day": 1,
+     "tokens": 270,
+     "turns": [
+      {
+       "role": "user",
+       "content": "I want to start exercising, haven't in years. Where do I start?"
+      },
+      {
+       "role": "assistant",
+       "content": "Start small so it sticks. Try a brisk 20-minute walk each morning before work, three days a week, and add a beginner strength routine twice a week: squats, wall push-ups and glute bridges, two sets of ten each. Many gyms run beginner classes on weekday mornings or early evenings, which give you good structure. Morning sunlight also helps sleep and mood. After two weeks, stretch the walks to 30 minutes."
+      },
+      {
+       "role": "user",
+       "content": "Update, none of it happened. I get out of work around ten at night, the classes were long over, and walking around my block at 11pm felt sketchy. Did the squats once in my kitchen at midnight."
+      },
+      {
+       "role": "assistant",
+       "content": "Midnight kitchen squats count! A short home routine could be a good base to build on."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "day": 5,
+     "tokens": 302,
+     "turns": [
+      {
+       "role": "user",
+       "content": "Amazon sent me the wrong size boots. What's the easiest way to return them?"
+      },
+      {
+       "role": "assistant",
+       "content": "Go to Your Orders, pick the boots, and select Return or Replace Items with 'wrong size' as the reason. For drop-off, the easiest options are usually a UPS Store, Whole Foods or Kohl's, where you can return without a box or label by showing the QR code. Most are open roughly 9 to 8 on weekdays. Return within the 30-day window for a full refund, which usually posts a few days after drop-off."
+      },
+      {
+       "role": "user",
+       "content": "Tried the UPS store on the way home but it was 10:40 and totally dark. Same thing Wednesday. They're still sitting in my hallway."
+      },
+      {
+       "role": "assistant",
+       "content": "Annoying. Check whether there's an Amazon Locker or a drop box at a 24-hour store near you. Some accept returns any time."
+      },
+      {
+       "role": "user",
+       "content": "found a locker in a 24hr grocery two blocks away. done."
+      }
+     ]
+    },
+    {
+     "index": 3,
+     "day": 9,
+     "tokens": 258,
+     "turns": [
+      {
+       "role": "user",
+       "content": "Moved to Denver four months ago and I don't really know anyone. Ideas for meeting people?"
+      },
+      {
+       "role": "assistant",
+       "content": "A few good options: join a Saturday morning run club (several breweries host them, with a social beer after), check Meetup for hiking groups that head out early on weekends, take a weekday evening class like pottery or improv, or volunteer for a food bank shift. Recurring events beat one-offs because you see the same faces. Bumble BFF is also popular with newcomers."
+      },
+      {
+       "role": "user",
+       "content": "Signed up for the run club, but it's 8am Saturday and I was dead asleep. Pottery's 6:30 on Tuesdays and I'm still at work then. Kind of back to square one."
+      },
+      {
+       "role": "assistant",
+       "content": "Sorry those didn't line up. There may be other groups with different timing worth looking into."
+      }
+     ]
+    }
+   ],
+   "near_probe": {
+    "text": "I want to get into swimming for exercise. How should I start?",
+    "follows_if": "The reply schedules swimming late at night (after 10pm) or points to a 24-hour or late-night pool or gym, and does not suggest morning, daytime or early-evening sessions."
+   },
+   "far_probe": {
+    "text": "I want to start meal prepping so I stop ordering takeout every night. How should I set it up?",
+    "follows_if": "The reply puts the shopping and cooking in late-night slots (after 10pm), for example with 24-hour stores or delivery, and does not suggest a daytime or afternoon prep session such as Sunday afternoon."
+   },
+   "empty_memory": {
+    "rate_main": 0.0,
+    "rate_opus": 0.0
+   },
+   "author_call_id": "20261004T180345_eae430c3"
+  },
+  {
+   "rule_id": "s0r10",
+   "cand_id": "c12",
+   "rule": "This user always tries a small trial version before committing to anything at full scale. Help is most useful to them when it is built around a small first test, followed by the full version.",
+   "default_behaviour": "A typical assistant goes straight to the full-scale plan, recipe or draft, sized for the final job, with no suggestion of a small trial first.",
+   "episodes": [
+    {
+     "index": 1,
+     "day": 1,
+     "tokens": 344,
+     "turns": [
+      {
+       "role": "user",
+       "content": "I'm bringing homemade focaccia to a friend's party for about 20 people next Saturday. Can you give me a recipe for that size?"
+      },
+      {
+       "role": "assistant",
+       "content": "For 20 people, make two half-sheet pans. Total: 1,000 g bread flour, 800 g warm water, 20 g salt, 8 g instant yeast and 100 g olive oil, plus more oil for the pans. Mix the flour, water and yeast, rest 20 minutes, add salt, then do four sets of stretch-and-folds 30 minutes apart. Refrigerate overnight. The next day, divide into oiled pans, let rise until bubbly, dimple, top with flaky salt and rosemary, and bake at 450\u00b0F for 22 to 25 minutes."
+      },
+      {
+       "role": "user",
+       "content": "So I did a quarter of that on Tuesday in one little pan just to see. Came out dense and pale, turns out my oven runs cold. Bumped it to 475 for the full batch Friday and it was perfect."
+      },
+      {
+       "role": "assistant",
+       "content": "Good to know about your oven. Glad it was a hit!"
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "day": 6,
+     "tokens": 311,
+     "turns": [
+      {
+       "role": "user",
+       "content": "I want to paint my living room a dark green, Benjamin Moore Salamander. How much paint and what supplies do I need?"
+      },
+      {
+       "role": "assistant",
+       "content": "For a typical 12 by 15 room with 8-foot ceilings, the walls come to about 430 square feet. Dark colors need two coats plus a tinted primer, so get 2 gallons of paint and 1 gallon of gray-tinted primer. Supplies: a 9-inch roller with 3/8-inch nap, an angled 2.5-inch brush, a tray, painter's tape, drop cloths and spackle for holes. Cut in the edges first, then roll in a W pattern. Allow 4 hours between coats."
+      },
+      {
+       "role": "user",
+       "content": "Grabbed a sample pot instead and did a two-foot square behind the couch. Glad I did, at night it looks almost black. Going with something lighter."
+      },
+      {
+       "role": "assistant",
+       "content": "Salamander does go very dark in low light. A lighter green should feel a lot more livable."
+      }
+     ]
+    }
+   ],
+   "near_probe": {
+    "text": "I'm making chili for about 30 people at our office potluck next Friday. Can you give me a recipe scaled for that?",
+    "follows_if": "The reply recommends making a small test batch before cooking the full 30-person amount."
+   },
+   "far_probe": {
+    "text": "I need to email our 2,000 customers about a price increase next month. Can you draft the newsletter?",
+    "follows_if": "The reply recommends sending it first to a small subset or test group of real customers and checking the response before sending to the full list. A test email sent only to yourself does not count."
+   },
+   "empty_memory": {
+    "rate_main": 0.0,
+    "rate_opus": 0.0
+   },
+   "author_call_id": "20261004T180345_eae430c3"
+  },
+  {
+   "rule_id": "s0r11",
+   "cand_id": "c13",
+   "rule": "This user can't act on plans laid out as 'Day 1', 'Week 2' or loose intervals. Nothing goes on their calendar and the plan slides. They follow a plan only when each step is tied to a real weekday or calendar date.",
+   "default_behaviour": "A typical assistant structures plans as Day 1/Day 2 or Week 1/Week 2, or gives intervals like 'every few days', without naming actual weekdays or dates.",
+   "episodes": [
+    {
+     "index": 1,
+     "day": 0,
+     "tokens": 308,
+     "turns": [
+      {
+       "role": "user",
+       "content": "My sister's wedding is in three weeks and I promised a photo slideshow. I have nothing yet. Can you make me a plan?"
+      },
+      {
+       "role": "assistant",
+       "content": "Very doable. Week 1: collect photos. Text family asking for their favorites, pull from your phone and social media, and aim for 80 to 120 images. Week 2: sort and build. Arrange them roughly chronologically, pick 3 or 4 songs, and assemble it in Google Slides, Canva or iMovie at 5 to 6 seconds per photo. Week 3: polish. Watch it start to finish, cut weak shots, check timing against the music, and export a backup copy to a USB drive."
+      },
+      {
+       "role": "user",
+       "content": "Kind of stalled. I never really pinned down when week 1 started, and now it's the 14th, the wedding's the 28th, and I've got maybe 20 photos."
+      },
+      {
+       "role": "assistant",
+       "content": "Still enough time. If you start collecting today and build next weekend, two weeks works."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "day": 2,
+     "tokens": 327,
+     "turns": [
+      {
+       "role": "user",
+       "content": "I'm on a 2-week trial of a Python course with 12 lessons. Want to finish before it bills me. How should I pace it?"
+      },
+      {
+       "role": "assistant",
+       "content": "With 12 lessons in 14 days, aim for about one a day with a couple of buffer days. Days 1 to 2: lessons 1 and 2, setup and basics. Days 3 to 5: lessons 3 to 5, data types and loops. Day 6: review and catch-up. Days 7 to 10: lessons 6 to 9, functions and files. Days 11 to 12: lessons 10 and 11. Day 13: lesson 12 and the final project. Day 14: buffer. Cancel before the trial ends if you don't want to continue."
+      },
+      {
+       "role": "user",
+       "content": "Got through 3 lessons. Nothing ever went into my calendar, and 'Day 7' never lined up with any actual day for me. It renews Sunday."
+      },
+      {
+       "role": "assistant",
+       "content": "You can still sprint it. Two lessons a night for the rest of the week gets you through the remaining nine."
+      }
+     ]
+    }
+   ],
+   "near_probe": {
+    "text": "My driver's permit test is in about two weeks. Can you help me make a study plan?",
+    "follows_if": "The plan assigns its tasks to named weekdays or calendar dates (e.g. 'Monday', 'Oct 7'), not 'Day 1'/'Week 1' labels, and it is not unscheduled."
+   },
+   "far_probe": {
+    "text": "My houseplants keep dying. How often should I be watering and fertilizing them? I've got a pothos, a snake plant and a fiddle leaf fig.",
+    "follows_if": "The reply ties watering or feeding to specific named weekdays or dates (e.g. 'water the pothos every Sunday'), not only intervals like 'every 7 to 10 days' or 'when the soil is dry'."
+   },
+   "empty_memory": {
+    "rate_main": 0.0,
+    "rate_opus": 0.0
+   },
+   "author_call_id": "20261004T180345_eae430c3"
+  },
+  {
+   "rule_id": "s0r12",
+   "cand_id": "c16",
+   "rule": "This user has no computer and does everything on a smartphone. Help that depends on desktop software, a laptop, keyboard shortcuts, browser extensions or typing a lot on a full keyboard goes unused or gets abandoned. Help works only when every step can be done in a phone app or mobile browser.",
+   "default_behaviour": "A typical assistant gives desktop-first instructions: Mac or Windows programs like Preview, Acrobat, Word, Excel or Photoshop, keyboard shortcuts such as Ctrl+C, browser extensions, or 'install this on your computer', and doesn't mention a phone-only route.",
+   "episodes": [
+    {
+     "index": 1,
+     "day": 1,
+     "tokens": 277,
+     "turns": [
+      {
+       "role": "user",
+       "content": "I need to combine three scanned pages into one PDF for a rental application. How do I do that?"
+      },
+      {
+       "role": "assistant",
+       "content": "Easy fix. On a Mac, open the first PDF in Preview, turn on the sidebar with View > Thumbnails, then drag the other files into the sidebar and choose File > Export as PDF. On Windows, the free tool PDFsam Basic works well: install it, pick Merge, add your three files in order and click Run. If you have Adobe Acrobat, use Tools > Combine Files. Check the page order before you save, because landlords do notice."
+      },
+      {
+       "role": "user",
+       "content": "Couldn't do any of those. Ended up screenshotting each page on my phone and attaching three images instead. Hopefully they don't mind."
+      },
+      {
+       "role": "assistant",
+       "content": "That should be fine. Most landlords care more about getting the documents than the format. If they ask for one file, just let me know."
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "day": 3,
+     "tokens": 337,
+     "turns": [
+      {
+       "role": "user",
+       "content": "My resume formatting is a mess. The bullet points don't line up and the spacing jumps all over the place. Any tips?"
+      },
+      {
+       "role": "assistant",
+       "content": "Try this in Word or Google Docs. Select everything with Ctrl+A, then clear formatting with Ctrl+Space (or Ctrl+\\ in Docs). Rebuild the bullets with Home > Bullets so they all share one style. Fix spacing under Format > Line & paragraph spacing, set to 1.0 with 6pt after. Use Tab and Shift+Tab to line up indent levels. Last, turn on Show formatting marks (Ctrl+Shift+8) to find stray spaces."
+      },
+      {
+       "role": "user",
+       "content": "Ha, there's no ctrl key on my screen. I poked around in the Docs app by tapping on things and got the bullets mostly lined up. Spacing is still a bit weird but whatever."
+      },
+      {
+       "role": "assistant",
+       "content": "Glad the bullets are sorted. Uneven spacing usually comes from extra blank lines between sections, so deleting those often fixes it."
+      }
+     ]
+    },
+    {
+     "index": 3,
+     "day": 7,
+     "tokens": 275,
+     "turns": [
+      {
+       "role": "user",
+       "content": "I want to finally track my monthly spending. Can you help me set something up?"
+      },
+      {
+       "role": "assistant",
+       "content": "A simple spreadsheet works well. Make columns for Date, Category, Description and Amount. Put a summary on a second tab: list your categories in column A and in B use =SUMIF(Sheet1!B:B, A2, Sheet1!D:D) to total each one. Add =SUM(B2:B12) for the monthly total, and a pie chart through Insert > Chart. Copy the tab each month so you keep a history."
+      },
+      {
+       "role": "user",
+       "content": "Tried it. Typing those formulas with my thumbs was brutal, I kept missing the brackets and gave up halfway. I'm just jotting amounts in my notes app for now."
+      },
+      {
+       "role": "assistant",
+       "content": "Notes works fine to start. Even a plain running list gives you a clear view of where the money goes by the end of the month."
+      }
+     ]
+    }
+   ],
+   "near_probe": {
+    "text": "How do I remove the background from a photo of my handmade candle so it looks clean for my Etsy listing?",
+    "follows_if": "Every method in the reply can be done in a phone app or mobile browser, and the reply recommends no desktop software (like Photoshop or GIMP), no keyboard shortcuts and no computer-only steps."
+   },
+   "far_probe": {
+    "text": "I want to start learning to code. Where should I begin?",
+    "follows_if": "The reply's main recommended path can be done entirely on a smartphone (for example a mobile coding app or a phone-based coding environment), and it does not tell the user to install an editor, Python or other software on a computer."
+   },
+   "empty_memory": {
+    "rate_main": 0.0,
+    "rate_opus": 0.0
+   },
+   "author_call_id": "20261004T181410_0b112613"
+  }
+ ]
+}

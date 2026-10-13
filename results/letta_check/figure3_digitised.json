@@ -1,0 +1,13 @@
+{
+  "source": "Lin et al 2025, arXiv 2504.13171, Figure 3 right panel (GSM8K-Symbolic P2). Marker centres read from the PDF vector paths with pdfplumber, calibrated on the axis tick lines. Series identified by line colour (grey = test-time only, blue = sleep-time) and by which group reaches higher accuracy (gpt-4o above gpt-4o-mini). Model assignment is inferred, not printed in the figure. Precision about plus or minus 0.02 accuracy and plus or minus 5 tokens.",
+  "axis": {"x_px_per_100_tokens": 33.2, "x_zero_px": 331, "y_px_per_0.2_acc": 31, "y_0.8_px": 136},
+  "gpt-4o-mini": {
+    "test_time_only": [[27, 0.045], [134, 0.311], [591, 0.746]],
+    "sleep_time":     [[28, 0.359], [132, 0.609], [555, 0.734]]
+  },
+  "gpt-4o": {
+    "test_time_only": [[48, 0.077], [135, 0.620], [480, 0.874]],
+    "sleep_time":     [[49, 0.492], [104, 0.770], [425, 0.846]]
+  },
+  "replication_target": "gpt-4o-mini, P2, verbosity 0 prompts: test-time only about 0.05, sleep-time about 0.36, at about 27 test-time completion tokens per question."
+}
