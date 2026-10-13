@@ -10,7 +10,7 @@ between the two judges (luna main, Opus second) on every graded answer.
 import json, glob, pathlib, statistics as st, sys, argparse
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "harness"))
-import arms
+import arms, battery
 ARMS = arms.ARMS
 RUNS = ROOT / "results" / "runs_v2"
 SUMMARY = ROOT / "results" / "summary_v2.json"
@@ -22,6 +22,11 @@ def rate_of(arm):
     if arm == "faithful": return 0.0
     if arm == "nosleep": return None
     return int(arm.split("_")[1]) / 100
+
+
+def rescore(name, rows):
+    items = [{k: v for k, v in r.items() if k not in ("said_yes", "raw")} for r in rows]
+    return battery.score(name, items, {i: r["raw"] for i, r in enumerate(rows, 1)})[0]
 
 
 def family_of(arm):
@@ -96,7 +101,8 @@ def per_run(state):
     b = state.get("battery", {})
     for phase in ("evening", "morning"):
         if phase in b:
-            d, s, p = b[phase]["drm"]["summary"], b[phase]["serial"]["summary"], b[phase]["pl"]["summary"]
+            # re-score from the saved per-item answers so scoring fixes apply to finished runs
+            d, s, p = (rescore(n, b[phase][n]["rows"]) for n in ("drm", "serial", "pl"))
             out[f"battery_{phase}"] = {"drm_hit": d["hit_rate"], "drm_lure_fa": d["lure_false_alarm"], "drm_unrelated_fa": d["unrelated_false_alarm"],
                                       "serial_hit": s["hit_rate"], "serial_primacy": s["primacy_hit_rate"], "serial_middle": s["middle_hit_rate"], "serial_recency": s["recency_hit_rate"], "serial_foil_fa": s["foil_false_alarm"],
                                       "pl_fan1_acc": p["fan1_accuracy"], "pl_fan2_acc": p["fan2_accuracy"]}

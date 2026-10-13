@@ -1896,11 +1896,11 @@
     "drm_hit": 1.0,
     "drm_lure_fa": 0.0,
     "drm_unrelated_fa": 0.0,
-    "serial_hit": 0.0,
-    "serial_primacy": 0.0,
-    "serial_middle": 0.0,
-    "serial_recency": 0.0,
-    "serial_foil_fa": 0.0,
+    "serial_hit": null,
+    "serial_primacy": null,
+    "serial_middle": null,
+    "serial_recency": null,
+    "serial_foil_fa": null,
     "pl_fan1_acc": null,
     "pl_fan2_acc": null
    }
@@ -9534,43 +9534,39 @@
      ]
     },
     "serial_hit": {
-     "mean": 0.6666666666666666,
-     "sd": 0.5773502691896257,
-     "n": 3,
+     "mean": 1.0,
+     "sd": 0.0,
+     "n": 2,
      "values": [
       1.0,
-      1.0,
-      0.0
+      1.0
      ]
     },
     "serial_primacy": {
-     "mean": 0.6666666666666666,
-     "sd": 0.5773502691896257,
-     "n": 3,
+     "mean": 1.0,
+     "sd": 0.0,
+     "n": 2,
      "values": [
       1.0,
-      1.0,
-      0.0
+      1.0
      ]
     },
     "serial_middle": {
-     "mean": 0.6666666666666666,
-     "sd": 0.5773502691896257,
-     "n": 3,
+     "mean": 1.0,
+     "sd": 0.0,
+     "n": 2,
      "values": [
       1.0,
-      1.0,
-      0.0
+      1.0
      ]
     },
     "serial_recency": {
-     "mean": 0.6666666666666666,
-     "sd": 0.5773502691896257,
-     "n": 3,
+     "mean": 1.0,
+     "sd": 0.0,
+     "n": 2,
      "values": [
       1.0,
-      1.0,
-      0.0
+      1.0
      ]
     },
     "pl_fan1_acc": {
@@ -11745,13 +11741,12 @@
    ]
   },
   "random_20_minus_faithful.battery_morning.serial_hit": {
-   "mean": -0.3333333333333333,
-   "sd": 0.5773502691896257,
-   "n": 3,
+   "mean": 0.0,
+   "sd": 0.0,
+   "n": 2,
    "values": [
     0.0,
-    0.0,
-    -1.0
+    0.0
    ]
   },
   "random_20_minus_faithful.battery_morning.pl_fan1_acc": {

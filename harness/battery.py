@@ -153,11 +153,12 @@ def parse_answers(text, n):
 
 def score(name, items, answers):
     """answers: {1-based index: 'old'/'new'/'yes'/'no'/None}"""
-    yes = {"old", "yes"}
+    yes, no = {"old", "yes"}, {"new", "no"}
     rows = []
     for i, it in enumerate(items, 1):
         a = answers.get(i)
-        rows.append({**it, "said_yes": (a in yes) if a else None, "raw": a})
+        # any other reply ("no record") is unanswered, not a "no"
+        rows.append({**it, "said_yes": True if a in yes else False if a in no else None, "raw": a})
     res = {"n": len(rows), "unanswered": sum(1 for r in rows if r["said_yes"] is None)}
     def rate(sel):
         xs = [r["said_yes"] for r in rows if sel(r) and r["said_yes"] is not None]

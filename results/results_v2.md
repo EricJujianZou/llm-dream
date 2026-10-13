@@ -1,6 +1,6 @@
 # Results: noisy replay at four doses
 
-Generated 09 October 2026 12:17 UTC. Model under test claude-opus-5-5, effort medium, through Claude Code on the Max plan. Days of 130,000 tokens; the memory cap grows each night (19,500, 35,100, 48,100, 59,800, 70,850, 81,250, 91,000, 100,100, 108,550, 117,000 tokens). Ten days, ten arms, three seeds.
+Generated 13 October 2026 23:30 UTC. Model under test claude-opus-5-5, effort medium, through Claude Code on the Max plan. Days of 130,000 tokens; the memory cap grows each night (19,500, 35,100, 48,100, 59,800, 70,850, 81,250, 91,000, 100,100, 108,550, 117,000 tokens). Ten days, ten arms, three seeds.
 
 ## One-screen summary
 
@@ -141,7 +141,7 @@ Memory tokens after each night, mean over seeds, with the cap:
 | Structured noise, 40 percent | 86 ± 2 | 0 ± 0 | 0 ± 0 | 96 ± 4 | 89 ± 19 | 93 ± 12 | 100 ± 0 | 99 ± 1 | 100 ± 0 |
 | Random noise, 5 percent | 96 ± 7 | 0 ± 0 | 0 ± 0 | 100 ± 0 | 100 ± 0 | 100 ± 0 | 100 ± 0 | 100 ± 0 | 100 ± 0 |
 | Random noise, 10 percent | 93 ± 6 | 0 ± 0 | 0 ± 0 | 100 ± 0 | 100 ± 0 | 100 ± 0 | 100 ± 0 | 100 ± 0 | 100 ± 0 |
-| Random noise, 20 percent | 92 ± 7 | 0 ± 0 | 0 ± 0 | 67 ± 58 | 67 ± 58 | 67 ± 58 | 67 ± 58 | 100 ± 0 | 100 ± 0 |
+| Random noise, 20 percent | 92 ± 7 | 0 ± 0 | 0 ± 0 | 100 ± 0 | 100 ± 0 | 100 ± 0 | 100 ± 0 | 100 ± 0 | 100 ± 0 |
 | Random noise, 40 percent | 81 ± 16 | 0 ± 0 | 0 ± 0 | 100 ± 0 | 100 ± 0 | 100 ± 0 | 100 ± 0 | 100 ± 0 | 100 ± 0 |
 
 Same tests in the evening, with the study lists still in context, are in summary_v2.json under battery_evening. The DRM lists are new ones built from the USF free-association norms, because Opus recognised the classic lists in v1. Human reference points: Roediger and McDermott 1995 found people false-recognise the critical lure at about 0.8 of the hit rate; Cao et al report 0.11 for GPT-4.

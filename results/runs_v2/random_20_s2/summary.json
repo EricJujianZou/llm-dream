@@ -116,11 +116,11 @@
   "drm_hit": 1.0,
   "drm_lure_fa": 0.0,
   "drm_unrelated_fa": 0.0,
-  "serial_hit": 0.0,
-  "serial_primacy": 0.0,
-  "serial_middle": 0.0,
-  "serial_recency": 0.0,
-  "serial_foil_fa": 0.0,
+  "serial_hit": null,
+  "serial_primacy": null,
+  "serial_middle": null,
+  "serial_recency": null,
+  "serial_foil_fa": null,
   "pl_fan1_acc": null,
   "pl_fan2_acc": null
  }
